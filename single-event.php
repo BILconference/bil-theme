@@ -19,6 +19,7 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<h1><?php the_title(); ?></h1>
+				<?php the_content(); ?>
 				<?php the_field('general_location'); ?><br>
 				<?php if (get_field('start_date')) { 
 					$start_date = DateTime::createFromFormat('Ymd', get_field('start_date'));
@@ -38,7 +39,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-8 content">
-				<?php the_content(); ?>
+				
 			</div>
 			<div class="col-xs-12 col-md-4">
 				<h2>Organizers</h2>

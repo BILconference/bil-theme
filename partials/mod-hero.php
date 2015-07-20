@@ -1,5 +1,5 @@
 <?php $module = get_module_by_slug("hero"); ?>
-<?php $background = get_field("background-image", $module->ID, OBJECT); ?>
+<?php $background = get_field("background_image", $module->ID, OBJECT); ?>
 <?php echo $module->ID; ?>
 <?php var_dump($background) ?>
 

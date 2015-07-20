@@ -42,7 +42,7 @@
 					
 		</header>
 
-		<nav class="navbar navbar-default navbar-static-top navbar-custom" role="navigation">
+		<nav id="nav" class="navbar navbar-default navbar-static-top navbar-custom" role="navigation">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="container">
 		        <div class="navbar-header">

@@ -8,6 +8,8 @@ if ( ! isset( $content_width ) ) {
   $content_width = 680;
 }
 
+add_theme_support( 'post-thumbnails' );
+
 // Helpers
 require_once get_template_directory() . '/inc/helpers.php';
 

@@ -101,13 +101,10 @@ THEME SUPPORT
 // Adding WP 3+ Functions & Theme Support
 function bones_theme_support() {
 
-	// wp thumbnails (sizes handled in functions.php)
 	add_theme_support( 'post-thumbnails' );
 
-	// default thumb size
 	set_post_thumbnail_size(125, 125, true);
 
-	// wp custom background (thx to @bransonwerner for update)
 	add_theme_support( 'custom-background',
 	    array(
 	    'default-image' => '',    // background image default

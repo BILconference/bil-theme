@@ -8,7 +8,7 @@
 			<div class="col-xs-12">
 				<?php if ( $sponsors->have_posts() ) : ?>
 					<?php while ( $sponsors->have_posts() ) : $sponsors->the_post(); ?>
-						<?php $background = get_field("white_image"); ?>
+						<?php $background = get_field("white_image", $post->ID, OBJECT); ?>
 						<?php $image = $background['sizes'][ '300x600' ]; ?>
 						<?php echo $image; ?>
 

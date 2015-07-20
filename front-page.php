@@ -1,12 +1,25 @@
 <?php get_header(); ?>
 
-	<?php if( have_rows('modules') ) {
-		while ( have_rows('modules') ) : the_row();
-			the_sub_field('module');
-		endwhile;
-	} else {
-		// no rows found
-	} ?>
+	<?php
+
+	// check if the repeater field has rows of data
+	if( have_rows('modules') ):
+
+	 	// loop through the rows of data
+	    while ( have_rows('modules') ) : the_row();
+
+	        // display a sub field value
+	        the_sub_field('module');
+
+	    endwhile;
+
+	else :
+
+	    // no rows found
+
+	endif;
+
+	?>
 
 	<div class="container-fluid" id="module-hero">
 		<div class="row">

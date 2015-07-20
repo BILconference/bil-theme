@@ -38,40 +38,34 @@
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 		<header id="header" class="container-fluid">
 			<div class="col-xs-12" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-				
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
 
-					<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-					    <!-- Brand and toggle get grouped for better mobile display -->
-					    <div class="container">
-					        <div class="navbar-header">
-					            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					                <span class="sr-only">Toggle navigation</span>
-					                <span class="icon-bar"></span>
-					                <span class="icon-bar"></span>
-					                <span class="icon-bar"></span>
-					            </button>
-
-					            <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
-					                <?php bloginfo('name'); ?>
-					            </a>
-					        </div>
-											
-
-							<?php
-					            wp_nav_menu( array(
-					                'menu'              => __( 'The Main Menu', 'bonestheme' ),
-					                'theme_location'    => 'main-nav',
-					                'depth'             => 2,
-					                'container'         => 'div',
-					                'container_class'   => 'collapse navbar-collapse',
-					        		'container_id'      => 'bs-example-navbar-collapse-1',
-					                'menu_class'        => 'nav navbar-nav',
-					                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-					                'walker'            => new wp_bootstrap_navwalker())
-					            );
-					        ?>
-				        </div>
-					</nav>
-				
+							<a class="navbar-brand" href="<?php bloginfo('url'); ?>">
+								<?php bloginfo('name'); ?>
+							</a>
+						</div>
+						<?php
+							wp_nav_menu( array(
+								'menu'              => __( 'The Main Menu', 'bonestheme' ),
+								'theme_location'    => 'main-nav',
+								'depth'             => 2,
+								'container'         => 'div',
+								'container_class'   => 'collapse navbar-collapse',
+								'container_id'      => 'bs-example-navbar-collapse-1',
+								'menu_class'        => 'nav navbar-nav',
+								'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+								'walker'            => new wp_bootstrap_navwalker())
+							);
+						?>
+					</div>
+				</nav>
 			</div>
 		</header>

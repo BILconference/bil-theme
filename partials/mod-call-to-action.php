@@ -3,7 +3,7 @@
 <div id="module-cta">
 	<div class="container">
 		<div class="row">
-			<div id="join-slack" class="col-xs-12 col-md-6">
+			<div class="col-xs-12 col-md-6">
 				Host a BIL
 			</div>
 			<div class="col-xs-12 col-md-6">

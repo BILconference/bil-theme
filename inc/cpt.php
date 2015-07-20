@@ -44,7 +44,7 @@ function cpt_module() {
 		'publicly_queryable'  => false,
 		'capability_type'     => 'page',
 	);
-	register_post_type( 'Modules', $args );
+	register_post_type( 'module', $args );
 
 }
 
@@ -97,7 +97,7 @@ function cpt_speaker() {
 		'publicly_queryable'  => true,
 		'capability_type'     => 'page',
 	);
-	register_post_type( 'Speakers', $args );
+	register_post_type( 'speaker', $args );
 
 }
 
@@ -150,7 +150,7 @@ function cpt_talk() {
 		'publicly_queryable'  => true,
 		'capability_type'     => 'page',
 	);
-	register_post_type( 'Talks', $args );
+	register_post_type( 'talk', $args );
 
 }
 
@@ -203,7 +203,7 @@ function cpt_event() {
 		'publicly_queryable'  => true,
 		'capability_type'     => 'page',
 	);
-	register_post_type( 'Events', $args );
+	register_post_type( 'event', $args );
 
 }
 
@@ -256,7 +256,7 @@ function cpt_sponsor() {
 		'publicly_queryable'  => true,
 		'capability_type'     => 'page',
 	);
-	register_post_type( 'Sponsors', $args );
+	register_post_type( 'sponsor', $args );
 
 }
 

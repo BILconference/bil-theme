@@ -1,6 +1,6 @@
-<?php $page = get_page_by_slug('hero') ?>
+<?php $module = get_module_by_slug('hero') ?>
 
-<?php echo $page->post_name ?>
+<?php echo $module->post_name ?>
 
 <div class="container-fluid" id="module-hero" style="background-image: url('');">
 	<div class="row">

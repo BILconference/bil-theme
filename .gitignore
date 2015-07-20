@@ -14,4 +14,5 @@ wp-content/wp-cache-config.php
 
 library/scss/.sass-cache
 config.codekit
+.DS_Store
 

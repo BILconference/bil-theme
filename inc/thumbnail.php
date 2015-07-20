@@ -1,10 +1,7 @@
 <?php
 
 // Add Image Sizes
-
-add_image_size( '600x150', 600, 150, true );
-add_image_size( '300x100', 300, 100, true );
-add_image_size( '1920x1050', 1920, 1050, true );
+add_image_size( 'bil-full-width', 1920, 1050, true );
 
 
 // Make the image size slugs, pretty for end users.

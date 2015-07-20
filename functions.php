@@ -29,4 +29,7 @@ require_once get_template_directory() . '/inc/js.php';
 // Fonts
 require_once get_template_directory() . '/inc/css.php';
 
+// Custom Post Types
+require_once get_template_directory() . '/inc/cpt.php';
+
 ?>

@@ -10,9 +10,10 @@
 					<?php while ( $sponsors->have_posts() ) : $sponsors->the_post(); ?>
 						<?php $background = get_field('white_image', $post->ID, OBJECT); ?>
 						<?php $image = $background['sizes'][ '300x100' ]; ?>
+
 						<div class="tile">
 							<img src="<?php echo $image; ?>">
-							<h2><?php the_title(); ?></h2>
+							<h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
 						</div>
 					<?php endwhile; ?>
 					<?php wp_reset_postdata(); ?>

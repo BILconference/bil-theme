@@ -12,7 +12,7 @@
 
 			// Bootstrap CDN File
 			// NOTE: We should write a check to grab a local file if CDN is not accessible
-			wp_register_script( 'bootstrap-cdn', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', array(), '3.3.5', false );
+			wp_register_style( 'bootstrap-cdn', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', array(), '3.3.5', false );
 
 			// register main stylesheet
 			wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );

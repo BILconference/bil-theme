@@ -8,6 +8,9 @@ if ( ! isset( $content_width ) ) {
   $content_width = 680;
 }
 
+// Helpers
+require_once get_template_directory() . '/library/helpers.php';
+
 // Bones Core
 require_once get_template_directory() . '/library/bones.php';
 

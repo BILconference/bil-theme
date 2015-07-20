@@ -1,4 +1,6 @@
-<?php echo $module->post_name ?>
+<?php $page = get_page_by_slug('hero') ?>
+
+<?php echo $page->post_name ?>
 
 <div class="container-fluid" id="module-hero" style="background-image: url('');">
 	<div class="row">

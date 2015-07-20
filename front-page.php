@@ -2,7 +2,7 @@
 <?php
 
 if( have_rows('modules') ):
-	while ( have_rows('repeater_field_name') ) : the_row();
+	while ( have_rows('modules') ) : the_row();
 		the_sub_field('module');
 	endwhile;
 else:

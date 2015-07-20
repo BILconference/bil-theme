@@ -1,5 +1,5 @@
 <?php $module = get_module_by_slug("hero"); ?>
-<?php $background = get_field("background-image", $module->id); ?>
+<?php $background = get_field("background-image", $module->ID); ?>
 <?php var_dump($background) ?>
 
 <div class="container-fluid" id="module-hero" style="background-image: url('');">

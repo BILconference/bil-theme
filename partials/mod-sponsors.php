@@ -8,6 +8,10 @@
 			<div class="col-xs-12">
 				<?php if ( $sponsors->have_posts() ) : ?>
 					<?php while ( $sponsors->have_posts() ) : $sponsors->the_post(); ?>
+						<?php $background = get_field("white_image"); ?>
+						<?php $image = $background['sizes'][ '300x600' ]; ?>
+						<?php echo $image; ?>
+
 						<h2><?php the_title(); ?></h2>
 					<?php endwhile; ?>
 					<?php wp_reset_postdata(); ?>

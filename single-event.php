@@ -1,21 +1,63 @@
-<?php
-	global $post;
-	$field = get_post_meta($post->ID, 'redirect', true);
-	if ($field) wp_redirect(clean_url($field), 301);
+<?php 
+	//************************************************************************
+	//
+	// Redirect Code - See page option for redirection URL
+	//
+	//************************************************************************
+
+	$redirect = get_post_meta($post->ID, 'redirect', true);
+	if (redirect) wp_redirect(clean_url($field), 301);
+
 ?>
 
 <?php get_header(); ?>
-<div class="event">
+
+
+
+<div id="event-hero" style="background-image: url('<?php echo $image; ?>');" >
 	<div class="container">
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			<article id="post-<?php the_ID(); ?>">
-				<header class="article-header">
-					<h1 class="page-title"><?php the_title(); ?></h1>
-					<p class="byline vcard hide">
-						<?php printf( __( 'Posted <time class="updated" datetime="%1$s" itemprop="datePublished">%2$s</time> by <span class="author">%3$s</span>', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
-					</p>
-				</header>
-				<section class="entry-content" itemprop="articleBody">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1><?php the_title(); ?></h1>
+				<?php the_field('general_location'); ?><br>
+				<?php if (get_field('start_date')) { 
+					$start_date = DateTime::createFromFormat('Ymd', get_field('start_date'));
+					echo $start_date->format('F jS, Y');
+				} ?>
+				<?php if (get_field('end_date')) { 
+					echo " &#9658; ";
+					$end_date = DateTime::createFromFormat('Ymd', get_field('end_date'));
+					echo $end_date->format('F jS, Y');
+				} ?>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="event-about" style="background-image: url('<?php echo $image; ?>');" >
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-8">
+				<?php the_content(); ?>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<h2>Organizers</h2>
+				<ul>
+					<li>Cody Marx Bailey</li>
+					<li>Michael Cummings</li>
+					<li>Ryan Plesko</li>
+					<li>Brad Shende</li>
+					<li>Jackson Smith</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
 					<?php if (get_field('iframe')) { ?>
 						<iframe seamless="seamless" border="0" height="1000" src="<?php the_field('iframe'); ?>" width="100%">
 							<p>Your browser does not support iframes.</p>

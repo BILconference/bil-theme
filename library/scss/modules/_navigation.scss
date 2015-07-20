@@ -78,6 +78,11 @@ NAVIGATION STYLES
 	margin-bottom: 0;
 }
 
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color: #eee;
+	background-color: saturate( $bil-blue, 20% );
+}
+
 
 #nav {
   width: 100%;
@@ -115,7 +120,7 @@ NAVIGATION STYLES
 .navbar-custom  .navbar-nav li>a:hover, 
 .navbar-nav li .open, 
 .navbar-custom .navbar-nav .active a  {
-	background-color: _#1687cb;
+	background-color: #1687cb;
 }
 
 .navbar-custom .navbar-nav>.dropdown>a .caret {

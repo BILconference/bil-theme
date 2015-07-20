@@ -82,7 +82,7 @@ function cpt_speaker() {
 		'label'               => __( 'speaker', 'text_domain' ),
 		'description'         => __( 'BIL Speakers', 'text_domain' ),
 		'labels'              => $labels,
-		'supports'            => array( ),
+		'supports'            => array('thumbnail'),
 		'hierarchical'        => false,
 		'public'              => true,
 		'show_ui'             => true,

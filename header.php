@@ -37,13 +37,9 @@
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 		<header id="header" class="masthead container-fluid">
-			<div class="col-xs-12" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 			
-
+				<?php get_template_part( 'partials/mod', 'hero' ); ?>
 					
-				
-
-			</div>
 		</header>
 
 		<nav class="navbar navbar-default navbar-static-top navbar-custom" role="navigation">

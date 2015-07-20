@@ -1,4 +1,15 @@
 <?php get_header(); ?>
+<?php
+
+if( have_rows('modules') ):
+	while ( have_rows('modules') ) : the_row();
+		the_sub_field('module');
+	endwhile;
+else:
+	// no rows found
+endif;
+
+?>
 	<div class="container-fluid" id="module-hero">
 		<div class="row">
 			<div class="col-xs-12">
@@ -34,7 +45,7 @@
 	<div class="container-fluid" id="module-cta">
 		<div class="row">
 			<div class="col-xs-12">
-				Sponsors
+				Call to Action
 				This should be full width
 			</div>
 		</div>

@@ -33,6 +33,6 @@ require_once get_template_directory() . '/inc/css.php';
 require_once get_template_directory() . '/inc/cpt.php';
 
 // Bootstrap Wordpress NavWalker
-require_once get_template_directory() . '/inc/wp_bootstrap_navwalker.php');
+require_once get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 
 ?>

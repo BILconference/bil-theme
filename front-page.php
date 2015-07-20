@@ -9,7 +9,8 @@
 	    while ( have_rows('modules') ) : the_row();
 
 	        // display a sub field value
-	        //the_sub_field('module');
+	        $module = get_sub_field('module');
+	        var_dump($module);
 
 	    endwhile;
 

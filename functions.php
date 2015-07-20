@@ -37,6 +37,9 @@ require_once get_template_directory() . '/inc/css.php';
 // Custom Post Types
 require_once get_template_directory() . '/inc/cpt.php';
 
+// Custom Taxonomies
+require_once get_template_directory() . '/inc/tax.php';
+
 // Bootstrap Wordpress NavWalker
 require_once get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 

@@ -470,6 +470,41 @@ select {
   background-repeat: no-repeat;
   background-position: 97.5% center; }
 
+/*********************
+NAVIGATION STYLES
+*********************/
+.nav {
+  border-bottom: 0;
+  margin: 0;
+  float: none;
+  text-align: center;
+  /* end .menu li */
+  /* highlight current page */
+  /* end current highlighters */ }
+  .nav li {
+    width: 200px;
+    height: 60px;
+    /*
+    so you really have to rethink your dropdowns for mobile.
+    you don't want to have it expand too much because the
+    screen is so small. How you manage your menu should
+    depend on the project. Here's some great info on it:
+    http://www.alistapart.com/articles/organizing-mobile/
+    */ }
+    .nav li a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.75em;
+      font-size: 1.2em; }
+    .nav li ul.sub-menu li a,
+    .nav li ul.children li a {
+      padding-left: 30px; }
+
+/* end .nav */
+.navbar {
+  margin-bottom: 0; }
+
 #nav {
   width: 100%;
   position: static;
@@ -500,7 +535,7 @@ select {
 .navbar-custom .navbar-nav li > a:hover,
 .navbar-nav li .open,
 .navbar-custom .navbar-nav .active a {
-  background-color: #1687cb; }
+  background-color: _ #1687cb; }
 
 .navbar-custom .navbar-nav > .dropdown > a .caret {
   border-top-color: #999;
@@ -519,7 +554,10 @@ select {
     text-align: center;
     line-height: 1.2;
     margin-top: 270px;
-    color: #F6F8E3; }
+    color: #F6F8E3;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 15px; }
 
 #module-map {
   height: 700px;
@@ -668,46 +706,6 @@ h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
-/*********************
-NAVIGATION STYLES
-*********************/
-/*
-all navs have a .nav class applied via
-the wp_menu function; this is so we can
-easily write one group of styles for
-the navs on the site so our css is cleaner
-and more scalable.
-*/
-.nav {
-  border-bottom: 0;
-  margin: 0;
-  /* end .menu li */
-  /* highlight current page */
-  /* end current highlighters */ }
-  .nav li {
-    /*
-    so you really have to rethink your dropdowns for mobile.
-    you don't want to have it expand too much because the
-    screen is so small. How you manage your menu should
-    depend on the project. Here's some great info on it:
-    http://www.alistapart.com/articles/organizing-mobile/
-    */ }
-    .nav li a {
-      display: block;
-      color: #fff;
-      text-decoration: none;
-      padding: 0.75em;
-      /*
-      remember this is for mobile ONLY, so there's no need
-      to even declare hover styles here, you can do it in
-      the style.scss file where it's relevant. We want to
-      keep this file as small as possible!
-      */ }
-    .nav li ul.sub-menu li a,
-    .nav li ul.children li a {
-      padding-left: 30px; }
-
-/* end .nav */
 /*********************
 POSTS & CONTENT STYLES
 *********************/

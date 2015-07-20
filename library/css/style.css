@@ -484,6 +484,8 @@ NAVIGATION STYLES
   .nav li {
     width: 200px;
     height: 60px;
+    display: inline-block;
+    float: none;
     /*
     so you really have to rethink your dropdowns for mobile.
     you don't want to have it expand too much because the

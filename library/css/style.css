@@ -481,7 +481,8 @@ select {
 #module-map {
   height: 700px;
   color: #fff;
-  background-color: #323944; }
+  background-color: #323944;
+  background: url(http://bilconference.com/wp-content/uploads/2015/07/topographic_map_earth.jpg) no-repeat cover; }
 
 #module-intro {
   height: 700px;

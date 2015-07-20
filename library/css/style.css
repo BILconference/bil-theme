@@ -498,6 +498,9 @@ select {
   height: 400px;
   color: #fff;
   background-color: #2ea3f2; }
+  #module-cta #join-slack {
+    height: 100%;
+    vertical-align: middle; }
 
 /*********************
 BASE (MOBILE) SIZE

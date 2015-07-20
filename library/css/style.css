@@ -478,6 +478,26 @@ select {
     margin-top: 270px;
     color: #F6F8E3; }
 
+#module-map {
+  height: 700px;
+  color: #fff;
+  background-color: #323944; }
+
+#module-intro {
+  height: 700px;
+  color: #323944;
+  background-color: #fff; }
+
+#module-sponsors {
+  height: 700px;
+  color: #fff;
+  background-color: #2ea3f2; }
+
+#module-cta {
+  height: 400px;
+  color: #fff;
+  background-color: #2ea3f2; }
+
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If

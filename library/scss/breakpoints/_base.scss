@@ -47,6 +47,14 @@ style a page via class
 .paged {}                         /* paged items like search results or archives */
 	.paged-1 {}                     /* individual paged (i.e. body.paged-3) */
 
+
+/*********************
+WORDPRESS ADMIN BAR
+*********************/
+
+body.admin-bar #branding-wrap{top: 28px;} 
+body.admin-bar #wrapper{margin-top: 145px;}
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/

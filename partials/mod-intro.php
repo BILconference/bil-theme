@@ -1,3 +1,5 @@
+<?php $module = get_module_by_slug('intro') ?>
+
 <div class="container-fluid" id="module-intro">
 	<div class="row">
 		<div class="col-xs-12">

@@ -1,6 +1,6 @@
 <?php $module = get_module_by_slug('hero') ?>
-
-<?php echo $module->post_name ?>
+<?php $background = get_the_field('background', $module->id); ?>
+<?php var_dump($background) ?>
 
 <div class="container-fluid" id="module-hero" style="background-image: url('');">
 	<div class="row">

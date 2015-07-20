@@ -471,7 +471,12 @@ select {
   background-position: 97.5% center; }
 
 #module-hero {
-  height: 500px; }
+  height: 700px; }
+  #module-hero h2 {
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 270px;
+    color: #F6F8E3; }
 
 /*********************
 BASE (MOBILE) SIZE

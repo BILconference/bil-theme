@@ -27,4 +27,3 @@
 
 			$wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 	}
-}

@@ -4,7 +4,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-6">
-				Join Slack
+				<script async defer src="http://slack.yourdomain.com/slackin.js"></script>
 			</div>
 			<div class="col-xs-12 col-md-6">
 				Sign Up

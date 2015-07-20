@@ -38,7 +38,7 @@
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 		<header id="header" class="container-fluid">
 			<div class="col-xs-12" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-				
+			
 
 					<nav class="navbar navbar-default navbar-static-top navbar-custom" role="navigation">
 					    <!-- Brand and toggle get grouped for better mobile display -->
@@ -73,5 +73,6 @@
 				        </div>
 					</nav>
 				
+
 			</div>
 		</header>

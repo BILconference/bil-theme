@@ -37,7 +37,7 @@
 <div id="event-about" style="background-image: url('<?php echo $image; ?>');" >
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-md-8">
+			<div class="col-xs-12 col-md-8 content">
 				<?php the_content(); ?>
 			</div>
 			<div class="col-xs-12 col-md-4">

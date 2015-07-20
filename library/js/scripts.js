@@ -101,7 +101,7 @@ jQuery(document).ready(function($) {
   */
   loadGravatars();
 
-
+  console.log( 'js loaded' );
   /* affix the navbar after scroll below header */
   $('#nav').affix({
         offset: {

@@ -10,7 +10,7 @@
 
 	        // display a sub field value
 	        $module = get_sub_field('module');
-	        echo $module->post_name;
+	        get_template_part( 'modules/', $module->post_name );
 
 	    endwhile;
 

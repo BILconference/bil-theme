@@ -1,28 +1,9 @@
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Base Mobile Stylesheet
-
-Be light and don't over style since everything here will be
-loaded by mobile devices. You want to keep it as minimal as
-possible. This is called at the top of the main stylsheet
-and will be used across all viewports.
-
-******************************************************************/
-
 /*********************
 GENERAL STYLES
 *********************/
 
 body {
-	font-family: $lato;
-	font-size: 100%;
-	line-height: 1.5;
-	color: $text-color;
-	background-color: $gray;
-  	-webkit-font-smoothing: antialiased;
-  	-moz-osx-font-smoothing: grayscale;
+	
 }
 
 /********************
@@ -70,10 +51,6 @@ style a page via class
 LAYOUT & GRID STYLES
 *********************/
 
-.wrap {
-	width: 96%;
-	margin: 0 auto;
-}
 
 /*********************
 LINK STYLES
@@ -152,17 +129,7 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 
-.header {
-	background-color: $black;
-}
 
-	#logo {
-		margin: 0.75em 0;
-
-		a {
-			color: $white;
-		}
-	}
 
 /*********************
 NAVIGATION STYLES
@@ -759,7 +726,7 @@ COMMENT FORM STYLES
 ******************************************************************/
 
 .comment-respond {
-	@extend .cf;
+	//@extend .cf;
 	padding: 1.5em;
 	border-top: 1px solid $light-gray;
 }

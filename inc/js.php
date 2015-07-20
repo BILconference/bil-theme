@@ -15,6 +15,9 @@
 			// register modernizr
 			wp_register_script( 'theme-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
+			// Bootstrap
+			wp_register_script( 'bootstrap-cdn-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js', array('jquery'), '3.3.5', true );
+
 			// register our custom scripts.js
 			wp_register_script( 'theme-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 
@@ -30,6 +33,9 @@
 
 			// enqueue styles and scripts
 			wp_enqueue_script( 'theme-modernizr' );
+
+			// enqueue bootstrap js
+			wp_enqueue_script( 'bootstrap-cdn-js');
 
 			// enqueue custom theme js
 			wp_enqueue_script( 'theme-js' );

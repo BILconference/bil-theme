@@ -9,7 +9,7 @@ if ( ! isset( $content_width ) ) {
 }
 
 // Helpers
-require_once get_template_directory() . '/library/helpers.php';
+require_once get_template_directory() . '/inc/helpers.php';
 
 // Bones Core
 require_once get_template_directory() . '/library/bones.php';

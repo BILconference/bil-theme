@@ -36,7 +36,7 @@
 	</head>
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
-		<header id="header" class="masthead container-fluid">
+		<header id="header" class="masthead">
 			
 				<?php get_template_part( 'partials/mod', 'hero' ); ?>
 					

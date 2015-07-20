@@ -7,7 +7,7 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<?php if ( $sponsors->have_posts() ) : ?>
-					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+					<?php while ( $sponsors->have_posts() ) : $sponsors->the_post(); ?>
 						<h2><?php the_title(); ?></h2>
 					<?php endwhile; ?>
 					<?php wp_reset_postdata(); ?>

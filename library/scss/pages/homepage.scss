@@ -30,12 +30,31 @@
 
 #module-cta {
 	height:400px;
-	color: $white;
-	background-color: $bil_blue;
+	color: $black;
+	background-color: $white;
 
 	#join-slack {
 		height:100%;
 		vertical-align: middle;
 	}
+
+	.iframe-wrapper {
+	    width    : 100%;
+	    height   : 250px;
+	    overflow : hidden;
+	    position : relative;
+
+	    iframe
+		{
+		    position : absolute;
+		    top      : -100px;
+		    left     : -100px;
+		    width    : 1280px;
+		    height   : 1200px;
+		    border   : 0;
+		}
+	}
+ 
+
 }
 

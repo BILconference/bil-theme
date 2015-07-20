@@ -526,6 +526,8 @@ WORDPRESS ADMIN BAR
 *********************/
 body.admin-bar .navbar {
   margin-top: 28px; }
+body.admin-bar .container-fluid:first-child {
+  margin-top: 78px; }
 
 /*********************
 LAYOUT & GRID STYLES

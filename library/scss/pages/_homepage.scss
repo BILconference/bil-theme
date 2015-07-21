@@ -35,6 +35,19 @@
 	height:700px;
 	color: $white;
 	background-color: $bil_blue;
+
+	ul.sponsors {
+		li {
+			width:200px;
+			height:200px;
+			text-align: center;
+
+			img {
+				max-width: 100%;
+				width:100%;
+			}
+		}
+	}
 }
 
 #module-cta {

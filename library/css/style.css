@@ -585,6 +585,13 @@ NAVIGATION STYLES
   height: 700px;
   color: #fff;
   background-color: #2ea3f2; }
+  #module-sponsors ul.sponsors li {
+    width: 200px;
+    height: 200px;
+    text-align: center; }
+    #module-sponsors ul.sponsors li img {
+      max-width: 100%;
+      width: 100%; }
 
 #module-cta {
   height: 400px;

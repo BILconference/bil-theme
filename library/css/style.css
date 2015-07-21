@@ -554,6 +554,11 @@ NAVIGATION STYLES
 .navbar-toggle {
   outline: 0; }
 
+.bil-logo {
+  position: absolute;
+  top: 50px;
+  width: 30%; }
+
 #module-hero {
   height: 700px; }
   #module-hero h2 {

@@ -58,6 +58,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
+					<h2>Talks</h2>
 					<?php $talks = get_posts(array(
 						'post_type' => 'talks',
 						'meta_query' => array(

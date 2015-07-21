@@ -558,7 +558,7 @@ header#header nav#nav.navbar {
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: si;
-    src: url(PATH_TO/socicon.svg) format(svg);
+    src: url(../fonts/socicon.svg) format(svg);
 }
 }
 /* line 20, ../scss/modules/_social_fonts.scss */
@@ -713,9 +713,11 @@ header#header nav#nav.navbar {
   border: 0;
 }
 
+/* line 2, ../scss/pages/_footer.scss */
 footer .tiny-cc-logo {
   height: auto;
-  width: 20px; }
+  width: 20px;
+}
 
 /*********************
 BASE (MOBILE) SIZE

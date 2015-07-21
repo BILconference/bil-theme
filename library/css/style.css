@@ -526,11 +526,11 @@ header#header nav#nav {
   border-color: #0e8ee4;
 }
 /* line 15, ../scss/modules/_navigation.scss */
-.navbar-bil a {
+.navbar-bil a, .navbar-bil a:visited {
   color: #f8f9fa;
 }
 /* line 18, ../scss/modules/_navigation.scss */
-.navbar-bil a:hover {
+.navbar-bil a:hover, .navbar-bil a:visited:hover {
   color: white;
 }
 

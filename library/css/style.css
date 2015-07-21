@@ -516,8 +516,8 @@ select {
 NAVIGATION STYLES
 *********************/
 /* line 6, ../scss/modules/_navigation.scss */
-header#header nav.nav {
-  margin-bottom: 0;
+header#header nav#nav {
+  margin-bottom: 0px;
 }
 
 /* line 1, ../scss/pages/_homepage.scss */

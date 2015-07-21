@@ -581,8 +581,8 @@ NAVIGATION STYLES
   color: #fff;
   background-color: #323944; }
   #module-intro .borders {
-    border-top: 2px solid #f8f9fa;
-    border-bottom: 2px solid #f8f9fa;
+    border-top: 2px solid rgba(248, 249, 250, 0.4);
+    border-bottom: 2px solid rgba(248, 249, 250, 0.4);
     padding: 50px; }
   #module-intro p {
     font-size: 1.4em;

@@ -544,7 +544,7 @@ header#header nav#nav.navbar {
 }
 /* line 31, ../scss/modules/_navigation.scss */
 .navbar-bil .navbar-toggle .icon-bar {
-  color: #2ea3f2;
+  background-color: #2ea3f2;
 }
 
 /* line 1, ../scss/pages/_homepage.scss */
@@ -641,19 +641,19 @@ header#header nav#nav.navbar {
   color: #323944;
   background-color: white;
 }
-/* line 89, ../scss/pages/_homepage.scss */
+/* line 90, ../scss/pages/_homepage.scss */
 #module-cta #join-slack {
   height: 100%;
   vertical-align: middle;
 }
-/* line 94, ../scss/pages/_homepage.scss */
+/* line 95, ../scss/pages/_homepage.scss */
 #module-cta .iframe-wrapper {
   width: 100%;
   height: 360px;
   overflow: hidden;
   position: relative;
 }
-/* line 101, ../scss/pages/_homepage.scss */
+/* line 102, ../scss/pages/_homepage.scss */
 #module-cta .iframe-wrapper iframe {
   position: absolute;
   top: -100px;

@@ -10,6 +10,7 @@
 						<div class="tile">
 							<?php the_post_thumbnail( '200x200', $attr ); ?>
 							<h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
+							<h6><?php the_field('association') ?></h6>
 						</div>
 					</div>
 				<?php endwhile; ?>

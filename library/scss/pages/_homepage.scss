@@ -38,6 +38,7 @@
 
 	ul.sponsors {
 		  display: block;
+		  list-style:none;
 		  list-style-type: none;
 		  -webkit-margin-before: 0;
 		  -webkit-margin-after: 0;
@@ -46,7 +47,7 @@
 		  -webkit-padding-start: 0;
 		  width: 100%;
 		  text-align: center;
-		  
+
 		li {
 			width:200px;
 			height:200px;

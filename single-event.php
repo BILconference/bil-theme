@@ -66,13 +66,16 @@
 				</div>
 				<div class="col-xs-12 col-md-4">
 					<h2>Organizers</h2>
-					<ul>
-						<li>Cody Marx Bailey</li>
-						<li>Michael Cummings</li>
-						<li>Ryan Plesko</li>
-						<li>Brad Shende</li>
-						<li>Jackson Smith</li>
-					</ul>
+					<?php if( have_rows('organizers') ): ?>
+						<ul>
+							<?php while ( have_rows('organizers') ) : the_row(); ?>
+								<?php $organizer = get_sub_field('organizer'); ?>
+								<li><strong><?php echo $organizer->post_title; ?></strong><br><?php the_sub_field('duties'); ?></li>
+							<?php endwhile; ?>
+						</li>
+					<?php else: ?>
+						Organizers not listed, yet.
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
@@ -96,10 +99,9 @@
 					<?php if( $talks ): ?>
 						<ul>
 							<?php foreach( $talks as $talk ): ?>
-								<?php $speaker = get_field('speaker', $talk->ID); ?>
 								<li>
 									<a href="<?php echo get_permalink( $talk->ID ); ?>">
-										<?php echo get_the_title( $talk->ID ); ?> by <?php echo $speaker->post_title; ?>
+										<?php echo get_the_title( $talk->ID ); ?>
 									</a>
 								</li>
 							<?php endforeach; ?>

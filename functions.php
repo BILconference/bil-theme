@@ -16,6 +16,9 @@ require_once get_template_directory() . '/inc/helpers.php';
 // Bones Core
 require_once get_template_directory() . '/library/bones.php';
 
+// Init functions
+require_once get_template_directory() . '/inc/init.php';
+
 // Customize wp-admin
 require_once get_template_directory() . '/library/admin.php';
 
@@ -31,11 +34,14 @@ require_once get_template_directory() . '/inc/fonts.php';
 // Scripts
 require_once get_template_directory() . '/inc/js.php';
 
-// Fonts
+// Style
 require_once get_template_directory() . '/inc/css.php';
 
 // Custom Post Types
 require_once get_template_directory() . '/inc/cpt.php';
+
+// CPT Archive Pre Get Post
+require_once get_template_directory() . '/inc/cpt-archive.php';
 
 // Custom Taxonomies
 require_once get_template_directory() . '/inc/tax.php';

@@ -67,7 +67,7 @@
 						<ul class="soc nav navbar-nav navbar-right">
 							<li><a class="soc-twitter" href="T"></a></li>
 							<li><a class="soc-facebook" href="F"></a></li>
-							<li><a class="soc-github soc-icon-last" href="G"></a></li>
+							<li><a class="soc-github" href="G"></a></li>
 						</ul>
 					</div>
 				</div>

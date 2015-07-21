@@ -58,7 +58,27 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-
+					<?php $talks = get_posts(array(
+						'post_type' => 'talks',
+						'meta_query' => array(
+							array(
+								'key' => 'event', // name of custom field
+								'value' => '"' . get_the_ID() . '"', // matches exaclty "123", not just 123. This prevents a match for "1234"
+								'compare' => 'LIKE'
+							)
+						)
+					)); ?>
+					<?php if( $talks ): ?>
+						<ul>
+							<?php foreach( $talks as $talk ): ?>
+								<li>
+									<a href="<?php echo get_permalink( $talk->ID ); ?>">
+										<?php echo get_the_title( $talk->ID ); ?>
+									</a>
+								</li>
+							<?php endforeach; ?>
+						</ul>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>

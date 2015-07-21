@@ -40,8 +40,10 @@
 				<div class="col-xs-12 col-md-8 content">
 					<h2>About</h2>
 					<?php the_content(); ?>
+					
 					<h2>Address:</h2>
 					<address><?php the_field('specific_location'); ?></address>
+					
 					<h2>Social:</h2>
 					<?php if (get_field('facebook_event')) { ?>
 						<a href="<?php the_field('facebook_event'); ?>">Facebook Event</a>
@@ -54,6 +56,12 @@
 					<?php } ?>
 					<?php if (get_field('ticketing')) { ?>
 						<a href="<?php the_field('ticketing'); ?>">Tickets</a>
+					<?php } ?>
+
+					<?php if (get_field('ticketing_embed_code')) { ?>
+						<h2>Ticketing</h2>
+						<?php $embed = get_field('ticketing_embed_code'); ?>
+						<?php echo sprintf($embed); ?>
 					<?php } ?>
 				</div>
 				<div class="col-xs-12 col-md-4">
@@ -122,13 +130,6 @@
 			</div>
 		</div>
 	</div>
-
-			<?php if (get_field('ticketing_embed_code')) { ?>
-				<h2>Ticketing</h2>
-				<?php $embed = get_field('ticketing_embed_code'); ?>
-				<?php echo sprintf($embed); ?>
-			<?php } ?>
-		<? } ?>
 <?php endwhile; endif; ?>
 
 <?php get_footer(); ?>

@@ -12,11 +12,16 @@
 **/
 
 
+// TODO: 
+// - If we want we can add in the WP Content as an upper description.
+// - Add in instructions, custom emojis, etc as a reference
+// - List out current slack channels (requires API integration)
+
 get_header();
 ?>
 
 
-<div id="slack-chat">
+<div id="join-slack">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">

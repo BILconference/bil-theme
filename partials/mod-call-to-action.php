@@ -7,10 +7,7 @@
 				Host a BIL
 			</div>
 			<div class="col-xs-12 col-md-6">
-				<script async defer src="https://bil-slack.herokuapp.com/slackin.js?large"></script>
-				<div class="iframe-wrapper">
-					<iframe style="width:100%; height:400px;" src="https://bil-slack.herokuapp.com/" scrolling="no"></iframe>
-				</div>
+				<a href="/chat"><img src="http://bilconference.com/wp-content/uploads/2015/07/Slack-Join.jpg" alt="Join BIL on Slack" /></a>
 			</div>
 		</div>
 	</div>

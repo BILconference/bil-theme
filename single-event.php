@@ -69,7 +69,8 @@
 					<?php if( have_rows('organizers') ): ?>
 						<ul>
 							<?php while ( have_rows('organizers') ) : the_row(); ?>
-								<li><?php the_sub_field('organizer');?> - <?php the_sub_field('duties'); ?>
+								<?php $organizer = get_sub_field('organizer'); ?>
+								<li><?php var_dump($organizer) ?></li>
 							<?php endwhile; ?>
 						</li>
 					<?php else: ?>

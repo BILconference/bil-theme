@@ -17,6 +17,10 @@
 								'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
 							)); ?>
 						</nav>
+						<section class="meta">
+						    <p class="colophon"><img src="/wp-content/uploads/2015/07/cc.large_.png" class="tiny-cc-logo" alt="creative commons icon"/> 2007-<?php echo date('Y');?>BIL Conference | </p>
+						    <p class="sponsors">Web hosting courtesy of <a href="http://mediatemple.7eer.net/c/138444/176548/2795">Media Temple</a>. Web fonts served by <a href="http://www.typekit.com/?utm_source=grok&amp;utm_medium=sponsor&amp;utm_content=gkge130201&amp;utm_campaign=general">Adobe Typekit</a>. Made with <i class="ss-icon">heart</i> in New York City.</p>
+						 </section>
 						<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
 					</div>
 				</div>
@@ -25,3 +29,5 @@
 		<?php wp_footer(); ?>
 	</body>
 </html>
+
+

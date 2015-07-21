@@ -583,6 +583,10 @@ header#header nav#nav.navbar {
     height: 1200px;
     border: 0; }
 
+footer .tiny-cc-logo {
+  height: auto;
+  width: 20px; }
+
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If

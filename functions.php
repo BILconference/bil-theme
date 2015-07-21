@@ -16,6 +16,9 @@ require_once get_template_directory() . '/inc/helpers.php';
 // Bones Core
 require_once get_template_directory() . '/library/bones.php';
 
+// Init functions
+require_once get_template_directory() . '/inc/init.php';
+
 // Customize wp-admin
 require_once get_template_directory() . '/library/admin.php';
 

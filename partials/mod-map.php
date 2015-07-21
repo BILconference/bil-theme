@@ -8,8 +8,8 @@
 			</div>
 			<div class="col-xs-12 col-md-4">
 				<?php $upcoming_bils = upcoming_bils(); ?>
-				<?php var_dump($upcoming_bils); ?>
-				<?php if ( $upcoming_bils->have_posts() ) : ?>
+				<?php var_dump($upcoming_bils->have_posts()); ?>
+				<?php if ($upcoming_bils->have_posts() ) : ?>
 					<ul>
 						<?php while ( $upcoming_bils->have_posts() ) : $upcoming_bils->the_post(); ?>
 							<li><?php the_title() ?> - <?php echo $post->ID; ?></li>

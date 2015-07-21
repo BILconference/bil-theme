@@ -70,7 +70,7 @@
 						<ul>
 							<?php while ( have_rows('organizers') ) : the_row(); ?>
 								<?php $organizer = get_sub_field('organizer'); ?>
-								<li><?php var_dump($organizer) ?></li>
+								<li><?php echo $organizer->post_title; ?> - <?php the_sub_field('duties'); ?></li>
 							<?php endwhile; ?>
 						</li>
 					<?php else: ?>

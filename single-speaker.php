@@ -2,16 +2,16 @@
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-	<div id="sponsor-hero" style="background-image: url('<?php echo $image; ?>');" >
+	<div id="speaker-hero" style="background-image: url('<?php echo $image; ?>');" >
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<h1>Supporter: <?php the_title(); ?></h1>
-					<?php the_field('about_long'); ?>
+					<h1><?php the_title(); ?></h1>
+					<?php the_content(); ?>
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 
 <?php endwhile; endif; ?>
 

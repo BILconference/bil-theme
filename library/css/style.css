@@ -548,7 +548,8 @@ header#header nav#nav {
         width: 100%; }
 
 #module-cta {
-  height: 400px;
+  min-height: 400px;
+  padding: 100px 0;
   color: #323944;
   background-color: #fff; }
   #module-cta #join-slack {

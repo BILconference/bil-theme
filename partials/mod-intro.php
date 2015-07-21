@@ -1,15 +1,11 @@
 <?php $module = get_module_by_slug('intro') ?>
 <?php $text = get_field("text", $module->ID, OBJECT); ?>
-
-
-<?php if (has_post_thumbnail( $post->ID ) ): 
-	$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full-width' );
-endif; ?>
+<?php $background = get_field("background_image", $module->ID, OBJECT); ?>
+<?php $image = $background['sizes'][ 'full-width' ]; ?>
 
 
 
-
-<div id="module-intro" style="background-image: url('<?php echo $image[0]; ?>')">
+<div id="module-intro" style="background-image: url('<?php echo $image; ?>')">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 borders">

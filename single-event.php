@@ -61,7 +61,7 @@
 				<div class="col-xs-12">
 					<h2>Talks</h2>
 					<?php $talks = get_posts(array(
-						'post_type' => 'talks',
+						'post_type' => 'talk',
 						'meta_query' => array(
 							array(
 								'key' => 'event', // name of custom field

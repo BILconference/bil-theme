@@ -536,7 +536,9 @@ header#header nav#nav.navbar {
 #module-map {
   padding: 100px 0;
   color: #fff;
-  background-color: #2ea3f2; }
+  background-color: #2ea3f2;
+  background: url("../images/World_map_with_points.svg") no-repeat;
+  background-size: cover; }
 
 #module-intro {
   padding: 100px 0;

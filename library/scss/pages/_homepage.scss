@@ -19,7 +19,7 @@
 }
 
 #module-map {
-	height:700px;
+	padding: 100px 0;
 	color: $white;
 	background-color: $black;
 	background: url('http://bilconference.com/wp-content/uploads/2015/07/topographic_map_earth.jpg') no-repeat;
@@ -27,7 +27,7 @@
 
 #module-intro {
 	padding: 100px 0;
-	color: $white;
+	color: #fff;
 	background-color: $black;
 
 	.borders {
@@ -40,6 +40,7 @@
 		font-size: 1.4em;
 		text-align: center;
 		padding-bottom: 10px;
+
 
 		&:last-child {
 			padding-bottom: 5px;

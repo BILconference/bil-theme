@@ -63,12 +63,11 @@
 								'walker'            => new wp_bootstrap_navwalker())
 							);
 						?>
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#">F</a></li>
-							<li><a href="#">T</a></li>
-							<li><a href="#">S</a></li>
-							<li><a href="#">G</a></li>
-							<li><a href="#">Y</a></li>
+
+						<ul class="soc nav navbar-nav navbar-right">
+							<li><a class="soc-twitter" href="T"></a></li>
+							<li><a class="soc-facebook" href="F"></a></li>
+							<li><a class="soc-github soc-icon-last" href="G"></a></li>
 						</ul>
 					</div>
 				</div>

@@ -12,7 +12,7 @@ header#header {
 	background-color: $bil-blue;
 	border-color: $bil-dark-blue;
 
-	a {
+	a, a:visited {
 		color: $light-gray;
 
 		&:hover {

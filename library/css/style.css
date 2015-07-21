@@ -479,9 +479,9 @@ header#header nav#nav {
 .navbar-bil {
   background-color: #2ea3f2;
   border-color: #0e8ee4; }
-  .navbar-bil a {
+  .navbar-bil a, .navbar-bil a:visited {
     color: #f8f9fa; }
-    .navbar-bil a:hover {
+    .navbar-bil a:hover, .navbar-bil a:visited:hover {
       color: #fff; }
 
 .bil-logo {

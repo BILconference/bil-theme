@@ -37,6 +37,7 @@
 	<div id="event-about">
 		<div class="container">
 			<div class="row">
+				<h2>About</h2>
 				<div class="col-xs-12 col-md-8 content">
 					<?php the_content(); ?>
 				</div>
@@ -89,7 +90,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					Sponsors
+					<h2>Sponsors</h2>
 				</div>
 			</div>
 		</div>

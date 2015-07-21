@@ -102,12 +102,13 @@ jQuery(document).ready(function($) {
   loadGravatars();
 
   console.log( 'js loaded' );
-  /* affix the navbar after scroll below header */
-  $('#nav').affix({
-        offset: {
-          top: $('header').height()-$('#nav').height()
-        }
-  }); 
+  
+  // /* affix the navbar after scroll below header */
+  // $('#nav').affix({
+  //       offset: {
+  //         top: $('header').height()-$('#nav').height()
+  //       }
+  // }); 
 
 
 }); /* end of as page load scripts */

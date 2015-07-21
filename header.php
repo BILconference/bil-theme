@@ -63,6 +63,13 @@
 							'walker'            => new wp_bootstrap_navwalker())
 						);
 					?>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">F</a></li>
+						<li><a href="#">T</a></li>
+						<li><a href="#">S</a></li>
+						<li><a href="#">G</a></li>
+						<li><a href="#">Y</a></li>
+					</ul>
 				</div>
 			</nav>
 		</header>

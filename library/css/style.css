@@ -536,7 +536,8 @@ header#header nav#nav.navbar {
 #module-map {
   padding: 100px 0;
   color: #fff;
-  background-color: #2ea3f2; }
+  background-color: #2ea3f2;
+  position: relative; }
   #module-map:before {
     content: ' ';
     display: block;
@@ -546,15 +547,15 @@ header#header nav#nav.navbar {
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0.6;
+    opacity: 0.2;
     background-image: url("../images/World_map_with_points_white.png");
     background-repeat: no-repeat;
     background-position: 50% 0;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover; }
+    -ms-background-size: contain;
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain; }
 
 #module-intro {
   padding: 100px 0;

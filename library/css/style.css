@@ -575,12 +575,12 @@ header#header nav#nav.navbar {
   content: 'a';
 }
 
-/* line 31, ../scss/modules/_social_fonts.scss */
+/* line 32, ../scss/modules/_social_fonts.scss */
 .soc-facebook:before {
   content: 'b';
 }
 
-/* line 34, ../scss/modules/_social_fonts.scss */
+/* line 36, ../scss/modules/_social_fonts.scss */
 .soc-github:before {
   content: 'Q';
 }

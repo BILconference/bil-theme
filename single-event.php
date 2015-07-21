@@ -37,8 +37,8 @@
 	<div id="event-about">
 		<div class="container">
 			<div class="row">
-				<h2>About</h2>
 				<div class="col-xs-12 col-md-8 content">
+					<h2>About</h2>
 					<?php the_content(); ?>
 				</div>
 				<div class="col-xs-12 col-md-4">
@@ -70,6 +70,7 @@
 							)
 						)
 					)); ?>
+					<?php var_dump($talks); ?>
 					<?php if( $talks ): ?>
 						<ul>
 							<?php foreach( $talks as $talk ): ?>
@@ -100,7 +101,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					Call to Action
+					<h2>Call to Action</h2>
 				</div>
 			</div>
 		</div>

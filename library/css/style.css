@@ -582,7 +582,7 @@ NAVIGATION STYLES
   background-color: #fff; }
 
 #module-sponsors {
-  height: 700px;
+  padding: 50px 0;
   color: #fff;
   background-color: #2ea3f2; }
   #module-sponsors ul.sponsors {
@@ -597,8 +597,8 @@ NAVIGATION STYLES
     width: 100%;
     text-align: center; }
     #module-sponsors ul.sponsors li {
-      width: 200px;
-      height: 200px;
+      width: 100px;
+      height: 100px;
       text-align: center;
       display: inline-block; }
       #module-sponsors ul.sponsors li img {

@@ -548,6 +548,7 @@ NAVIGATION STYLES
 /* line 28, ../scss/pages/_homepage.scss */
 #module-intro {
   padding: 100px 0;
+<<<<<<< HEAD
   color: white;
   background-color: #323944;
 }
@@ -562,6 +563,21 @@ NAVIGATION STYLES
   font-size: 1.4em;
   text-align: center;
 }
+=======
+  color: #fff;
+  background-color: #323944; }
+  #module-intro .borders {
+    border-top: 2px solid rgba(248, 249, 250, 0.4);
+    border-bottom: 2px solid rgba(248, 249, 250, 0.4);
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.05); }
+  #module-intro p {
+    font-size: 1.4em;
+    text-align: center;
+    padding-bottom: 10px; }
+    #module-intro p:last-child {
+      padding-bottom: 5px; }
+>>>>>>> e8002ec8f3211512649fad9cd777da9ca30e1824
 
 /* line 44, ../scss/pages/_homepage.scss */
 #module-sponsors {

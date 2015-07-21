@@ -538,6 +538,14 @@ header#header nav#nav.navbar {
 .navbar-bil a:hover, .navbar-bil a:visited:hover {
   color: white;
 }
+/* line 28, ../scss/modules/_navigation.scss */
+.navbar-bil .navbar-toggle {
+  background: #f8f9fa;
+}
+/* line 31, ../scss/modules/_navigation.scss */
+.navbar-bil .navbar-toggle .icon-bar {
+  color: #2ea3f2;
+}
 
 /* line 1, ../scss/pages/_homepage.scss */
 .bil-logo {

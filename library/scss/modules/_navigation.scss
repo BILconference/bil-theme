@@ -24,4 +24,12 @@ header#header {
 			color: $white;
 		}
 	}
+
+	.navbar-toggle {
+		background: $light-gray;
+
+		.icon-bar {
+			color: $bil-blue;
+		}
+	}
 }

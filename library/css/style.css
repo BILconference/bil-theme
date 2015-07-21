@@ -515,16 +515,14 @@ select {
 /*********************
 NAVIGATION STYLES
 *********************/
-<<<<<<< HEAD
 /* line 6, ../scss/modules/_navigation.scss */
-=======
->>>>>>> 9665b300fbf21e7d75b69985ee5a8764e6734e47
-header#header nav#nav {
-  margin-bottom: 0px; }
+header#header nav#nav.navbar {
+  margin-bottom: 0px;
+}
 
+/* line 11, ../scss/modules/_navigation.scss */
 .navbar-bil {
   background-color: #2ea3f2;
-<<<<<<< HEAD
   border-color: #0e8ee4;
 }
 /* line 15, ../scss/modules/_navigation.scss */
@@ -542,14 +540,6 @@ header#header nav#nav {
 }
 
 /* line 1, ../scss/pages/_homepage.scss */
-=======
-  border-color: #0e8ee4; }
-  .navbar-bil a, .navbar-bil a:visited {
-    color: #f8f9fa; }
-    .navbar-bil a:hover, .navbar-bil a:visited:hover {
-      color: #fff; }
-
->>>>>>> 9665b300fbf21e7d75b69985ee5a8764e6734e47
 .bil-logo {
   position: absolute;
   top: 50px;
@@ -584,8 +574,6 @@ header#header nav#nav {
   padding: 100px 0;
   color: white;
   background-color: #323944;
-<<<<<<< HEAD
-  background-position-y: 850px;
   background-size: cover;
 }
 /* line 35, ../scss/pages/_homepage.scss */
@@ -605,20 +593,6 @@ header#header nav#nav {
 #module-intro p:last-child {
   padding-bottom: 5px;
 }
-=======
-  background-size: cover; }
-  #module-intro .borders {
-    border-top: 2px solid rgba(248, 249, 250, 0.4);
-    border-bottom: 2px solid rgba(248, 249, 250, 0.4);
-    padding: 50px 160px;
-    background: rgba(255, 255, 255, 0.05); }
-  #module-intro p {
-    font-size: 1.4em;
-    text-align: center;
-    padding-bottom: 10px; }
-    #module-intro p:last-child {
-      padding-bottom: 5px; }
->>>>>>> 9665b300fbf21e7d75b69985ee5a8764e6734e47
 
 /* line 53, ../scss/pages/_homepage.scss */
 #module-sponsors {
@@ -742,7 +716,6 @@ a, a:visited {
   color: #2ea3f2;
   /* on hover */
   /* on click */
-<<<<<<< HEAD
   /* mobile tap color */
 }
 /* line 76, ../scss/breakpoints/_base.scss */
@@ -758,18 +731,6 @@ a:link, a:visited:link {
   */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
 }
-=======
-  /* mobile tap color */ }
-  a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #0e8ee4; }
-  a:link, a:visited:link {
-    /*
-    this highlights links on iPhones/iPads.
-    so it basically works like the :hover selector
-    for mobile devices.
-    */
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
->>>>>>> 9665b300fbf21e7d75b69985ee5a8764e6734e47
 
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES

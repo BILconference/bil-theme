@@ -636,7 +636,8 @@ header#header nav#nav.navbar {
 
 /* line 84, ../scss/pages/_homepage.scss */
 #module-cta {
-  height: 400px;
+  min-height: 400px;
+  padding: 100px 0;
   color: #323944;
   background-color: white;
 }

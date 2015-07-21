@@ -562,81 +562,25 @@ header#header nav#nav.navbar {
 }
 }
 /* line 20, ../scss/modules/_social_fonts.scss */
-.soc {
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* line 26, ../scss/modules/_social_fonts.scss */
-.soc li {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-}
-
-/* line 32, ../scss/modules/_social_fonts.scss */
 .soc li a {
   font-family: si !important;
   font-style: normal;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  overflow: hidden;
-  text-decoration: none;
-  text-align: center;
-  display: block;
-  position: relative;
-  z-index: 1;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  font-size: 44px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  margin-right: 10px;
-  color: #ffffff;
-  background-color: none;
 }
 
-/* line 61, ../scss/modules/_social_fonts.scss */
-.soc-icon-last {
-  margin: 0 !important;
-}
-
-/* line 65, ../scss/modules/_social_fonts.scss */
-.soc-twitter {
-  background-color: #4da7de;
-}
-
-/* line 68, ../scss/modules/_social_fonts.scss */
+/* line 28, ../scss/modules/_social_fonts.scss */
 .soc-twitter:before {
   content: 'a';
 }
 
-/* line 71, ../scss/modules/_social_fonts.scss */
-.soc-facebook {
-  background-color: #3e5b98;
-}
-
-/* line 74, ../scss/modules/_social_fonts.scss */
+/* line 31, ../scss/modules/_social_fonts.scss */
 .soc-facebook:before {
   content: 'b';
 }
 
-/* line 77, ../scss/modules/_social_fonts.scss */
-.soc-github {
-  background-color: #5380c0;
-}
-
-/* line 80, ../scss/modules/_social_fonts.scss */
+/* line 34, ../scss/modules/_social_fonts.scss */
 .soc-github:before {
   content: 'Q';
 }

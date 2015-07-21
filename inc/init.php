@@ -1,6 +1,7 @@
 <?php
 
 function themeInit() {
+
   // allow editor style
   add_editor_style( get_stylesheet_directory_uri() . '/library/css/editor-style.css' );
 
@@ -36,6 +37,9 @@ function themeInit() {
 
   // cleaning up excerpt
   add_filter( 'excerpt_more', 'bones_excerpt_more' );
+
+  // add filter to prevent "slack.png" from occupying the "slack" slug
+  add_filter( 'wp_unique_post_slug_is_bad_attachment_slug', '__return_true' );
 
 }
 

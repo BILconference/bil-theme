@@ -15,9 +15,10 @@
 							<div class="sponsor-wrap" style="background:url( <?php echo $image; ?> )"> 
 							
 
-							<div class="tile hidden">
-								<img src="<?php echo $image; ?>">
-								<h2><a href="<?php the_permalink();?>" ><?php the_title(); ?></a></h2>
+								<div class="tile hidden">
+									<img src="<?php echo $image; ?>">
+									<h2><a href="<?php the_permalink();?>" ><?php the_title(); ?></a></h2>
+								</div>
 							</div>
 						</div>
 

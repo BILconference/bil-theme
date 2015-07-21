@@ -489,7 +489,7 @@ header#header nav#nav.navbar {
   .navbar-bil .navbar-toggle {
     background: #f8f9fa; }
     .navbar-bil .navbar-toggle .icon-bar {
-      color: #2ea3f2; }
+      background-color: #2ea3f2; }
 
 .bil-logo {
   position: absolute;

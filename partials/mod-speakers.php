@@ -6,13 +6,17 @@
 		<div class="row row-eq-height">
 			<?php if ( $speakers->have_posts() ) : ?>
 				<?php while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
-					<div class="col-xs-12 col-sm-6 col-md-2">
-						<div class="tile">
-							<?php the_post_thumbnail( '200x200', $attr ); ?>
-							<h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
-							<h6><?php the_field('association') ?></h6>
+					<?php if (has_post_thumbnail()): ?>
+						<div class="col-xs-12 col-sm-6 col-md-2">
+							<div class="tile">
+								<?php the_post_thumbnail( '200x200', $attr ); ?>
+								<h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
+								<h6><?php the_field('association') ?></h6>
+							</div>
 						</div>
-					</div>
+					<?php else :?>
+					<?php endif;?>
+					
 				<?php endwhile; ?>
 				<?php wp_reset_postdata(); ?>
 			<?php endif; ?>

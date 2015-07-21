@@ -49,27 +49,28 @@
 
 						<a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
 					</div>
-
-					<?php
-						wp_nav_menu( array(
-							'menu'              => __( 'The Main Menu', 'bonestheme' ),
-							'theme_location'    => 'main-nav',
-							'depth'             => 2,
-							'container'         => 'div',
-							'container_class'   => 'collapse navbar-collapse',
-							'container_id'      => 'primary-nav-menu',
-							'menu_class'        => 'nav navbar-nav',
-							'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-							'walker'            => new wp_bootstrap_navwalker())
-						);
-					?>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">F</a></li>
-						<li><a href="#">T</a></li>
-						<li><a href="#">S</a></li>
-						<li><a href="#">G</a></li>
-						<li><a href="#">Y</a></li>
-					</ul>
+					<div class="collapse navbar-collapse">
+						<?php
+							wp_nav_menu( array(
+								'menu'              => __( 'The Main Menu', 'bonestheme' ),
+								'theme_location'    => 'main-nav',
+								'depth'             => 2,
+								'container'         => 'div',
+								'container_class'   => '',
+								'container_id'      => 'primary-nav-menu',
+								'menu_class'        => 'nav navbar-nav',
+								'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+								'walker'            => new wp_bootstrap_navwalker())
+							);
+						?>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">F</a></li>
+							<li><a href="#">T</a></li>
+							<li><a href="#">S</a></li>
+							<li><a href="#">G</a></li>
+							<li><a href="#">Y</a></li>
+						</ul>
+					</div>
 				</div>
 			</nav>
 		</header>

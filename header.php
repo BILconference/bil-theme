@@ -68,7 +68,7 @@
 							<li><a class="soc-twitter" href="T"></a></li>
 							<li><a class="soc-facebook" href="F"></a></li>
 							<li><a class="soc-github" href="G"></a></li>
-							<li><a href="/slack/"><img src="http://slack.yourdomain.com/badge.svg"></a></li>
+							<li><a href="/slack/"><img src="http://bil-slack.herokuapp.com/badge.svg"></a></li>
 						</ul>
 					</div>
 				</div>

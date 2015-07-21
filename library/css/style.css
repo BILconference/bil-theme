@@ -525,6 +525,14 @@ header#header nav#nav {
   background-color: #2ea3f2;
   border-color: #0e8ee4;
 }
+/* line 15, ../scss/modules/_navigation.scss */
+.navbar-bil a {
+  color: #f8f9fa;
+}
+/* line 18, ../scss/modules/_navigation.scss */
+.navbar-bil a:hover {
+  color: white;
+}
 
 /* line 1, ../scss/pages/_homepage.scss */
 .bil-logo {

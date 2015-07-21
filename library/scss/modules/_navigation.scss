@@ -11,4 +11,12 @@ header#header {
 .navbar-bil {
 	background-color: $bil-blue;
 	border-color: $bil-dark-blue;
+
+	a {
+		color: $light-gray;
+
+		&:hover {
+			color: $white;
+		}
+	}
 }

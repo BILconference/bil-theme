@@ -473,8 +473,18 @@ select {
 /*********************
 NAVIGATION STYLES
 *********************/
-header#header nav.nav {
-  margin-bottom: 0; }
+
+/* line 6, ../scss/modules/_navigation.scss */
+header#header nav#nav {
+  margin-bottom: 0px;
+}
+
+/* line 11, ../scss/modules/_navigation.scss */
+.navbar-bil {
+  background-color: #2ea3f2;
+  border-color: #0e8ee4;
+}
+
 
 .bil-logo {
   position: absolute;
@@ -618,9 +628,10 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 a, a:visited {
-  color: #f01d4f;
+  color: #2ea3f2;
   /* on hover */
   /* on click */
+<<<<<<< HEAD
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
     color: #d10e3c; }
@@ -631,6 +642,23 @@ a, a:visited {
     for mobile devices.
     */
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
+=======
+  /* mobile tap color */
+}
+/* line 76, ../scss/breakpoints/_base.scss */
+a:hover, a:focus, a:visited:hover, a:visited:focus {
+  color: #0e8ee4;
+}
+/* line 86, ../scss/breakpoints/_base.scss */
+a:link, a:visited:link {
+  /*
+  this highlights links on iPhones/iPads.
+  so it basically works like the :hover selector
+  for mobile devices.
+  */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+>>>>>>> 293023591666f6b290605a7fcbf5d30f0d571bea
 
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES

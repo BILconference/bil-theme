@@ -36,14 +36,17 @@ $green:             #7dd667;
 
 $bones-pink:        #f01d4f;
 $blue:              #2980b9;
+$bil-blue: 			#2ea3f2;
+$bil-dark-blue:		darken($bil-blue, 9%);
 
-$link-color:        $bones-pink;
-$link-hover:        darken($link-color, 9%);
+$link-color:        $bil-blue;
+$link-hover:        $bil-dark-blue;
 
 $border-color:      #ccc;
 $disabled-gray:     #cfcfcf;
 
-$bil-blue: 			#2ea3f2;
+
+
 
 
 /*

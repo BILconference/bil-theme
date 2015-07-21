@@ -3,7 +3,12 @@ NAVIGATION STYLES
 *********************/
 
 header#header {
-	nav.nav {
-		margin-bottom:0;
+	nav#nav {
+		margin-bottom:0px;
 	}
+}
+
+.navbar-bil {
+	background-color: $bil-blue;
+	border-color: $bil-dark-blue;
 }

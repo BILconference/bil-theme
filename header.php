@@ -37,7 +37,7 @@
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 		<header id="header" class="masthead">
-			<nav id="nav" class="navbar navbar-default navbar-static-top navbar-custom" role="navigation">
+			<nav id="nav" class="navbar navbar-bil navbar-static-top navbar-custom" role="navigation">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">

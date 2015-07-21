@@ -1,20 +1,20 @@
 <?php get_header(); ?>
-	<?php global $post; ?>
+
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<div id="page-<?php $post->post_name; ?>">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<h1>Events</h1>
+					<h1><?php the_title(); ?></h1>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xs-12">
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-					<?php endwhile; endif; ?>
+					<?php the_content(); ?>
 				</div>
 			</div>
 		</div>
 	</div>
+<?php endwhile; endif; ?>
 
 <?php get_footer(); ?>

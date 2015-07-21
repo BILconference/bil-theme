@@ -575,6 +575,16 @@ header#header nav#nav.navbar {
   content: 'a';
 }
 
+/* line 32, ../scss/modules/_social_fonts.scss */
+.soc-facebook:before {
+  content: 'b';
+}
+
+/* line 36, ../scss/modules/_social_fonts.scss */
+.soc-github:before {
+  content: 'Q';
+}
+
 /* line 1, ../scss/pages/_homepage.scss */
 .bil-logo {
   position: absolute;

@@ -66,13 +66,15 @@
 				</div>
 				<div class="col-xs-12 col-md-4">
 					<h2>Organizers</h2>
-					<ul>
-						<li>Cody Marx Bailey</li>
-						<li>Michael Cummings</li>
-						<li>Ryan Plesko</li>
-						<li>Brad Shende</li>
-						<li>Jackson Smith</li>
-					</ul>
+					<?php if( have_rows('organizers') ): ?>
+						<ul>
+							<?php while ( have_rows('organizers') ) : the_row(); ?>
+								<li><?php the_sub_field('organizer');?> - <?php the_sub_field('duties'); ?>
+							<?php endwhile; ?>
+						</li>
+					<?php else: ?>
+						Organizers not listed, yet.
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>

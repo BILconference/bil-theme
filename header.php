@@ -63,6 +63,7 @@
 								'walker'            => new wp_bootstrap_navwalker())
 							);
 						?>
+
 						<ul class="soc nav navbar-nav navbar-right">
 							<li><a class="soc-twitter" href="T"></a></li>
 							<li><a class="soc-facebook" href="F"></a></li>

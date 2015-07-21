@@ -7,21 +7,15 @@
 			<ul class="sponsors">
 				<?php if ( $sponsors->have_posts() ) : ?>
 					<?php while ( $sponsors->have_posts() ) : $sponsors->the_post(); ?>
-
-						<?php $background = get_field('white_image');
-						 	  $image = $background['sizes'][ '600x600' ]; 
+						<?php $imgObj = get_field('white_image');
+						 	  $image = $imgObj['sizes'][ '600x600' ]; 
 						 	  $sponsor_url = get_field('url'); ?>
 
-						
 							<li class="sponsor-wrap">
-								<a href="<?php echo $sponsor_url; ?>" target="_blank"><img src="<?php echo $image; ?>"></a>
-								<span><a href="<?php the_permalink();?>" class="hidden"><?php the_title(); ?></a></span>
+								<a href="<?php echo $sponsor_url; ?>" target="_blank"><img alt="<?php the_title(); ?>" src="<?php echo $image; ?>"></a>
 							</li>
-
 					<?php endwhile; ?>
-					
 					<?php wp_reset_postdata(); ?>
-				
 				<?php endif; ?>
 			</ul>
 		</div>

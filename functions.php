@@ -31,11 +31,14 @@ require_once get_template_directory() . '/inc/fonts.php';
 // Scripts
 require_once get_template_directory() . '/inc/js.php';
 
-// Fonts
+// Style
 require_once get_template_directory() . '/inc/css.php';
 
 // Custom Post Types
 require_once get_template_directory() . '/inc/cpt.php';
+
+// CPT Archive Pre Get Post
+require_once get_template_directory() . '/inc/cpt-archive.php';
 
 // Custom Taxonomies
 require_once get_template_directory() . '/inc/tax.php';

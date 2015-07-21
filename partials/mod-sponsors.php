@@ -2,7 +2,8 @@
 <?php $sponsors = new WP_Query( array('post_type' => 'sponsor', 'orderby' => 'menu_order', 'posts_per_page' => -1) ); ?>
 
 <div id="module-sponsors">
-	
+	<div class="container grid-sponsors">
+	    <div class="row">
 			
 				<?php if ( $sponsors->have_posts() ) : ?>
 					<?php while ( $sponsors->have_posts() ) : $sponsors->the_post(); ?>
@@ -11,12 +12,13 @@
 						 	  $image = $background['sizes'][ '600x600' ]; ?>
 
 						<div class="col-xs-12 col-sm-6 col-md-2">
-							<div class="sponsor-wrap" style="background:url( '<?php echo $image; ?>' )"> 
+							<div class="sponsor-wrap" style="background:url( <?php echo $image; ?> )"> 
 							
 
-							<div class="tile hidden">
-								<img src="<?php echo $image; ?>">
-								<h2><a href="<?php the_permalink();?>" ><?php the_title(); ?></a></h2>
+								<div class="tile hidden">
+									<img src="<?php echo $image; ?>">
+									<h2><a href="<?php the_permalink();?>" ><?php the_title(); ?></a></h2>
+								</div>
 							</div>
 						</div>
 
@@ -26,5 +28,7 @@
 				
 				<?php endif; ?>
 			
-
+		</div>
+    </div>
 </div>
+

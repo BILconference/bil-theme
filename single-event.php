@@ -70,13 +70,13 @@
 							)
 						)
 					)); ?>
-					<?php var_dump($talks); ?>
 					<?php if( $talks ): ?>
 						<ul>
 							<?php foreach( $talks as $talk ): ?>
+								<?php $speaker = the_field('speaker', $talk->ID) ?>
 								<li>
 									<a href="<?php echo get_permalink( $talk->ID ); ?>">
-										<?php echo get_the_title( $talk->ID ); ?>
+										<?php echo get_the_title( $talk->ID ); ?> by <?php the_title($speaker); ?>
 									</a>
 								</li>
 							<?php endforeach; ?>

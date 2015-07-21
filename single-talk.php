@@ -13,11 +13,9 @@
 
 					<p>
 						<?php if( $speaker ) { ?>
-							<a href="<?php echo get_permalink( $speaker->ID ); ?>">
-								<?php echo get_the_title( $speaker->ID ); ?>
-							</a> 
+							<a href="<?php echo get_permalink( $speaker->ID ); ?>"><?php echo get_the_title( $speaker->ID ); ?></a>
 						<?php } else { ?> unknown <?php } ?>
-						 at
+						&nbsp;at&nbsp;
 						<?php if( $event ) { ?>
 							<a href="<?php echo get_permalink( $event->ID ); ?>">
 								<?php echo get_the_title( $event->ID ); ?>

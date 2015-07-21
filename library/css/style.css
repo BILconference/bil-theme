@@ -520,6 +520,12 @@ header#header nav#nav {
   margin-bottom: 0px;
 }
 
+/* line 11, ../scss/modules/_navigation.scss */
+.navbar-bil {
+  background-color: #2ea3f2;
+  border-color: #0e8ee4;
+}
+
 /* line 1, ../scss/pages/_homepage.scss */
 .bil-logo {
   position: absolute;
@@ -693,14 +699,14 @@ LINK STYLES
 *********************/
 /* line 72, ../scss/breakpoints/_base.scss */
 a, a:visited {
-  color: #f01d4f;
+  color: #2ea3f2;
   /* on hover */
   /* on click */
   /* mobile tap color */
 }
 /* line 76, ../scss/breakpoints/_base.scss */
 a:hover, a:focus, a:visited:hover, a:visited:focus {
-  color: #d10e3c;
+  color: #0e8ee4;
 }
 /* line 86, ../scss/breakpoints/_base.scss */
 a:link, a:visited:link {

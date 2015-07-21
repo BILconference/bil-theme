@@ -4,19 +4,17 @@
 <div id="module-speakers">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12">
-				<?php if ( $speakers->have_posts() ) : ?>
-					<?php while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
-						<div class="col-xs-12 col-sm-6 col-md-2">
-							<div class="tile">
-								<?php the_post_thumbnail( '200x200', $attr ); ?>
-								<h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
-							</div>
+			<?php if ( $speakers->have_posts() ) : ?>
+				<?php while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
+					<div class="col-xs-12 col-sm-6 col-md-2">
+						<div class="tile">
+							<?php the_post_thumbnail( '200x200', $attr ); ?>
+							<h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
 						</div>
-					<?php endwhile; ?>
-					<?php wp_reset_postdata(); ?>
-				<?php endif; ?>
-			</div>
+					</div>
+				<?php endwhile; ?>
+				<?php wp_reset_postdata(); ?>
+			<?php endif; ?>
 		</div>
 	</div>
 </div>

@@ -585,13 +585,24 @@ NAVIGATION STYLES
   height: 700px;
   color: #fff;
   background-color: #2ea3f2; }
-  #module-sponsors ul.sponsors li {
-    width: 200px;
-    height: 200px;
+  #module-sponsors ul.sponsors {
+    display: block;
+    list-style-type: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0;
+    width: 100%;
     text-align: center; }
-    #module-sponsors ul.sponsors li img {
-      max-width: 100%;
-      width: 100%; }
+    #module-sponsors ul.sponsors li {
+      width: 200px;
+      height: 200px;
+      text-align: center;
+      display: inline-block; }
+      #module-sponsors ul.sponsors li img {
+        max-width: 100%;
+        width: 100%; }
 
 #module-cta {
   height: 400px;

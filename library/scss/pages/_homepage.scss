@@ -37,10 +37,21 @@
 	background-color: $bil_blue;
 
 	ul.sponsors {
+		  display: block;
+		  list-style-type: none;
+		  -webkit-margin-before: 0;
+		  -webkit-margin-after: 0;
+		  -webkit-margin-start: 0px;
+		  -webkit-margin-end: 0px;
+		  -webkit-padding-start: 0;
+		  width: 100%;
+		  text-align: center;
+		  
 		li {
 			width:200px;
 			height:200px;
 			text-align: center;
+			display:inline-block;
 
 			img {
 				max-width: 100%;

@@ -583,10 +583,14 @@ NAVIGATION STYLES
   #module-intro .borders {
     border-top: 2px solid rgba(248, 249, 250, 0.4);
     border-bottom: 2px solid rgba(248, 249, 250, 0.4);
-    padding: 50px; }
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.05); }
   #module-intro p {
     font-size: 1.4em;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 10px; }
+    #module-intro p:last-child {
+      padding-bottom: 5px; }
 
 #module-sponsors {
   padding: 50px 0;

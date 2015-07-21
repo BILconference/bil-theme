@@ -21,7 +21,7 @@
 				<?php if ($past_bils->have_posts() ) : ?>
 					<ul>
 						<?php while ( $past_bils->have_posts() ) : $past_bils->the_post(); ?>
-							<li><?php the_title() ?> - <?php echo $post->ID; ?></li>
+							<li><?php the_title() ?> - <?php the_field('general_location', $post->ID); ?></li>
 						<?php endwhile; ?>
 					</ul>
 					<?php wp_reset_postdata(); ?>

@@ -73,10 +73,10 @@
 					<?php if( $talks ): ?>
 						<ul>
 							<?php foreach( $talks as $talk ): ?>
-								<?php $speaker = the_field('speaker', $talk->ID) ?>
+								<?php $speaker = get_field('speaker', $talk->ID); ?>
 								<li>
 									<a href="<?php echo get_permalink( $talk->ID ); ?>">
-										<?php echo get_the_title( $talk->ID ); ?> by <?php the_title($speaker); ?>
+										<?php echo get_the_title( $talk->ID ); ?> by <?php var_dump($speaker) ?>
 									</a>
 								</li>
 							<?php endforeach; ?>

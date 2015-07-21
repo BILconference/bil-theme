@@ -577,9 +577,16 @@ NAVIGATION STYLES
   background: url("http://bilconference.com/wp-content/uploads/2015/07/topographic_map_earth.jpg") no-repeat; }
 
 #module-intro {
-  height: 700px;
-  color: #323944;
-  background-color: #fff; }
+  padding: 100px 0;
+  color: #fff;
+  background-color: #323944; }
+  #module-intro .borders {
+    border-top: 2px solid #f8f9fa;
+    border-bottom: 2px solid #f8f9fa;
+    padding: 50px; }
+  #module-intro p {
+    font-size: 1.4em;
+    text-align: center; }
 
 #module-sponsors {
   padding: 50px 0;

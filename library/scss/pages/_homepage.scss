@@ -26,9 +26,19 @@
 }
 
 #module-intro {
-	height:700px;
-	color: $black;
-	background-color: $white;
+	padding: 100px 0;
+	color: $white;
+	background-color: $black;
+
+	.borders {
+		border-top: 2px solid $light-gray;
+		border-bottom: 2px solid $light-gray;
+		padding: 50px;
+	}
+	p {
+		font-size: 1.4em;
+		text-align: center;
+	}
 }
 
 #module-sponsors {

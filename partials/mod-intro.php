@@ -4,7 +4,7 @@
 <div id="module-intro">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="col-xs-12 borders">
 				<?php echo $text ?>
 			</div>
 		</div>

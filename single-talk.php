@@ -17,7 +17,7 @@
 								<?php echo get_the_title( $speaker->ID ); ?>
 							</a> 
 						<?php } else { ?> unknown <?php } ?>
-						at
+						 at
 						<?php if( $event ) { ?>
 							<a href="<?php echo get_permalink( $event->ID ); ?>">
 								<?php echo get_the_title( $event->ID ); ?>

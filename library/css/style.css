@@ -582,7 +582,8 @@ NAVIGATION STYLES
   background-color: #323944; }
   #module-intro .borders {
     border-top: 2px solid #f8f9fa;
-    border-bottom: 2px solid #f8f9fa; }
+    border-bottom: 2px solid #f8f9fa;
+    padding: 50px; }
   #module-intro p {
     font-size: 1.4em;
     text-align: center; }

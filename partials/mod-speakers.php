@@ -3,7 +3,7 @@
 
 <div id="module-speakers">
 	<div class="container">
-		<div class="row">
+		<div class="row row-eq-height">
 			<?php if ( $speakers->have_posts() ) : ?>
 				<?php while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
 					<div class="col-xs-12 col-sm-6 col-md-2">

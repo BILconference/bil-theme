@@ -7,8 +7,8 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<h1><?php the_title(); ?></h1>
-					<?php if( get_field( "affiliation" ) ): ?>
-						<p><?php the_field( "affiliation" ); ?></p>
+					<?php if( get_field( "association" ) ): ?>
+						<p><?php the_field( "association" ); ?></p>
 					<?php endif; ?>
 				</div>
 			</div>

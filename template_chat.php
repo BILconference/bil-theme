@@ -16,7 +16,7 @@ get_header();
 ?>
 
 
-<div id="slack-chat">
+<div id="join-slack">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">

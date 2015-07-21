@@ -3,7 +3,7 @@ NAVIGATION STYLES
 *********************/
 
 header#header {
-	nav#nav {
+	nav#nav.navbar {
 		margin-bottom:0px;
 	}
 }
@@ -11,6 +11,11 @@ header#header {
 .navbar-bil {
 	background-color: $bil-blue;
 	border-color: $bil-dark-blue;
+
+	.nav>li>a:focus, .nav>li>a:hover {
+		background-color: $bil-dark-blue;
+		color: $white;
+	}
 
 	a, a:visited {
 		color: $light-gray;

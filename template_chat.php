@@ -20,7 +20,9 @@ get_header();
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<script async defer src="https://bil-slack.herokuapp.com/slackin.js?large"></script>
+				<div class="iframe-wrapper">
+					<iframe style="width:100%; height:400px;" src="https://bil-slack.herokuapp.com/" scrolling="no"></iframe>
+				</div>
 			</div>
 		</div>
 	</div>

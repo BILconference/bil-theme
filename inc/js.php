@@ -21,8 +21,6 @@
 			// register our custom scripts.js
 			wp_register_script( 'theme-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 
-			wp_register_script( 'fittextjs-cdn', 'https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js', array('jquery'), '1.1', true );
-			wp_enqueue_script( 'fittextjs-cdn' );
 
 		// ***********************************************************************
 		//
@@ -48,9 +46,4 @@
 			}
 
 			
-			if ( is_home() || is_front_page() ){
-				// Fittext.js (Load only on homepage)	
-				
-
-			}
 	}

@@ -18,11 +18,9 @@
 			<?php if ( $speakers->have_posts() ) : ?>
 				<?php while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
 					<div class="col-xs-12 col-sm-6 col-md-2">
-						<div class="tile">
-							<?php the_post_thumbnail( '200x200', $attr ); ?>
-							<h4><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
-							<h5><?php the_field('association') ?></h5>
-						</div>
+						<?php the_post_thumbnail( '200x200', $attr ); ?>
+						<h4><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
+						<h5><?php the_field('association') ?></h5>
 					</div>
 				<?php endwhile; ?>
 				<?php wp_reset_postdata(); ?>

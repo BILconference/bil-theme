@@ -1,7 +1,7 @@
 		<footer id="footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12">
+					<div class="col-xs-12 col-sm-4">
 						<nav role="navigation">
 							<?php wp_nav_menu(array(
 								'container' => 'div',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
@@ -17,11 +17,14 @@
 								'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
 							)); ?>
 						</nav>
+					</div>
+					<div class="col-xs-12 col-sm-4">
 						<p>Press, Contact, Resources, Media Kit, Sponsorship Stuff</p>
+					</div>
+					<div class="col-xs-12 col-sm-4">
 						<section class="meta">
 						    <p class="colophon"><img src="/wp-content/uploads/2015/07/cc.large_.png" class="tiny-cc-logo" alt="creative commons icon"/> 2007-<?php echo date('Y');?> BIL Conference </p>
 						 </section>
-						
 					</div>
 				</div>
 			</div>

@@ -4,10 +4,10 @@
 	<div class="container">
 		<div class="row">
 			<div id="bil-global-statistics" class="col-xs-12 col-md-8">
-				<h3 class="statistic">9 Years Running</h3> 
-				<h3 class="statistic">6 Countries</h3>		
-				<h3 class="statistic">40 Cities</h3>
-				<h3 class="statistic">Thousands of BILders</h3>
+				<div>9 Years Running</div> 
+				<div>6 Countries</div>		
+				<div>40 Cities</div>
+				<div>Thousands of BILders</div>
 			</div>
 			<div id="full-event-list" class="col-xs-12 col-md-4">
 				<?php $upcoming_bils = upcoming_bils(); ?>

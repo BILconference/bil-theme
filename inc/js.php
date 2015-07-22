@@ -20,7 +20,7 @@
 
 			// register our custom scripts.js
 			wp_register_script( 'theme-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
-
+			// Production: wp_register_script( 'theme-js', get_stylesheet_directory_uri() . '/library/js/min/scripts.js', array( 'jquery' ), '', true );
 
 		// ***********************************************************************
 		//

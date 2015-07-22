@@ -1,54 +1,21 @@
-
-/*********************
-IMPORTING PARTIALS
-These files are needed at the beginning so that we establish all
-our mixins, functions, and variables that we'll be using across
-the whole project.
-*********************/
-
-// normalize: http://necolas.github.io/normalize.css/
-//@import "utilities/normalize";
-// Bootstrap includes Normalize
-
-// Sass variables
+// sass variables
 @import "utilities/variables";
 
 // typography
 @import "utilities/typography";
 
-// Sass functions
+// sass functions
 @import "utilities/functions";
 
 // import mixins
 @import "utilities/mixins";
 
-// the grid
-//@import "utilities/grid";
-// We are using Bootstrap Grid
+// header and footer
+@import "template/header";
 
-/*********************
-IMPORTING MODULES
-Modules are reusable blocks or elements we use throughout the project.
-We can break them up as much as we want or just keep them all in one.
-I mean, you can do whatever you want. The world is your oyster. Unless
-you hate oysters, then the world is your peanut butter & jelly sandwich.
-*********************/
-
-// alert boxes
-@import "modules/alerts";
-
-// buttons
-@import "modules/buttons";
-
-// forms (inputs & labels)
-@import "modules/forms";
-
-// Navgation
-@import "modules/navigation";
-
-// PAGES
+// pages
 @import "pages/homepage";
-@import "pages/chat";
+@import "pages/slack";
 @import "pages/footer";
 
 

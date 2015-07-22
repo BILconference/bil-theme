@@ -13,6 +13,15 @@
 // header and footer
 @import "template/header";
 
+// modules
+@import "modules/hero";
+@import "modules/map";
+@import "modules/intro";
+@import "modules/sponsors";
+@import "modules/cta";
+@import "modules/speakers";
+
+
 // pages
 @import "pages/homepage";
 @import "pages/slack";

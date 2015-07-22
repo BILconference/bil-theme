@@ -1,0 +1,26 @@
+#module-map {
+	padding: 100px 0;
+	color: $white;
+	background: url('../images/world_map.png') 50% 50% no-repeat $bil-blue;
+	-ms-background-size: contain;
+	-o-background-size: contain;
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;
+
+	#global-statics {
+
+	}
+
+	#full-event-list {
+		ul {
+			list-style: none;
+			color:$white;
+			padding-left:0px;
+
+			a, a:visited {
+				color:$white;
+			}
+		}
+	}
+}

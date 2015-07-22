@@ -3,10 +3,10 @@
 <div id="module-map">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-md-8">
+			<div id="bil-global-statistics" class="col-xs-12 col-md-8">
 				Some statistics here....		
 			</div>
-			<div class="col-xs-12 col-md-4">
+			<div id="full-event-list" class="col-xs-12 col-md-4">
 				<?php $upcoming_bils = upcoming_bils(); ?>
 				<?php if ($upcoming_bils->have_posts() ) : ?>
 					<ul>
@@ -16,7 +16,9 @@
 					</ul>
 					<?php wp_reset_postdata(); ?>
 				<?php endif; ?>
+
 				<hr>
+				
 				<?php $past_bils = past_bils(); ?>
 				<?php if ($past_bils->have_posts() ) : ?>
 					<ul>

@@ -1,7 +1,7 @@
 #module-speakers {
 	.tile {
-		width:200px;
+		max-width:200px;
 		overflow:hidden;
-		display: table-cell;
+		display:inline-block;
 	}
 }

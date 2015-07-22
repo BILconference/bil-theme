@@ -131,4 +131,7 @@ jQuery(document).ready(function($) {
   // homepage
   //$("h3.statistic").fitText();
 
+  // BIGTEXT
+  $("#bil-global-statistics").bigtext();
+
 }); /* end of as page load scripts */

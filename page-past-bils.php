@@ -6,10 +6,10 @@
 			<div class="row">
 				<div class="col-xs-12 col-md-8">
 					<h1><?php the_title(); ?></h1>
-					<?php $upcoming_bils = upcoming_bils(); ?>
-					<?php if ($upcoming_bils->have_posts() ) : ?>
+					<?php $past_bils = past_bils(); ?>
+					<?php if ($past_bils->have_posts() ) : ?>
 						<ul>
-							<?php while ( $upcoming_bils->have_posts() ) : $upcoming_bils->the_post(); ?>
+							<?php while ( $past_bils->have_posts() ) : $past_bils->the_post(); ?>
 								<li><?php the_title() ?> - <?php echo $post->ID; ?></li>
 							<?php endwhile; ?>
 						</ul>

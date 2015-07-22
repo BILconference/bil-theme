@@ -111,4 +111,8 @@ jQuery(document).ready(function($) {
   // }); 
 
 
+  // FIT TEXT
+  // homepage
+  $("h3.statistic").fitText();
+
 }); /* end of as page load scripts */

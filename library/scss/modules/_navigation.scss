@@ -1,4 +1,10 @@
 /*********************
+HEADER STYLES
+*********************/
+
+
+
+/*********************
 NAVIGATION STYLES
 *********************/
 
@@ -32,4 +38,26 @@ header#header {
 			background-color: $bil-blue;
 		}
 	}
+}
+
+// SOCIAL ICONS (Header)
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+.soc-twitter:before {
+    content:'a';
+}
+
+.soc-facebook:before {
+    content:'b';
+}
+
+.soc-github:before {
+    content:'Q';
 }

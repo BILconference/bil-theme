@@ -257,8 +257,26 @@ footer#footer {
 #module-cta {
   min-height: 400px;
   padding: 100px 0;
-  color: #323944;
-  background-color: #fff; }
+  color: #fff;
+  background-color: #323944; }
+  #module-cta .button {
+    display: inline-block;
+    height: 100px;
+    width: 70%;
+    line-height: 100px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin: 0 auto; }
+    #module-cta .button .label {
+      display: block;
+      height: 100%;
+      position: relative;
+      top: 0%;
+      transition: top 0.35s;
+      width: 100%; }
+    #module-cta .button:hover .label {
+      top: -100%; }
 
 #join-slack {
   height: 100vh;

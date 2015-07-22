@@ -35,7 +35,7 @@
 								<?php $event = get_field('event', $talk->ID); ?>
 								<li>
 									<a href="<?php echo get_permalink(); ?>">
-										<?php the_title($talk->ID); ?> at <?php echo $event->post_title; ?>
+										<?php echo get_the_title($talk->ID); ?> at <?php echo $event->post_title; ?>
 									</a>
 								</li>
 							<?php endforeach; ?>

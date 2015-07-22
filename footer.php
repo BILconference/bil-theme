@@ -17,6 +17,7 @@
 								'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
 							)); ?>
 						</nav>
+						<p>Press, Contact, Resources, Media Kit, Sponsorship Stuff</p>
 						<section class="meta">
 						    <p class="colophon"><img src="/wp-content/uploads/2015/07/cc.large_.png" class="tiny-cc-logo" alt="creative commons icon"/> 2007-<?php echo date('Y');?> BIL Conference </p>
 						 </section>

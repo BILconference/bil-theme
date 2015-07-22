@@ -113,6 +113,6 @@ jQuery(document).ready(function($) {
 
   // FIT TEXT
   // homepage
-  $("h3.statistic").fittext(1, {});
+  $("h3.statistic").fitText();
 
 }); /* end of as page load scripts */

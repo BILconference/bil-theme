@@ -193,7 +193,7 @@ footer#footer {
   -moz-background-size: contain;
   -webkit-background-size: contain;
   background-size: contain; }
-  #module-map #bil-global-statics {
+  #module-map #bil-global-statistics {
     font-weight: bold;
     line-height: 1;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.2); }

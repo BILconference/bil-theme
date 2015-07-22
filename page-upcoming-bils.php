@@ -6,7 +6,7 @@
 			<div class="row">
 				<div class="col-xs-12 col-md-8">
 					<h1><?php the_title(); ?></h1>
-					<?php the_content(); ?>
+					asdf
 				</div>
 				<div class="col-xs-12 col-md-4">
 					sidebar

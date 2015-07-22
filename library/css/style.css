@@ -173,22 +173,6 @@ footer#footer {
     footer#footer a:hover, footer#footer a:visited:hover {
       color: #2ea3f2; }
 
-button,
-.button {
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  border: 1px solid #fff; }
-  button:hover,
-  .button:hover, button:focus,
-  .button:focus {
-    color: #fff;
-    text-decoration: none;
-    outline: none; }
-  button:active,
-  .button:active {
-    top: 1px; }
-
 #module-hero {
   height: 700px; }
   #module-hero h2 {
@@ -268,12 +252,11 @@ button,
         filter: alpha(opacity=100); }
 
 #module-cta {
-  min-height: 400px;
   padding: 100px 0;
   color: #fff;
   background-color: #323944; }
   #module-cta .button {
-    display: table;
+    display: block;
     height: 100px;
     width: 70%;
     line-height: 100px;
@@ -285,8 +268,8 @@ button,
     cursor: pointer;
     border: 3px solid #fff; }
     #module-cta .button .label {
-      display: table-cell;
-      vertical-align: middle;
+      display: block;
+      line-height: 70px;
       height: 100%;
       position: relative;
       top: 0%;

@@ -142,6 +142,10 @@ header#header nav#nav.navbar {
     color: #f8f9fa; }
     .navbar-bil a:hover, .navbar-bil a:visited:hover {
       color: #fff; }
+  .navbar-bil .dropdown-menu > li > a, .navbar-bil .dropdown-menu > li > a:visited, .navbar-bil .dropdown-menu > li > a:hover {
+    color: #323944; }
+  .navbar-bil .dropdown-menu > .active > a, .navbar-bil .dropdown-menu > .active > a:focus, .navbar-bil .dropdown-menu > .active > a:hover {
+    background: #fff; }
   .navbar-bil .navbar-toggle {
     background: #f8f9fa; }
     .navbar-bil .navbar-toggle .icon-bar {

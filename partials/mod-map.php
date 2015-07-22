@@ -5,8 +5,8 @@
 		<div class="row">
 			<div id="bil-global-statistics" class="col-xs-12 col-md-8">
 				<div>9 Years Running</div> 
-				<div>6 Countries</div>		
-				<div>40 Cities</div>
+				<div>7 Countries</div>		
+				<div>33 Cities</div>
 				<div>thousands and thousands of</div>
 				<div>BILders</div>
 			</div>

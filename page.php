@@ -4,13 +4,12 @@
 	<div id="page-<?php $post->post_name; ?>">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+				<div class="col-xs-12 col-md-8">
 					<h1><?php the_title(); ?></h1>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-8 col-sm-offset-2">
 					<?php the_content(); ?>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					sidebar
 				</div>
 			</div>
 		</div>

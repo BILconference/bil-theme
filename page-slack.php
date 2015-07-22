@@ -1,17 +1,4 @@
 <?php
-/**
- * Template Name: Chat Page
- *
- *
- * This page is a holder for a Slack Chat iFrame for
- * signing up on the BIL Slack Channel.
- *
- * A Heroku app has been created for automated adding
- * to the slack community.
- *
-**/
-
-
 // TODO: 
 // - If we want we can add in the WP Content as an upper description.
 // - Add in instructions, custom emojis, etc as a reference
@@ -21,7 +8,7 @@ get_header();
 ?>
 
 
-<div id="join-slack">
+<div class="content">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">

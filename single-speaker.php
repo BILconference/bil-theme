@@ -32,10 +32,10 @@
 					<?php if( $talks ): ?>
 						<ul>
 							<?php foreach( $talks as $talk ): ?>
-								<?php $speaker = get_field('speaker', $talk->ID); ?>
+								<?php $event = get_field('event', $talk->ID); ?>
 								<li>
-									<a href="<?php echo get_permalink( $talk->ID ); ?>">
-										<?php echo get_the_title( $talk->ID ); ?> by <?php echo $speaker->post_title; ?>
+									<a href="<?php echo get_permalink(); ?>">
+										<?php echo get_the_title($talk->ID); ?> at <?php echo $event->post_title; ?>
 									</a>
 								</li>
 							<?php endforeach; ?>

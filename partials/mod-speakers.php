@@ -10,7 +10,7 @@
 			'terms'    => 'featured',
 		)
 	)
-); ?>
+)); ?>
 
 <div id="module-speakers">
 	<div class="container">

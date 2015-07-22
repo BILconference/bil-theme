@@ -35,6 +35,11 @@
 	#full-event-list {
 		ul {
 			list-style: none;
+			color:$white;
+
+			a, a:visited {
+				color:$white;
+			}
 		}
 	}
 	

@@ -1,12 +1,12 @@
 #module-cta {
-	min-height:400px;
+	//min-height:400px;
 	padding: 100px 0;
 	color: $white;
 	background-color: $black;
 
 
 	.button {
-	    display: table;
+	    display: block;
 	    height: 100px;
 	    width: 70%;
 	    line-height: 100px;
@@ -19,8 +19,8 @@
 		border: 3px solid $white;
 
 	    .label {
-		    display: table-cell;
-		    vertical-align: middle;
+		    display: block;
+		    line-height: 70px;
 		    height: 100%;
 		    position: relative;
 		    top: 0%;

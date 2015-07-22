@@ -6,7 +6,7 @@
 
 
 	.button {
-	    display: inline-block;
+	    display: table;
 	    height: 100px;
 	    width: 70%;
 	    line-height: 100px;
@@ -14,15 +14,20 @@
 	    position: relative;
 	    text-align: center;
 	    margin: 0 auto;
+	    color: $white;
+		cursor: pointer;
+		border: 3px solid $white;
 
 	    .label {
-		    display: block;
+		    display: table-cell;
+		    vertical-align: middle;
 		    height: 100%;
 		    position: relative;
 		    top: 0%;
 		    transition: top 0.35s;
 		    width: 100%;
-		    
+		    font-size:2em;
+
 		}
 
 		&:hover .label {

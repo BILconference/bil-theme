@@ -163,6 +163,16 @@ header#header nav#nav.navbar {
 .soc-github:before {
   content: 'Q'; }
 
+footer#footer {
+  min-height: 500px;
+  background: #666;
+  padding-top: 50px;
+  color: #fff; }
+  footer#footer a, footer#footer a:visited {
+    color: #fff; }
+    footer#footer a:hover, footer#footer a:visited:hover {
+      color: #2ea3f2; }
+
 #module-hero {
   height: 700px; }
   #module-hero h2 {
@@ -246,11 +256,6 @@ header#header nav#nav.navbar {
   padding: 100px 0;
   color: #323944;
   background-color: #fff; }
-
-#module-speakers .tile {
-  max-width: 200px;
-  overflow: hidden;
-  display: inline-block; }
 
 #join-slack {
   height: 100vh;

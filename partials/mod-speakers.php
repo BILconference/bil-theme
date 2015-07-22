@@ -1,5 +1,16 @@
 <?php $module = get_module_by_slug('speakers') ?>
-<?php $speakers = new WP_Query( array('post_type' => 'speaker', 'orderby' => 'menu_order', 'posts_per_page' => -1, 'tag' => 4) ); ?>
+<?php $speakers = new WP_Query( array(
+	'post_type' => 'speaker',
+	'orderby' => 'menu_order',
+	'posts_per_page' => -1,
+	'tax_query' => array(
+		array(
+			'taxonomy' => 'group',
+			'field'    => 'slug',
+			'terms'    => 'featured',
+		)
+	)
+)); ?>
 
 <div id="module-speakers">
 	<div class="container">
@@ -7,11 +18,9 @@
 			<?php if ( $speakers->have_posts() ) : ?>
 				<?php while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
 					<div class="col-xs-12 col-sm-6 col-md-2">
-						<div class="tile">
-							<?php the_post_thumbnail( '200x200', $attr ); ?>
-							<h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
-							<h6><?php the_field('association') ?></h6>
-						</div>
+						<?php the_post_thumbnail( '200x200', $attr ); ?>
+						<h4><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
+						<h5><?php the_field('association') ?></h5>
 					</div>
 				<?php endwhile; ?>
 				<?php wp_reset_postdata(); ?>

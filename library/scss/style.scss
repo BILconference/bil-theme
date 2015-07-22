@@ -7,23 +7,23 @@ the whole project.
 *********************/
 
 // normalize: http://necolas.github.io/normalize.css/
-//@import "partials/normalize";
+//@import "utilities/normalize";
 // Bootstrap includes Normalize
 
 // Sass variables
-@import "partials/variables";
+@import "utilities/variables";
 
 // typography
-@import "partials/typography";
+@import "utilities/typography";
 
 // Sass functions
-@import "partials/functions";
+@import "utilities/functions";
 
 // import mixins
-@import "partials/mixins";
+@import "utilities/mixins";
 
 // the grid
-//@import "partials/grid";
+//@import "utilities/grid";
 // We are using Bootstrap Grid
 
 /*********************

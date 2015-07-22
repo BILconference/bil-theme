@@ -7,7 +7,8 @@
 				<div>9 Years Running</div> 
 				<div>6 Countries</div>		
 				<div>40 Cities</div>
-				<div>Thousands of BILders</div>
+				<div>thousands and thousands of</div>
+				<div>BILders</div>
 			</div>
 			<div id="full-event-list" class="col-xs-12 col-md-4">
 				<?php $upcoming_bils = upcoming_bils(); ?>

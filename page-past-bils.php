@@ -10,7 +10,9 @@
 					<?php if ($past_bils->have_posts() ) : ?>
 						<ul>
 							<?php while ( $past_bils->have_posts() ) : $past_bils->the_post(); ?>
-								<li><?php the_title() ?> - <?php echo $post->ID; ?></li>
+								<li>
+									<a href="<?php the_permalink(); ?>"><strong><?php the_title() ?></strong> - <?php the_field('general_location'); ?></a>
+								</li>
 							<?php endwhile; ?>
 						</ul>
 						<?php wp_reset_postdata(); ?>

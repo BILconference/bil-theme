@@ -1,5 +1,16 @@
 <?php $module = get_module_by_slug('speakers') ?>
-<?php $speakers = new WP_Query( array('post_type' => 'speaker', 'orderby' => 'menu_order', 'posts_per_page' => -1, 'tag' => 4) ); ?>
+<?php $speakers = new WP_Query( array(
+	'post_type' => 'speaker',
+	'orderby' => 'menu_order',
+	'posts_per_page' => -1,
+	'tax_query' => array(
+		array(
+			'taxonomy' => 'group',
+			'field'    => 'slug',
+			'terms'    => 'featured',
+		)
+	)
+); ?>
 
 <div id="module-speakers">
 	<div class="container">

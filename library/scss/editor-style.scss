@@ -17,26 +17,26 @@ here http://codex.wordpress.org/Function_Reference/add_editor_style */
 body#tinymce.wp-editor {
 
 	// normalize: http://necolas.github.io/normalize.css/
-	@import "partials/normalize";
+	@import "utilities/normalize";
 
 	// Sass variables
-	@import "partials/variables";
+	@import "utilities/variables";
 
 	// typography
-	@import "partials/typography";
+	@import "utilities/typography";
 
 	// Sass functions
-	@import "partials/functions";
+	@import "utilities/functions";
 
 	// import mixins
-	@import "partials/mixins";
+	@import "utilities/mixins";
 
 	width: 731px;
 	font-family: $lato;
 	font-size: 100%;
 	line-height: 1.5;
 	color: $text-color;
-  -webkit-font-smoothing: antialiased;
+  	-webkit-font-smoothing: antialiased;
 
   /*********************
 	LINK STYLES

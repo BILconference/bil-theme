@@ -1,5 +1,5 @@
 #module-map {
-	padding: 100px 0;
+	padding: 100px inherit;
 	color: $white;
 	background: url('../images/world_map.png') 50% 50% no-repeat $bil-blue;
 	-ms-background-size: contain;
@@ -15,6 +15,8 @@
 	}
 
 	#full-event-list {
+		padding-left:20px;
+		
 		ul {
 			list-style: none;
 			color:$white;

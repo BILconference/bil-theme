@@ -3,8 +3,6 @@
 <?php $background = get_field("background_image", $module->ID, OBJECT); ?>
 <?php $image = $background['sizes'][ 'full-width' ]; ?>
 
-
-
 <div id="module-intro" style="background-image: url('<?php echo $image; ?>')">
 	<div class="container">
 		<div class="row">

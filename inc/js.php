@@ -49,7 +49,7 @@
 			if ( is_home() || is_front_page() ){
 				// Fittext.js (Load only on homepage)	
 				wp_register_script( 'fittextjs-cdn', 'https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js', array('jquery'), '1.1', true );
-				wp_enqueue_script( ' fittextjs-cdn' );
+				wp_enqueue_script( 'fittextjs-cdn' );
 
 			}
 	}

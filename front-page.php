@@ -1,7 +1,3 @@
-<?php
-var_dump(is_front_page());
-var_dump(is_home());
-?>
 <?php get_header(); ?>
 	<?php
 	// check if the repeater field has rows of data

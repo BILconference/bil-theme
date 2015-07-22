@@ -35,6 +35,10 @@ header#header {
 		}
 	}
 
+	.dropdown-menu>li>a, .dropdown-menu>li>a:visited, .dropdown-menu>li>a:hover {
+		color:$black;
+	}
+
 	.navbar-toggle {
 		background: $light-gray;
 

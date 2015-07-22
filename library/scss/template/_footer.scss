@@ -2,4 +2,14 @@ footer#footer {
 	min-height:500px;
 	background:#666;
 	padding-top:50px;
+
+	color:$white;
+
+	a, a:visited {
+		color: $white;
+
+		&:hover {
+			color:$bil-blue;
+		}
+	}
 }

@@ -17,18 +17,20 @@
 	<div id="event-hero" style="background-image: url('<?php echo $image; ?>');" >
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12">
-					<h1><?php the_title(); ?></h1>
-					<?php the_field('general_location'); ?><br>
-					<?php if (get_field('start_date')) { 
-						$start_date = DateTime::createFromFormat('Ymd', get_field('start_date'));
-						echo $start_date->format('F jS, Y');
-					} ?>
-					 - 
-					<?php if (get_field('end_date')) {
-						$end_date = DateTime::createFromFormat('Ymd', get_field('end_date'));
-						echo $end_date->format('F jS, Y');
-					} ?>
+				<div class="col-xs-12 content">
+					<h1 class="text-center"><?php the_title(); ?></h1>
+					<p class="text-center">
+						<?php the_field('general_location'); ?><br>
+						<?php if (get_field('start_date')) { 
+							$start_date = DateTime::createFromFormat('Ymd', get_field('start_date'));
+							echo $start_date->format('F jS, Y');
+						} ?>
+						 - 
+						<?php if (get_field('end_date')) {
+							$end_date = DateTime::createFromFormat('Ymd', get_field('end_date'));
+							echo $end_date->format('F jS, Y');
+						} ?>
+					</p>
 				</div>
 			</div>
 		</div>

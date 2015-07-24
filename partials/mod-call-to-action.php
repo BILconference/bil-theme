@@ -6,7 +6,7 @@
 			<div class="col-xs-12">
 				<div class="button">
 				    <span class="label">Want to host your own BIL?</span>
-				    <span class="label">Let us show you how! Click Here!</span>
+				    <span class="label">Let us show you how!</span>
 				</div>
 			</div>
 			

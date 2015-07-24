@@ -198,8 +198,8 @@ footer#footer {
     width: 300px;
     display: block;
     margin: 100px auto 0 auto;
-    opacity: 0.4;
-    filter: alpha(opacity=40);
+    opacity: 0.9;
+    filter: alpha(opacity=90);
     /* For IE8 and earlier */ }
 
 #module-map {

@@ -1,10 +1,14 @@
 #event-hero {
-	padding-top:200px;
-	padding-bottom:200px;
+	// padding-top:200px;
+	// padding-bottom:200px;
 	background: url('../images/banner-brain.jpg') 50% 50% no-repeat transparent;
 	background-size: cover;
 
 	.content {
 		color: $white;
 	}
+}
+
+#event-about {
+	padding: $section-padding;
 }

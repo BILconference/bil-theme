@@ -11,7 +11,7 @@ if( function_exists('acf_add_options_sub_page') ) {
     ));
 
     acf_add_options_sub_page(array(
-        'title' => 'Press Options',
+        'title' => 'Events Options',
         'menu' => 'Events Options',
         'parent' => 'edit.php?post_type=event',
         'slug' => 'events_options',

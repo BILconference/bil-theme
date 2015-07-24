@@ -1,6 +1,6 @@
 #module-cta {
-	//min-height:400px;
-	padding: 100px 0;
+	@extend %module;
+	
 	color: $white;
 	background-color: $black;
 
@@ -15,7 +15,7 @@
 	    text-align: center;
 	    margin: 0 auto;
 	    color: $white;
-		cursor: pointer;
+		cursor: pointer; 
 		border: 3px solid $white;
 
 	    .label {

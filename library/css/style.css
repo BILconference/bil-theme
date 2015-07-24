@@ -20,7 +20,7 @@ Here's a great tutorial on how to
 use color variables properly:
 http://sachagreif.com/sass-color-variables/
 */
-#event-about, #event-talks, #event-sponsors, #event-cta, #speaker-about {
+#module-map, #module-intro, #module-sponsors, #module-cta, #module-speakers, #event-about, #event-talks, #event-sponsors, #event-cta, #speaker-about {
   padding-top: 50px;
   padding-bottom: 50px; }
 
@@ -203,7 +203,6 @@ footer#footer {
     /* For IE8 and earlier */ }
 
 #module-map {
-  padding: 100px 0;
   color: #fff;
   background: url("../images/world_map.png") 50% 50% no-repeat #2ea3f2;
   -ms-background-size: contain;
@@ -223,7 +222,6 @@ footer#footer {
       color: #fff; }
 
 #module-intro {
-  padding: 100px 0;
   color: #fff;
   background-color: #323944;
   background-size: cover; }
@@ -240,7 +238,6 @@ footer#footer {
       padding-bottom: 5px; }
 
 #module-sponsors {
-  padding: 50px 0;
   color: #fff;
   background-color: #2ea3f2; }
   #module-sponsors ul.sponsors {
@@ -270,7 +267,6 @@ footer#footer {
         filter: alpha(opacity=100); }
 
 #module-cta {
-  padding: 100px 0;
   color: #fff;
   background-color: #323944; }
   #module-cta .button {
@@ -297,12 +293,9 @@ footer#footer {
     #module-cta .button:hover .label {
       top: -100%; }
 
-#module-speakers {
-  padding-top: 50px;
-  padding-bottom: 50px; }
-  #module-speakers .speaker {
-    min-height: 300px;
-    overflow-y: hidden; }
+#module-speakers .speaker {
+  min-height: 300px;
+  overflow-y: hidden; }
 
 body.page div.content {
   padding-top: 50px;

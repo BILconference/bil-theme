@@ -55,9 +55,12 @@ use color variables properly:
 http://sachagreif.com/sass-color-variables/
 */
 
-$section-padding:	50px;
-
 %module {
-	padding-top: $section-padding;
-	padding-bottom: $section-padding;
-}	
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+%module-home {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}

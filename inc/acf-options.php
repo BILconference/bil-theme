@@ -3,7 +3,7 @@
 if( function_exists('acf_add_options_sub_page') ) {
 
     acf_add_options_sub_page(array(
-        'title' => 'Options',
+        'title' => 'Press Options',
         'menu' => 'Press Options',
         'parent' => 'edit.php?post_type=press',
         'slug' => 'press_options',
@@ -11,7 +11,7 @@ if( function_exists('acf_add_options_sub_page') ) {
     ));
 
     acf_add_options_sub_page(array(
-        'title' => 'Options',
+        'title' => 'Press Options',
         'menu' => 'Events Options',
         'parent' => 'edit.php?post_type=event',
         'slug' => 'events_options',

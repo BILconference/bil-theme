@@ -1,4 +1,7 @@
 .post-type-archive-press {
+	#press-hero {
+		background:$bil-blue;
+	}
 
 	#press-list {
 		@extend %module;

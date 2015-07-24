@@ -169,6 +169,8 @@ header#header nav#nav.navbar {
   .navbar-bil #primary-nav-menu {
     text-transform: uppercase;
     font-weight: 700; }
+    .navbar-bil #primary-nav-menu li.active {
+      border-bottom: 2px solid #f3f3f3; }
 
 .soc li a {
   font-family: si !important;

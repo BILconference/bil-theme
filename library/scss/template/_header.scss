@@ -33,6 +33,7 @@ header#header {
 	    font-weight: 700;
 	}
 
+
 	.nav>li>a:focus, .nav>li>a:hover {
 		background-color: $bil-dark-blue;
 		color: $white;
@@ -65,6 +66,11 @@ header#header {
 	#primary-nav-menu {
 		text-transform: uppercase;
 	    font-weight: 700;
+
+	    li.active {
+			border-bottom: 2px solid #f3f3f3
+
+	    }
 	}
 
 

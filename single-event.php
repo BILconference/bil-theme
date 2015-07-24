@@ -25,8 +25,9 @@
 							$start_date = DateTime::createFromFormat('Ymd', get_field('start_date'));
 							echo $start_date->format('F jS, Y');
 						} ?>
-						 - 
+						
 						<?php if (get_field('end_date')) {
+							echo ' - ';
 							$end_date = DateTime::createFromFormat('Ymd', get_field('end_date'));
 							echo $end_date->format('F jS, Y');
 						} ?>

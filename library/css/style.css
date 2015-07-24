@@ -143,13 +143,19 @@ header#header nav#nav.navbar {
 .navbar-bil {
   background-color: #2ea3f2;
   border-color: #0e8ee4; }
+  .navbar-bil .navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 24px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 700; }
   .navbar-bil .nav > li > a:focus, .navbar-bil .nav > li > a:hover {
     background-color: #0e8ee4;
     color: #fff; }
   .navbar-bil a, .navbar-bil a:visited {
-    color: #f8f9fa;
-    text-transform: uppercase;
-    font-weight: 700; }
+    color: #f8f9fa; }
     .navbar-bil a:hover, .navbar-bil a:visited:hover {
       color: #fff; }
   .navbar-bil .dropdown-menu > li > a, .navbar-bil .dropdown-menu > li > a:visited, .navbar-bil .dropdown-menu > li > a:hover {
@@ -160,6 +166,9 @@ header#header nav#nav.navbar {
     background: #f8f9fa; }
     .navbar-bil .navbar-toggle .icon-bar {
       background-color: #2ea3f2; }
+  .navbar-bil #primary-nav-menu {
+    text-transform: uppercase;
+    font-weight: 700; }
 
 .soc li a {
   font-family: si !important;

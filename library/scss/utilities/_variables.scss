@@ -56,3 +56,8 @@ http://sachagreif.com/sass-color-variables/
 */
 
 $section-padding:	50px;
+
+%module {
+	padding-top: $section-padding;
+	padding-bottom: $section-padding;
+}	

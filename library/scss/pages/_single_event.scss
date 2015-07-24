@@ -8,21 +8,17 @@
 }
 
 #event-about {
-	padding-top: $section-padding;
-	padding-bottom: $section-padding;
+	@extend %module;
 }
 
 #event-talks {
-	padding-top: $section-padding;
-	padding-bottom: $section-padding;
+	@extend %module;
 }
 
 #event-sponsors {
-	padding-top: $section-padding;
-	padding-bottom: $section-padding;
+	@extend %module;
 }
 
 #event-cta {
-	padding-top: $section-padding;
-	padding-bottom: $section-padding;
+	@extend %module;
 }

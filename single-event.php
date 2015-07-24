@@ -14,7 +14,7 @@
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-	<div id="event-hero" style="background-image: url('<?php echo $image; ?>');" >
+	<div id="event-hero">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 content">

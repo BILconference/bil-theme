@@ -2,16 +2,20 @@
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-	<div id="speaker-hero" style="background-image: url('<?php echo $image; ?>');" >
+	<div id="speaker-hero" class="jumbotron">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12">
+				<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 content bigtext">
 					<h1><?php the_title(); ?></h1>
 					<?php if( get_field( "association" ) ): ?>
 						<p><?php the_field( "association" ); ?></p>
 					<?php endif; ?>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div id="speaker-about">
+		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-6">
 					<h2>Bio:</h2>

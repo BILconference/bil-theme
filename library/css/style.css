@@ -287,7 +287,7 @@ footer#footer {
     border: 3px solid #fff; }
     #module-cta .button .label {
       display: block;
-      line-height: 70px;
+      line-height: 75px;
       height: 100%;
       position: relative;
       top: 0%;
@@ -301,7 +301,8 @@ footer#footer {
   padding-top: 50px;
   padding-bottom: 50px; }
   #module-speakers .speaker {
-    min-height: 300px; }
+    min-height: 300px;
+    overflow-y: hidden; }
 
 body.page div.content {
   padding-top: 50px;

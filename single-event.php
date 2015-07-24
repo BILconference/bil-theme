@@ -102,9 +102,14 @@
 					<?php if( $talks ): ?>
 						<ul>
 							<?php foreach( $talks as $talk ): ?>
+								<?php $speaker = get_field('speaker', $talk->ID); ?>
 								<li>
 									<a href="<?php echo get_permalink( $talk->ID ); ?>">
-										<?php echo get_the_title( $talk->ID ); ?>
+										<?php echo $talk->post_name; ?>
+									</a>
+									
+									<a href="<?php echo get_permalink($speaker->ID); ?>">
+										<?php echo $speaker->post_name; ?>
 									</a>
 								</li>
 							<?php endforeach; ?>

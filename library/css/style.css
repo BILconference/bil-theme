@@ -20,7 +20,7 @@ Here's a great tutorial on how to
 use color variables properly:
 http://sachagreif.com/sass-color-variables/
 */
-#module-map, #module-intro, #module-sponsors, #module-cta, #module-speakers, #event-about, #event-talks, #event-sponsors, #event-cta, #speaker-about {
+#module-map, #module-intro, #module-sponsors, #module-cta, #module-speakers, body.page div.content, #event-about, #event-talks, #event-sponsors, #event-cta, #speaker-about {
   padding-top: 50px;
   padding-bottom: 50px; }
 
@@ -297,10 +297,6 @@ footer#footer {
   min-height: 300px;
   padding-left: 0;
   padding-right: 0; }
-
-body.page div.content {
-  padding-top: 50px;
-  padding-bottom: 50px; }
 
 #join-slack {
   height: 100vh;

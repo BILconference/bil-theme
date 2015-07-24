@@ -47,7 +47,7 @@
 					<h2>Address</h2>
 					<address><?php the_field('specific_location'); ?></address>
 					
-					<h2>Social:</h2>
+					<h2>Social</h2>
 					<?php if (get_field('facebook_event')) { ?>
 						<a href="<?php the_field('facebook_event'); ?>">Facebook Event</a>
 					<?php } ?>

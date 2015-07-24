@@ -18,7 +18,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-6">
-					<h2>Bio:</h2>
+					<h2>Biography</h2>
 					<?php the_content(); ?>
 				</div>
 				<div class="col-xs-12 col-md-6">

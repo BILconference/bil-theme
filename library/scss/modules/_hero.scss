@@ -4,10 +4,18 @@
 	h2 {
 		text-align: center;
 		line-height: 1.2;
-		margin-top: 270px;
+		margin-top: 17px;
 		color: #F6F8E3;
 		text-shadow: 1px 1px rgba( 0, 0, 0, 0.2 );
 		background-color: rgba(255,255,255,0.15);
 		border-radius: 15px;
+	}
+
+	img.bil-logo {
+		width: 300px;
+		display: block;
+		margin:100px auto 0 auto;
+		opacity: 0.4;
+	    filter: alpha(opacity=40); /* For IE8 and earlier */
 	}
 }

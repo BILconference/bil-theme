@@ -301,7 +301,7 @@ footer#footer {
   padding-top: 50px;
   padding-bottom: 50px; }
   #module-speakers .speaker {
-    height: 300px; }
+    min-height: 300px; }
 
 body.page div.content {
   padding-top: 50px;

@@ -17,8 +17,8 @@
 	<div id="event-hero">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 content">
-					<h1 class="text-center bigtext"><?php the_title(); ?></h1>
+				<div class="col-xs-12 content bigtext">
+					<h1 class="text-center"><?php the_title(); ?></h1>
 					<p class="text-center">
 						<?php the_field('general_location'); ?><br>
 						<?php if (get_field('start_date')) { 

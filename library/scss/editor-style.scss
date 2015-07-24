@@ -32,7 +32,6 @@ body#tinymce.wp-editor {
 	@import "utilities/mixins";
 
 	width: 731px;
-	font-family: $lato;
 	font-size: 100%;
 	line-height: 1.5;
 	color: $text-color;
@@ -100,7 +99,7 @@ body#tinymce.wp-editor {
 		letter-spacing: 2px;
 	}
 
-	padding: 1.5em 1.5em 0;
+	padding: 10px;
 
 		p {
 			margin: 0 0 1.5em;

@@ -17,9 +17,14 @@
 
 	#full-event-list {
 		ul {
+			margin-top: 10px;
 			list-style: none;
 			color:$white;
-			padding-left:0px;
+			padding-left:65px;
+
+			li {
+				white-space: nowrap;
+			}
 
 			a, a:visited {
 				color:$white;

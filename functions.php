@@ -56,6 +56,6 @@ require_once get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 require_once get_template_directory() . '/inc/menus.php';
 
 // Dashboard Modifications
-require_once get_template_directory() . '/inc/dashboard.php';
+//require_once get_template_directory() . '/inc/dashboard.php';
 
 ?>

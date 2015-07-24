@@ -72,17 +72,17 @@ function dashboard_customization() {
 
              // add 'Submit Guest Post' menu to adminbar
 
-             $wp_admin_bar->add_menu( array(
+             // $wp_admin_bar->add_menu( array(
 
-             'parent' => false,
+             // 'parent' => false,
 
-             'id' => 'submit-guest-post',
+             // 'id' => '',
 
-             'title' => __('Submit Guest Post'),
+             // 'title' => __(''),
 
-             'href' => '#'
+             // 'href' => '#'
 
-             ));
+             // ));
 }
 
 // add custom widget in dashboard

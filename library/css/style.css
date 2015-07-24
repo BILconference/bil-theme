@@ -147,7 +147,9 @@ header#header nav#nav.navbar {
     background-color: #0e8ee4;
     color: #fff; }
   .navbar-bil a, .navbar-bil a:visited {
-    color: #f8f9fa; }
+    color: #f8f9fa;
+    text-transform: uppercase;
+    font-weight: 700; }
     .navbar-bil a:hover, .navbar-bil a:visited:hover {
       color: #fff; }
   .navbar-bil .dropdown-menu > li > a, .navbar-bil .dropdown-menu > li > a:visited, .navbar-bil .dropdown-menu > li > a:hover {

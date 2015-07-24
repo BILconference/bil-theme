@@ -105,11 +105,11 @@
 								<?php $speaker = get_field('speaker', $talk->ID); ?>
 								<li>
 									<a href="<?php echo get_permalink( $talk->ID ); ?>">
-										<?php echo $talk->post_name; ?>
+										<?php echo $talk->post_title; ?>
 									</a>
-									
+									 by 
 									<a href="<?php echo get_permalink($speaker->ID); ?>">
-										<?php echo $speaker->post_name; ?>
+										<?php echo $speaker->post_title; ?>
 									</a>
 								</li>
 							<?php endforeach; ?>

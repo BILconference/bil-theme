@@ -1,5 +1,5 @@
 #module-hero {
-	height: 700px;
+	@extend %module-home;
 
 	h2 {
 		text-align: center;

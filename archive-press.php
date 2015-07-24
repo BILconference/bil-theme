@@ -4,7 +4,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<?php $image = the_field('press_image', 'option'); ?>
+					<?php $image = get_field('press_image', 'option'); ?>
 					<?php if( !empty($image) ): ?>
 						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 					<?php endif; ?>

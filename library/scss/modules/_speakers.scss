@@ -1,7 +1,5 @@
 #module-speakers {
-	padding-top:50px;
-	padding-bottom:50px;
-
+	@extend %module;
 
 	.speaker {
 		min-height:300px;

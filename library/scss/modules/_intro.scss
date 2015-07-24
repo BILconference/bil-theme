@@ -1,5 +1,6 @@
 #module-intro {
-	padding: 100px 0;
+	@extend %module;
+	
 	color: $white;
 	background-color: $black;
 	

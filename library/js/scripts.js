@@ -111,27 +111,6 @@ function loadGravatars() {
 */
 jQuery(document).ready(function($) {
 
-  /*
-   * Let's fire off the gravatar function
-   * You can remove this if you don't need it
-  */
-  loadGravatars();
+  $(".bigtext").bigtext();
 
-  console.log( 'js loaded' );
-  
-  // /* affix the navbar after scroll below header */
-  // $('#nav').affix({
-  //       offset: {
-  //         top: $('header').height()-$('#nav').height()
-  //       }
-  // }); 
-
-
-  // FIT TEXT
-  // homepage
-  //$("h3.statistic").fitText();
-
-  // BIGTEXT
-  $("#bil-global-statistics").bigtext();
-
-}); /* end of as page load scripts */
+});

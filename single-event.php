@@ -27,7 +27,7 @@
 						} ?>
 						
 						<?php if (get_field('end_date')) {
-							echo ' - ';
+							echo '&nbsp;-&nbsp;';
 							$end_date = DateTime::createFromFormat('Ymd', get_field('end_date'));
 							echo $end_date->format('F jS, Y');
 						} ?>

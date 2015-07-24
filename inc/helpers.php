@@ -56,3 +56,19 @@ function past_bils() {
 
 	return $past_bils;
 }
+
+function all_bils() {
+	$today = date('Ymd');
+
+    $args = array (
+		'posts_per_page' => -1,
+		'post_type'     => 'event',
+		'orderby'     => 'meta_value_num',
+		'meta_key'      => 'end_date',
+		'order'       => 'DESC'
+	);
+
+	$past_bils = new WP_Query($args);
+
+	return $past_bils;
+}

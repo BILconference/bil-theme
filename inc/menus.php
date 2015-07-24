@@ -9,5 +9,3 @@
 			'main-nav' => __( 'The Main Menu', 'bonestheme' ),   // main nav in header
 		)
 	);
-
-?>

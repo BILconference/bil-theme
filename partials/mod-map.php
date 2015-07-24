@@ -10,23 +10,11 @@
 				<div>thousands and thousands of</div>
 				<div>BILders</div>
 			</div>
-			<div id="full-event-list" class="col-xs-12 col-md-4">
-				<?php $upcoming_bils = upcoming_bils(); ?>
-				<?php if ($upcoming_bils->have_posts() ) : ?>
+			<div id="full-event-list" class="col-xs-12 col-md-4">				
+				<?php $all_bils = all_bils(); ?>
+				<?php if ($all_bils->have_posts() ) : ?>
 					<ul>
-						<?php while ( $upcoming_bils->have_posts() ) : $upcoming_bils->the_post(); ?>
-							<li><?php the_title() ?> - <?php echo $post->ID; ?></li>
-						<?php endwhile; ?>
-					</ul>
-					<?php wp_reset_postdata(); ?>
-				<?php endif; ?>
-
-				<hr>
-				
-				<?php $past_bils = past_bils(); ?>
-				<?php if ($past_bils->have_posts() ) : ?>
-					<ul>
-						<?php while ( $past_bils->have_posts() ) : $past_bils->the_post(); ?>
+						<?php while ( $all_bils->have_posts() ) : $all_bils->the_post(); ?>
 							<li>
 								<a href="<?php the_permalink(); ?>"><strong><?php the_title() ?></strong> - <?php the_field('general_location'); ?></a>
 							</li>

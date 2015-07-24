@@ -1,6 +1,14 @@
 #module-hero {
 	@extend %module-home;
 
+	img.bil-logo {
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+		opacity: 0.9;
+		filter: alpha(opacity=90); /* For IE8 and earlier */
+	}
+
 	h2 {
 		text-align: center;
 		line-height: 1.2;
@@ -11,11 +19,4 @@
 		border-radius: 15px;
 	}
 
-	img.bil-logo {
-		width: 300px;
-		display: block;
-		margin:100px auto 0 auto;
-		opacity: 0.9;
-	    filter: alpha(opacity=90); /* For IE8 and earlier */
-	}
 }

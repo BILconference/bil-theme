@@ -10,4 +10,12 @@ if( function_exists('acf_add_options_sub_page') ) {
         'capability' => 'manage_options'
     ));
 
+    acf_add_options_sub_page(array(
+        'title' => 'Options',
+        'menu' => 'Events Options',
+        'parent' => 'edit.php?post_type=event',
+        'slug' => 'events_options',
+        'capability' => 'manage_options'
+    ));
+
 }

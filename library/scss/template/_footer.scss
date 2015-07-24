@@ -5,6 +5,11 @@ footer#footer {
 
 	color:$white;
 
+	.tiny-cc-logo {
+		height:auto;
+		width: 20px;
+	}
+
 	a, a:visited {
 		color: $white;
 
@@ -13,3 +18,4 @@ footer#footer {
 		}
 	}
 }
+

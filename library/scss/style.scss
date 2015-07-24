@@ -29,10 +29,7 @@
 @import "pages/page";
 @import "pages/homepage";
 @import "pages/slack";
-@import "pages/footer";
-
-// event modules
-@import "modules/event_hero";
+@import "pages/single_event";
 
 // media queries
 @media only screen and (min-width: 481px) { } 

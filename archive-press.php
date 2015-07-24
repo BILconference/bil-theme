@@ -15,9 +15,11 @@
 	<div id="press-list">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12">
-					<h1>Press</h1>
+				<div class="col-xs-12 col-sm-4">
+					<h2>Press</h2>
 					<?php the_field('press_content', 'option'); ?>
+				</div>
+				<div class="col-xs-12 col-sm-8">
 					<ul>
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						<li>

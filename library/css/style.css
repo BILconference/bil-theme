@@ -295,7 +295,8 @@ footer#footer {
 
 #module-speakers .speaker {
   min-height: 300px;
-  overflow-y: hidden; }
+  padding-left: 0;
+  padding-right: 0; }
 
 body.page div.content {
   padding-top: 50px;

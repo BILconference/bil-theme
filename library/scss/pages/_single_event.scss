@@ -1,24 +1,28 @@
-#event-hero {
-	background: url('../images/banner-brain.jpg') 50% 50% no-repeat transparent;
-	background-size: cover;
+body.single-event {
 
-	.content {
-		color: $white;
+	#event-hero {
+		background: url('../images/banner-brain.jpg') 50% 50% no-repeat transparent;
+		background-size: cover;
+
+		.content {
+			color: $white;
+		}
 	}
-}
 
-#event-about {
-	@extend %module;
-}
+	#event-about {
+		@extend %module;
+	}
 
-#event-talks {
-	@extend %module;
-}
+	#event-talks {
+		@extend %module;
+	}
 
-#event-sponsors {
-	@extend %module;
-}
+	#event-sponsors {
+		@extend %module;
+	}
 
-#event-cta {
-	@extend %module;
+	#event-cta {
+		@extend %module;
+	}
+
 }

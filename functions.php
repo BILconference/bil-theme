@@ -46,6 +46,9 @@ require_once get_template_directory() . '/inc/cpt-archive.php';
 // Custom Taxonomies
 require_once get_template_directory() . '/inc/tax.php';
 
+// ACF Custom Options Pages
+require_once get_template_directory() . '/inc/acf-options.php';
+
 // Bootstrap Wordpress NavWalker
 require_once get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 

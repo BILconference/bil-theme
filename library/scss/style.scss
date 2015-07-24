@@ -31,6 +31,9 @@
 @import "pages/slack";
 @import "pages/footer";
 
+// event modules
+@import "modules/event_hero";
+
 // media queries
 @media only screen and (min-width: 481px) { } 
 @media only screen and (min-width: 768px) { }

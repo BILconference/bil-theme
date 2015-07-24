@@ -22,6 +22,17 @@ header#header {
 	background-color: $bil-blue;
 	border-color: $bil-dark-blue;
 
+
+	.navbar-brand {
+	    float: left;
+	    height: 50px;
+	    padding: 15px 15px;
+	    font-size: 24px;
+	    line-height: 20px;
+	    text-transform: uppercase;
+	    font-weight: 700;
+	}
+
 	.nav>li>a:focus, .nav>li>a:hover {
 		background-color: $bil-dark-blue;
 		color: $white;
@@ -55,6 +66,8 @@ header#header {
 		text-transform: uppercase;
 	    font-weight: 700;
 	}
+
+
 }
 
 //************************************************************************

@@ -6,7 +6,7 @@
 <div id="module-intro" style="background-image: url('<?php echo $image; ?>')">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 borders">
+			<div class="col-xs-12 content">
 				<?php echo $text ?>
 			</div>
 		</div>

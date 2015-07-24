@@ -6,20 +6,20 @@
 	
 	background-size: cover;	
 
-	.borders {
+	.content {
 		border-top: 2px solid rgba( $light-gray, .4 );
 		border-bottom: 2px solid rgba( $light-gray, .4);
-		padding: 50px 160px;
+		padding: 50px 240px;
 		background: rgba( $white, .05 );
-	}
-	p {
-		font-size: 1.4em;
-		text-align: center;
-		padding-bottom: 10px;
+	
+		p {
+			font-size: 1.4em;
+			text-align: center;
+			padding-bottom: 10px;
 
-
-		&:last-child {
-			padding-bottom: 5px;
+			&:last-child {
+				padding-bottom: 5px;
+			}
 		}
 	}
 }

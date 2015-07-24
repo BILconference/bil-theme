@@ -8,6 +8,17 @@
 }
 
 #event-about {
-	padding-top: $section-padding;
-	padding-bottom: $section-padding;
+	@extend %module;
+}
+
+#event-talks {
+	@extend %module;
+}
+
+#event-sponsors {
+	@extend %module;
+}
+
+#event-cta {
+	@extend %module;
 }

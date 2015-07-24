@@ -44,7 +44,7 @@
 					<h2>About</h2>
 					<?php the_content(); ?>
 					
-					<h2>Address:</h2>
+					<h2>Address</h2>
 					<address><?php the_field('specific_location'); ?></address>
 					
 					<h2>Social:</h2>

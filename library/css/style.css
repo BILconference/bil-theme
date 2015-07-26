@@ -1330,7 +1330,8 @@ footer#footer {
 
 #module-cta {
   color: #fff;
-  background-color: #323944; }
+  background-color: #323944;
+  background-image: url("../images/square_bg.png"); }
   #module-cta .button {
     display: block;
     height: 100px;

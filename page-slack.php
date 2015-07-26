@@ -17,6 +17,12 @@ get_header();
 				</div>
 			</div>
 		</div>
+
+		<div class="row">
+			<h2>What is Slack??</h2>
+			<p>Slack is a comminication tool for teams that allows organized chats.  We use it here at BIL because we have different communities all over the world who occasionally need to communicate with one another. Slack helps us do that efficiently.</p>
+			
+		</div>
 	</div>
 </div>
 

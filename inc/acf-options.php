@@ -18,4 +18,12 @@ if( function_exists('acf_add_options_sub_page') ) {
         'capability' => 'manage_options'
     ));
 
+    acf_add_options_sub_page(array(
+        'title' => 'Talks Options',
+        'menu' => 'Talks Options',
+        'parent' => 'edit.php?post_type=talk',
+        'slug' => 'talks_options',
+        'capability' => 'manage_options'
+    ));
+
 }

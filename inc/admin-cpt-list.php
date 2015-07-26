@@ -84,7 +84,7 @@ function bil_talk_table_content( $column_name, $post_id ) {
 	if ($column_name == 'event') {
 		if (get_field('event', $post_id)) {
 			$event = get_field('event', $post_id);
-			echo $speaker->post_title;
+			echo $event->post_title;
 		} else {
 			echo '-';
 		}

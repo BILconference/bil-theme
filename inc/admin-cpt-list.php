@@ -13,8 +13,9 @@ add_filter('manage_event_posts_columns', 'bil_event_table_head');
 
 function bil_event_table_content( $column_name, $post_id ) {
 	if ($column_name == 'event_date') {
-		if (get_field('start_date', $post_id)) { 
-			$start_date = DateTime::createFromFormat('Ymd', get_field('start_date', $post_id));
+		if (get_field('start_date', $post_id)) {
+			$ugly_date = get_field('start_date', $post_id);
+			$start_date = DateTime::createFromFormat('Ymd', $ugly_date);
 			echo $start_date->format('F jS, Y');
 		} else {
 			echo '-';

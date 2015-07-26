@@ -11,6 +11,13 @@ footer#footer {
 		width: 20px;
 	}
 
+	.nav>li>a {
+		-o-transition:.5s;
+		-ms-transition:.5s;
+		-moz-transition:.5s;
+		-webkit-transition:.5s;
+		transition:.5s;
+	}
 	.nav>li>a:focus, 
 	.nav>li>a:hover {
 	    text-decoration: none;

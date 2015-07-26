@@ -1241,6 +1241,12 @@ footer#footer {
   footer#footer .tiny-cc-logo {
     height: auto;
     width: 20px; }
+  footer#footer .nav > li > a {
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s; }
   footer#footer .nav > li > a:focus,
   footer#footer .nav > li > a:hover {
     text-decoration: none;

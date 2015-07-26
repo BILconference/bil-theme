@@ -30,7 +30,7 @@
 						<ul>
 							<?php while ( $past_bils->have_posts() ) : $past_bils->the_post(); ?>
 								<li class="f16">
-									<span class="flag us"></span><a href="<?php the_permalink(); ?>"><strong><?php the_title() ?></strong> - <?php the_field('general_location'); ?></a>	
+									<span class="flag <php the_field('country'); ?>"></span><a href="<?php the_permalink(); ?>"><strong><?php the_title() ?></strong> - <?php the_field('general_location'); ?></a>	
 								</li>
 							<?php endwhile; ?>
 						</ul>
@@ -45,11 +45,13 @@
 						Don't see your country or city represented?
 						<button class="btn button btn-large">Host your own</button>
 					</div>
+
+					<?php list_countries_and_codes(); ?>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<?php list_countries_and_codes(); ?>
+
 
 <?php get_footer(); ?>

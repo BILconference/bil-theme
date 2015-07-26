@@ -27,9 +27,12 @@
 						} ?>
 						
 						<?php if (get_field('end_date')) {
-							echo '&nbsp;-&nbsp;';
 							$end_date = DateTime::createFromFormat('Ymd', get_field('end_date'));
-							echo $end_date->format('F jS, Y');
+
+							if ($end_date != $start_date) { // Case for one day event(s)
+								echo '&nbsp;-&nbsp;';
+								echo $end_date->format('F jS, Y');
+							}
 						} ?>
 					</p>
 				</div>

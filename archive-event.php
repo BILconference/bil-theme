@@ -2,7 +2,7 @@
 
 	<?php if (get_field('events_hero_background', 'option')) { 
 		$hero_bg_obj = get_field('events_hero_background', 'option');
-		$hero_bg = $her_big_obj['sizes']['full-width']; ?>
+		$hero_bg = $her_big_obj['sizes']['full-width'];
 	} ?>
 	<div id="event-hero" class="jumbotron" style="background-image: url('<?php echo $hero_bg; ?>');" >
 		<div class="container">

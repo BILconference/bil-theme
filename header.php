@@ -64,7 +64,7 @@
 							);
 						?>
 
-						<ul class="soc nav navbar-nav navbar-right hidden-md">
+						<ul class="soc nav navbar-nav navbar-right visible-lg">
 							<li><a class="soc-youtube" href="http://youtube.com/biltalks"></a></li>
 							<li><a class="soc-facebook" href="http://facebook.com/bilconference"></a></li>
 							<li><a class="soc-github" href="http://github.com/bilconference"></a></li>

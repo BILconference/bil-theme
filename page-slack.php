@@ -8,7 +8,7 @@ get_header();
 ?>
 
 
-<div class="content">
+<div id="join-slack" class="content">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">

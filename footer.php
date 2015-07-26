@@ -1,5 +1,10 @@
 		<footer id="footer">
 			<div class="container">
+				
+				<div class="row">
+					<h2>BIL</h2>
+				</div>
+
 				<div class="row">
 					<div id="footer-left" class="col-xs-12 col-sm-6">
 						<div class="row">

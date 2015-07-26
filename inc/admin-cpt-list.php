@@ -93,3 +93,41 @@ function bil_talk_table_content( $column_name, $post_id ) {
 }
 
 add_action( 'manage_talk_posts_custom_column', 'bil_talk_table_content', 10, 2 );
+
+
+
+//************************************************************************
+//
+// Press CPT Listing
+//
+//************************************************************************
+
+function bil_press_table_head( $defaults ) {
+	$defaults = array(); // to clear out the original order
+
+	$defaults['title'] 				= 'Article Title';
+	$defaults['publisher']			= 'Publisher';
+	$defaults['author'] 			= 'Added By';
+	$defaults['date']				= 'Added On';
+
+	return $defaults;
+}
+
+add_filter('manage_press_posts_columns', 'bil_press_table_head');
+
+
+
+function bil_press_table_content( $column_name, $post_id ) {
+
+	if ($column_name == 'publisher') {
+		if (get_field('publisher', $post_id)) {
+			$publisher = get_field('speaker', $post_id);
+			echo $speaker;
+		} else {
+			echo '-';
+		}
+	}
+
+}
+
+add_action( 'manage_talk_posts_custom_column', 'bil_talk_table_content', 10, 2 );

@@ -1241,21 +1241,21 @@ footer#footer {
   footer#footer .tiny-cc-logo {
     height: auto;
     width: 20px; }
+  footer#footer a, footer#footer a:visited {
+    color: #fff; }
+    footer#footer a:hover, footer#footer a:visited:hover {
+      color: #fff; }
   footer#footer .nav > li > a {
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s; }
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
   footer#footer .nav > li > a:focus,
   footer#footer .nav > li > a:hover {
     text-decoration: none;
     background-color: #2ea3f2;
     border-radius: 5px; }
-  footer#footer a, footer#footer a:visited {
-    color: #fff; }
-    footer#footer a:hover, footer#footer a:visited:hover {
-      color: #fff; }
   footer#footer ul.sub-menu {
     list-style: none;
     margin-left: 0;
@@ -1263,7 +1263,7 @@ footer#footer {
     footer#footer ul.sub-menu li a {
       color: #bcbec0;
       display: block;
-      height: 20px; }
+      padding-bottom: 10px; }
 
 #module-hero img.bil-logo {
   display: block;

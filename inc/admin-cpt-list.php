@@ -1,9 +1,8 @@
 <?php
 
 function bil_event_table_head( $defaults ) {
-	$defaults['event_date']  	= 'Event Date (Start)';
-	$defaults['venue'] 			= 'Venue';
-	$defaults['author']			= 'Added By';
+	$defaults['event_date']  		= 'Event Date (Start)';
+	$defaults['general_location']	= 'General Location';
 	return $defaults;
 }
 
@@ -22,14 +21,13 @@ function bil_event_table_content( $column_name, $post_id ) {
 		}
 	}
 
-	// if ($column_name == 'ticket_status') {
-	// 	$status = get_post_meta( $post_id, '_bs_meta_event_ticket_status', true );
-	// 	echo $status;
-	// }
-
-	// if ($column_name == 'venue') {
-	// 	echo get_post_meta( $post_id, '_bs_meta_event_venue', true );
-	// }
+	if ($column_name == 'general_location') {
+		if (get_field('general_location', $post_id)) {
+			echo get_field('general_location', $post_id);
+		} else {
+			echo '-';
+		}
+	}
 
 }
 

@@ -1,10 +1,14 @@
 <?php
 
 function bil_event_table_head( $defaults ) {
-	var_dump($defaults);
+	$defaults = array(); // to clear out the original order
+
+	$defaults['title'] 				= 'Event Name';
 	$defaults['event_date']  		= 'Event Date (Start)';
 	$defaults['general_location']	= 'General Location';
 	$defaults['author'] 			= 'Added By';
+	$defaults['date']				= 'Added On';
+
 	return $defaults;
 }
 

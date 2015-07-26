@@ -1,13 +1,24 @@
 <?php get_header(); ?>
 
-	<div id="talk-list">
+	<div id="event-hero" class="jumbotron">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<h1>Events</h1>
+					<?php $image = get_field('event_hero_foreground', 'option'); ?>
+					<?php if( !empty($image) ): ?>
+						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+					<?php endif; ?>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div id="event-list">
+		<div class="container">
 			<div class="row">
+				<div class="col-xs-12 col-sm-4">
+					<h2>Events</h2>
+					<?php the_field('event_content', 'option'); ?>
+				</div>
 				<div class="col-xs-12 col-sm-8">
 					<?php $upcoming_bils = upcoming_bils(); ?>
 					<?php if ($upcoming_bils->have_posts() ) : ?>
@@ -36,22 +47,12 @@
 						</ul>
 						<?php wp_reset_postdata(); ?>
 					<?php endif; ?>
-
-				</div>
-
-				<div class="sidebar col-xs-12 col-sm-4">
-					<?php //this is a place we could put this content in as a widget ?>
-					<div class="sidebar-cta host-a-bil">
-						Don't see your country or city represented?
-						<button class="btn button btn-large">Host your own</button>
-					</div>
-
-					<?php list_countries_and_codes(); ?>
 				</div>
 			</div>
 		</div>
 	</div>
 
-
-
 <?php get_footer(); ?>
+
+
+<?php get_header(); ?>

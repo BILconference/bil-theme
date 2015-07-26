@@ -1,5 +1,11 @@
 <?php
 
+//************************************************************************
+//
+// Event CPT Listing
+//
+//************************************************************************
+
 function bil_event_table_head( $defaults ) {
 	$defaults = array(); // to clear out the original order
 
@@ -17,6 +23,7 @@ add_filter('manage_event_posts_columns', 'bil_event_table_head');
 
 
 function bil_event_table_content( $column_name, $post_id ) {
+
 	if ($column_name == 'event_date') {
 		if (get_field('start_date', $post_id)) {
 			$ugly_date = get_field('start_date', $post_id);
@@ -38,3 +45,45 @@ function bil_event_table_content( $column_name, $post_id ) {
 }
 
 add_action( 'manage_event_posts_custom_column', 'bil_event_table_content', 10, 2 );
+
+
+
+//************************************************************************
+//
+// Talk CPT Listing
+//
+//************************************************************************
+
+function bil_talk_table_head( $defaults ) {
+	$defaults = array(); // to clear out the original order
+
+	$defaults['title'] 				= 'Talk Title';
+	$defaults['speaker']			= 'Speaker';
+	$defaults['event']				= 'Event';
+	$defaults['author'] 			= 'Added By';
+	$defaults['date']				= 'Added On';
+
+	return $defaults;
+}
+
+add_filter('manage_talk_posts_columns', 'bil_talk_table_head');
+
+
+
+function bil_talk_table_content( $column_name, $post_id ) {
+
+	if ($column_name == 'speaker') {
+		echo '!';
+	} else {
+		echo '-';
+	}
+
+	if ($column_name == 'event') {
+		echo '!';
+	} else {
+		echo '-';
+	}
+
+}
+
+add_action( 'manage_talk_posts_custom_column', 'bil_talk_table_content', 10, 2 );

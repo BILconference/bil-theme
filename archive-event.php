@@ -50,4 +50,6 @@
 		</div>
 	</div>
 
+	<?php list_countries_and_codes(); ?>
+
 <?php get_footer(); ?>

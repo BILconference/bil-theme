@@ -1,10 +1,11 @@
 <?php get_header(); ?>
 
-	<div id="event-hero" class="jumbotron">
+	<?php if (get_field('events_hero_background', 'option')) : $hero_bg = get_field('events_hero_background', 'option'); ?>
+	<div id="event-hero" class="jumbotron" style="background-image: url('<?php echo $hero_bg; ?>');" >
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<?php $image = get_field('event_hero_foreground', 'option'); ?>
+					<?php $image = get_field('events_hero_foreground', 'option'); ?>
 					<?php if( !empty($image) ): ?>
 						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 					<?php endif; ?>
@@ -53,6 +54,3 @@
 	</div>
 
 <?php get_footer(); ?>
-
-
-<?php get_header(); ?>

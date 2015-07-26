@@ -1,5 +1,8 @@
 $flags-images-path: "../images" !default; //Override this variable in your .scss to use bower.
 
+.f16 span {width:22px; height:14px; display:inline-block;}
+.f32 span {width:22px; height:14px; display:inline-block;}
+
 .f16 {
 
     .flag{background:url(#{$flags-images-path}/flags16.png) no-repeat;}

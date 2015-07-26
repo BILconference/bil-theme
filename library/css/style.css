@@ -137,6 +137,16 @@ BOX SIZING
 /* @include box-sizing(border-box); */
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
+.f16 span {
+  width: 22px;
+  height: 14px;
+  display: inline-block; }
+
+.f32 span {
+  width: 22px;
+  height: 14px;
+  display: inline-block; }
+
 .f16 .flag {
   background: url(../images/flags16.png) no-repeat; }
 .f16 ._African_Union {

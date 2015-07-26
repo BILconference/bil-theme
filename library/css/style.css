@@ -1249,6 +1249,10 @@ footer#footer {
     list-style: none;
     margin-left: 0;
     padding-left: 15px; }
+    footer#footer ul.sub-menu li a {
+      color: #bcbec0;
+      display: block;
+      height: 20px; }
 
 #module-hero img.bil-logo {
   display: block;

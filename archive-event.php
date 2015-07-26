@@ -31,7 +31,7 @@
 							<?php while ( $past_bils->have_posts() ) : $past_bils->the_post(); ?>
 								<li>
 									<a href="<?php the_permalink(); ?>"><strong><?php the_title() ?></strong> - <?php the_field('general_location'); ?></a>
-									<?php $flag = the_field('flag'); ?>
+									<?php $flag = get_field('flag'); ?>
 									<img src="<?php echo $flag[6]; ?>"/>
 								</li>
 							<?php endwhile; ?>

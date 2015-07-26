@@ -19,7 +19,7 @@ Theme used on http://bilconference.com
 # Website
 | Status  | Task  | Description |
 | :------------: | :--------------- | :----- |
-|  | Home Page |  |
+| complete | Home Page |  |
 | in progress | Events Page | properly list all events |
 | in progress | Event Page | |
 | in progress | Speakers Page | |

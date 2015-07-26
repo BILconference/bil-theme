@@ -3,7 +3,7 @@ Theme used on http://bilconference.com
 
 ---
 
-*TODO*
+This page is a general todo list for the website. Please try to keep this updated if you work on and complete new features.
 
 | Status Options | Description |
 | -------------- | ----------- |
@@ -19,7 +19,7 @@ Theme used on http://bilconference.com
 # Website
 | Status  | Task  | Description |
 | :------------: | :--------------- | :----- |
-|  | Home Page |  |
+| complete | Home Page |  |
 | in progress | Events Page | properly list all events |
 | in progress | Event Page | |
 | in progress | Speakers Page | |
@@ -29,6 +29,7 @@ Theme used on http://bilconference.com
 | in progress | Talk Page | |
 | in progress | Blog Post | |
 | in progress | Interior Pages | |
+| in progress | Event Page Contact Form | Each event should have a main email address associated with the event that people want to get in contact with the organizers with. |
 
 # Documents
 | Status  | Task  | Description |

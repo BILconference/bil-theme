@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<?php if (get_field('events_hero_background', 'option')) : $hero_bg = get_field('events_hero_background', 'option'); ?>
+	<?php if (get_field('events_hero_background', 'option')) $hero_bg = get_field('events_hero_background', 'option'); ?>
 	<div id="event-hero" class="jumbotron" style="background-image: url('<?php echo $hero_bg; ?>');" >
 		<div class="container">
 			<div class="row">

@@ -1241,10 +1241,13 @@ footer#footer {
   footer#footer .tiny-cc-logo {
     height: auto;
     width: 20px; }
+  footer#footer .nav > li > a:focus, footer#footer .nav > li > a:hover {
+    text-decoration: none;
+    background-color: #2ea3f2; }
   footer#footer a, footer#footer a:visited {
     color: #fff; }
     footer#footer a:hover, footer#footer a:visited:hover {
-      color: #2ea3f2; }
+      color: #fff; }
   footer#footer ul.sub-menu {
     list-style: none;
     margin-left: 0;

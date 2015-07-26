@@ -11,11 +11,16 @@ footer#footer {
 		width: 20px;
 	}
 
+	.nav>li>a:focus, .nav>li>a:hover {
+	    text-decoration: none;
+	    background-color: $bil-blue;
+	}
+
 	a, a:visited {
 		color: $white;
 
 		&:hover {
-			color:$bil-blue;
+			color:$white;
 		}
 	}
 

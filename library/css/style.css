@@ -1238,6 +1238,12 @@ footer#footer {
   padding-top: 50px;
   background-image: url("../images/use_your_illusion.png");
   color: #fff; }
+  footer#footer h2 {
+    font-size: 80px;
+    font-family: helvetica;
+    font-weight: bold;
+    color: #2ea3f2;
+    padding-left: 10px; }
   footer#footer .tiny-cc-logo {
     height: auto;
     width: 20px; }

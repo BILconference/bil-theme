@@ -94,6 +94,7 @@
 					<h2>Talks</h2>
 					<?php $talks = get_posts(array(
 						'post_type' => 'talk',
+						'posts_per_page' => '50',
 						'meta_query' => array(
 							array(
 								'key' => 'event', // name of custom field

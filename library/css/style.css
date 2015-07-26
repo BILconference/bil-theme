@@ -1245,6 +1245,10 @@ footer#footer {
     color: #fff; }
     footer#footer a:hover, footer#footer a:visited:hover {
       color: #2ea3f2; }
+  footer#footer ul.sub-menu {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 15px; }
 
 #module-hero img.bil-logo {
   display: block;

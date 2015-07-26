@@ -88,6 +88,6 @@ function get_country_code_by_name($country) {
 function list_countries_and_codes() {
 	$countries = get_countries_array();
 	foreach($countries as $key => $value){
-		echo $key . " : " . $value . "\r\n";
+		echo $key . " : " . $value . "\r\n <br>";
 	}
 }

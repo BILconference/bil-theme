@@ -24,7 +24,7 @@ get_header();
 				<p>Slack is a comminication tool for teams that allows organized chats.  We use it here at BIL because we have different communities all over the world who occasionally need to communicate with one another. Slack helps us do that efficiently.</p>
 			</div>
 			<div class="col-xs-12 col-sm-8">
-				<img src="<? echo get_template_directory_uri(); ?>/images/bil-slack.jpg"/>
+				<img class="img-responsive" src="<? echo get_template_directory_uri(); ?>/library/images/bil-slack.jpg"/>
 			</div>
 		</div>
 	</div>

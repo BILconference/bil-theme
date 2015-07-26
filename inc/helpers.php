@@ -84,3 +84,10 @@ function get_country_code_by_name($country) {
 	$code = array_search($country, $countries);
 	return $code;
 }
+
+function list_countries_and_codes() {
+	$countries = get_countries_array();
+	foreach($countries as $key => $value){
+		echo $key . " : " . $value . "\r\n";
+	}
+}

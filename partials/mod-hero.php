@@ -1,6 +1,6 @@
 <?php $module = get_module_by_slug("hero"); ?>
 <?php $background = get_field("background_image", $module->ID, OBJECT); ?>
-<?php $image = $background['sizes'][ 'full-width' ]; ?>
+<?php $image = $background['sizes']['full-width']; ?>
 <?php $text = get_field("text", $module->ID, OBJECT); ?>
 
 <div id="module-hero" style="background-image: url('<?php echo $image; ?>');" >

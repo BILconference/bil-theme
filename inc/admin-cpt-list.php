@@ -1,6 +1,7 @@
 <?php
 
 function bil_event_table_head( $defaults ) {
+	var_dump($defaults);
 	$defaults['event_date']  		= 'Event Date (Start)';
 	$defaults['general_location']	= 'General Location';
 	$defaults['author'] 			= 'Added By';

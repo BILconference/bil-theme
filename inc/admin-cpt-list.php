@@ -73,17 +73,23 @@ add_filter('manage_talk_posts_columns', 'bil_talk_table_head');
 function bil_talk_table_content( $column_name, $post_id ) {
 
 	if ($column_name == 'speaker') {
-		echo '!';
-	} else {
-		echo '-';
+		if (get_field('speaker', $post_id)) {
+			$speaker = get_field('speaker', $post_id);
+			echo $speaker->post_title;
+		} else {
+			echo '-';
+		}
 	}
 
 	if ($column_name == 'event') {
-		echo '!';
-	} else {
-		echo '-';
-	}
+		if (get_field('event', $post_id)) {
+			$event = get_field('event', $post_id);
+			echo $event->post_title;
+		} else {
+			echo '-';
+		}
 
+	}
 }
 
 add_action( 'manage_talk_posts_custom_column', 'bil_talk_table_content', 10, 2 );

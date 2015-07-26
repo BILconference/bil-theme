@@ -11,9 +11,11 @@ footer#footer {
 		width: 20px;
 	}
 
-	.nav>li>a:focus, .nav>li>a:hover {
+	.nav>li>a:focus, 
+	.nav>li>a:hover {
 	    text-decoration: none;
 	    background-color: $bil-blue;
+	    border-radius: 5px;
 	}
 
 	a, a:visited {

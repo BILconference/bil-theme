@@ -15,7 +15,7 @@
 						<ul>
 							<?php while ( $upcoming_bils->have_posts() ) : $upcoming_bils->the_post(); ?>
 								<li>
-
+									<img src="<?php the_field('flag'); ?>"/>
 									<a href="<?php the_permalink(); ?>"><strong><?php the_title() ?></strong> - <?php the_field('general_location'); ?></a>
 								</li>
 							<?php endwhile; ?>
@@ -29,10 +29,8 @@
 						<h1>Past BILs</h1>
 						<ul>
 							<?php while ( $past_bils->have_posts() ) : $past_bils->the_post(); ?>
-								<li>
-									<a href="<?php the_permalink(); ?>"><strong><?php the_title() ?></strong> - <?php the_field('general_location'); ?></a>
-									
-									<img src="<?php the_field('flag'); ?>"/>
+								<li class="f32">
+									<span class="flag us"></span><a href="<?php the_permalink(); ?>"><strong><?php the_title() ?></strong> - <?php the_field('general_location'); ?></a>	
 								</li>
 							<?php endwhile; ?>
 						</ul>

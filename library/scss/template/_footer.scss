@@ -12,7 +12,17 @@ footer#footer {
 	}
 
 	// Genera Links
-	a, a:visited {
+	$ttime: .5s; // Change the transition time in one place
+	a {
+		-o-transition:$ttime;
+		-ms-transition:$ttime;
+		-moz-transition:$ttime;
+		-webkit-transition:$ttime;
+		transition:$ttime;
+	}
+	
+	a, 
+	a:visited {
 		color: $white;
 
 		&:hover {
@@ -21,21 +31,20 @@ footer#footer {
 	}
 
 	// Top Level
-	$ttime: .5s;
+	
 
 	.nav>li>a {
-		-o-transition:$ttime;
-		-ms-transition:$ttime;
-		-moz-transition:$ttime;
-		-webkit-transition:$ttime;
-		transition:$ttime;
+		font-size: 18px;
+
+		&:focus,
+		&:hover {
+			text-decoration: none;
+		    background-color: $bil-blue;
+		    border-radius: 5px;
+		}
+		
 	}
-	.nav>li>a:focus, 
-	.nav>li>a:hover {
-	    text-decoration: none;
-	    background-color: $bil-blue;
-	    border-radius: 5px;
-	}
+	
 
 	// Secondary Level
 
@@ -50,6 +59,14 @@ footer#footer {
 	    		color: $submenu-gray;
 	    		display: block;
     		    padding-bottom: 10px;
+
+    		    font-size: 14px;
+
+    		    &:hover,
+    		    &:focus {
+    		    	text-decoration:none;
+    		    	color: $white;
+    		    }
 	    	}
 	    }
 	}

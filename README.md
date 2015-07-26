@@ -4,10 +4,21 @@ Theme used on http://bilconference.com
 ---
 
 *TODO*
+| Status Options | Description |
+| -------------- | ----------- |
+| proposed | pages or features that have been requested but not yet being worked on |
+| declined | likely not going to work on this anytime in the near future |
+| on hold | progress has been made, but temporarily on hold |
+| in progress | actively being worked on |
+| near complete | almost finished |
+| complete | complete |
+
+
 
 # Website
 | Status  | Task  | Description |
 | :------------: | :--------------- | :----- |
+|  | Home Page |  |
 | in progress | Events Page | properly list all events |
 | in progress | Event Page | |
 | in progress | Speakers Page | |

@@ -33,8 +33,9 @@
 
 						<?php if (get_field('event')) { ?>
 							<?php $event = get_field('event'); ?>
+							 @ 
 							<a href="<?php echo get_permalink( $event->ID ); ?>">
-								@ <?php echo $event->post_title; ?>
+								<?php echo $event->post_title; ?>
 							</a>
 						<?php } ?>
 					</div>

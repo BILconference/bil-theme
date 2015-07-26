@@ -24,6 +24,15 @@ footer#footer {
 	    list-style: none;
 	    margin-left: 0;
 	    padding-left: 15px;
+
+	    li {
+
+	    	a {
+	    		color: $submenu-gray;
+	    		display: block;
+	    		height: 20px;
+	    	}
+	    }
 	}
 
 

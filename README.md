@@ -6,19 +6,24 @@ Theme used on http://bilconference.com
 *TODO*
 
 # Website
-- Events Page
-- Event Page
-- Speakers Page
-- Speaker Page
-- Sponsors Page
-- Talks Page
-- Talk Page
-- Blog Post
-- Interior Pages
+| Status  | Task  | Description |
+| :------------: | :--------------- | :----- |
+| in progress | Events Page | properly list all events |
+| in progress | Event Page | |
+| in progress | Speakers Page | |
+| in progress | Speaker Page | |
+| in progress | Sponsors Page | |
+| in progress | Talks Page | |
+| in progress | Talk Page | |
+| in progress | Blog Post | |
+| in progress | Interior Pages | |
 
 # Documents
-- Style Guide
-- BIL Handbook
+| Status  | Task  | Description |
+| :------------: |:---------------| :-----|
+| in progress | Style Guide | |
+| in progress | BIL Handbook | |
+
 
 # Data Collection and Entry
 - Speakers 2008-2015

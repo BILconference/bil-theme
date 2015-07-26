@@ -1236,6 +1236,7 @@ footer#footer {
   min-height: 500px;
   background: #666;
   padding-top: 50px;
+  background-image: url("../images/use_your_illusion.png");
   color: #fff; }
   footer#footer .tiny-cc-logo {
     height: auto;
@@ -1331,7 +1332,7 @@ footer#footer {
 #module-cta {
   color: #fff;
   background-color: #323944;
-  background-image: url("../images/use_your_illusion.png"); }
+  background-image: url("../images/dark_wood.png"); }
   #module-cta .button {
     display: block;
     height: 100px;
@@ -1356,10 +1357,12 @@ footer#footer {
     #module-cta .button:hover .label {
       top: -100%; }
 
-#module-speakers .speaker {
-  min-height: 300px;
-  padding-left: 0;
-  padding-right: 0; }
+#module-speakers {
+  background-image: url("../images/square_bg.png"); }
+  #module-speakers .speaker {
+    min-height: 300px;
+    padding-left: 0;
+    padding-right: 0; }
 
 .post-type-archive-press #press-hero {
   background: #2ea3f2; }

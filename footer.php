@@ -33,7 +33,7 @@
 								'depth' => 0,                                   // limit the depth of the nav
 								'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
 							)); ?>
-						<p>Press, Contact, Resources, Media Kit, Sponsorship Stuff</p>
+						
 					</div>
 
 					<div class="col-xs-12 col-sm-4">
@@ -50,7 +50,7 @@
 								'depth' => 0,                                   // limit the depth of the nav
 								'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
 							)); ?>
-						<p>Press, Contact, Resources, Media Kit, Sponsorship Stuff</p>
+						
 					</div>
 
 				</div>

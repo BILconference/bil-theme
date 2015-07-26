@@ -58,4 +58,5 @@ require_once get_template_directory() . '/inc/menus.php';
 // Dashboard Modifications
 //require_once get_template_directory() . '/inc/dashboard.php';
 
-?>
+// Admin CPT Lists
+require_once get_template_directory() . '/inc/admin-cpt-list.php';

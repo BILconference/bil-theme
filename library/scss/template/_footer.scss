@@ -11,13 +11,7 @@ footer#footer {
 		width: 20px;
 	}
 
-	.nav>li>a:focus, 
-	.nav>li>a:hover {
-	    text-decoration: none;
-	    background-color: $bil-blue;
-	    border-radius: 5px;
-	}
-
+	// Genera Links
 	a, a:visited {
 		color: $white;
 
@@ -26,6 +20,24 @@ footer#footer {
 		}
 	}
 
+	// Top Level
+	$ttime: .5s;
+
+	.nav>li>a {
+		-o-transition:$ttime;
+		-ms-transition:$ttime;
+		-moz-transition:$ttime;
+		-webkit-transition:$ttime;
+		transition:$ttime;
+	}
+	.nav>li>a:focus, 
+	.nav>li>a:hover {
+	    text-decoration: none;
+	    background-color: $bil-blue;
+	    border-radius: 5px;
+	}
+
+	// Secondary Level
 
 	ul.sub-menu {
 	    list-style: none;
@@ -37,7 +49,7 @@ footer#footer {
 	    	a {
 	    		color: $submenu-gray;
 	    		display: block;
-	    		height: 20px;
+    		    padding-bottom: 10px;
 	    	}
 	    }
 	}

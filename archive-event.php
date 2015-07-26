@@ -29,7 +29,7 @@
 						<h1>Past BILs</h1>
 						<ul>
 							<?php while ( $past_bils->have_posts() ) : $past_bils->the_post(); ?>
-								<li class="f32">
+								<li class="f16">
 									<span class="flag us"></span><a href="<?php the_permalink(); ?>"><strong><?php the_title() ?></strong> - <?php the_field('general_location'); ?></a>	
 								</li>
 							<?php endwhile; ?>

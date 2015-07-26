@@ -1404,7 +1404,7 @@ body.post-type-archive-talk #talk-list .talk {
   overflow: hidden; }
 
 #join-slack {
-  height: 100vh;
+  min-height: 100vh;
   vertical-align: middle; }
   #join-slack .iframe-wrapper {
     width: 400px;

@@ -6,4 +6,8 @@ body.post-type-archive-event {
 		background-color: $white;
 		background-size: cover;
 	}
+
+	#event-list {
+		@extend %module;
+	}
 }

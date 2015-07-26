@@ -26,7 +26,7 @@
 				<div class="col-xs-12 col-sm-8">
 					<?php $upcoming_bils = upcoming_bils(); ?>
 					<?php if ($upcoming_bils->have_posts() ) { ?>
-						<h1>Upcoming BILs</h1>
+						<h2>Upcoming BILs</h2>
 						<ul>
 							<?php while ( $upcoming_bils->have_posts() ) : $upcoming_bils->the_post(); ?>
 								<li>

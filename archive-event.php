@@ -20,7 +20,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-4">
-					<h2>Events</h2>
+					<h1>Events</h1>
 					<?php the_field('event_content', 'option'); ?>
 				</div>
 				<div class="col-xs-12 col-sm-8">
@@ -41,7 +41,7 @@
 
 					<?php $past_bils = past_bils(); ?>
 					<?php if ($past_bils->have_posts() ) { ?>
-						<h1>Past BILs</h1>
+						<h2>Past BILs</h2>
 						<ul>
 							<?php while ( $past_bils->have_posts() ) : $past_bils->the_post(); ?>
 								<li class="f16">

@@ -1,8 +1,20 @@
 # bil-theme
-Theme for http://bilconference.com
+Theme used on http://bilconference.com
 
-Based on BONES : https://github.com/eddiemachado/bones
+---
 
-Modified to include:
+*TODO*
 
-- Bootstrap 3 CSS Framework
+# Website
+- one
+- two
+- three
+
+# Documents
+- Style Guide
+- BIL Handbook
+- 
+
+# Data Collection and Entry
+- Speakers 2008-2015
+- Translations

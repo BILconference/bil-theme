@@ -27,7 +27,7 @@
 					<?php list_filter_taxonomies('subject'); ?>
 				</div>
 			</div>
-			<div class="row parent">
+			<div id="parent" class="row">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<div class="col-xs-12 col-sm-6 col-md-4 talk box <?php echo get_talk_categories( the_ID(), 'subject' ); ?>">
 						<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>

@@ -103,6 +103,7 @@ function get_youtube_video_id($youtube) {
 	// pare string for query variables and assign to array
 	parse_str( $parts['query'], $params );
 	var_dump($params);
+	var_dump($params[0]);
 
 	if ( in_array( 'v', $params ) ){
 		return end( explode( '=', $params['v'] ) );

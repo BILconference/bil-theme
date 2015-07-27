@@ -8,10 +8,16 @@
 	    padding: 0 4px 0 0;
 	    margin: 5px 0;
 
-    	button.btn {
+    	button {
     		padding: 3px 8px;
 		    font-size: 12px;
 		    background-color: #eee;
+
+		    .active {
+			    outline: 0;
+			    -webkit-box-shadow: none;
+			    box-shadow: none;
+		    }
 
 		    &:hover, 
 		    &:active {

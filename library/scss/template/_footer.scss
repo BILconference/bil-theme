@@ -1,6 +1,7 @@
 footer#footer {
 	min-height:500px;
 	background:#666;
+	padding-bottom:100px;
 	padding-top:50px;
 	background-image: url('../images/use_your_illusion.png');
     border-top: 40px solid #2ea3f2;
@@ -22,7 +23,7 @@ footer#footer {
 	}
 
 	// Genera Links
-	$ttime: .5s; // Change the transition time in one place
+	$ttime: .3s; // Change the transition time in one place
 	a {
 		-o-transition:$ttime;
 		-ms-transition:$ttime;

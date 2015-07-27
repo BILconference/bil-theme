@@ -4,8 +4,18 @@
 
 	.speaker {
 		min-height:300px;
-		//overflow-y: hidden;
 	    padding-left: 0;
 	    padding-right: 0;
+
+	    a {
+	    	display:block;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: none;
+				color:$white;
+				background-color:$bil-blue;
+			}	    	
+	    }
 	}
 }

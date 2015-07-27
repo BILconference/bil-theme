@@ -1189,11 +1189,11 @@ ul.filter-categories {
     display: inline-block;
     padding: 0 4px 0 0;
     margin: 5px 0; }
-    ul.filter-categories li button {
+    ul.filter-categories li button.btn {
       padding: 3px 8px;
       font-size: 12px;
       background-color: #eee; }
-      ul.filter-categories li button:hover, ul.filter-categories li button:active {
+      ul.filter-categories li button.btn:hover, ul.filter-categories li button.btn:active {
         background-color: #2ea3f2;
         color: #fff; }
 

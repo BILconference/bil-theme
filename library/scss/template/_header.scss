@@ -20,8 +20,8 @@ header#header {
 
 .navbar-bil {
 	background-color: $bil-blue;
-	border-color: $bil-dark-blue;
-
+	border: 0px;
+    max-height: 50px;
 
 	.navbar-brand {
 	    float: left;
@@ -90,8 +90,8 @@ header#header {
     -moz-osx-font-smoothing:grayscale;
 }
 
-.soc-youtube:before {
-    content:'r';
+.soc-twitter:before {
+    content:'a';
 }
 
 .soc-facebook:before {

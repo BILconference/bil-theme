@@ -24,10 +24,15 @@
 					<h1>Speakers</h1>
 					<?php the_field('speakers_content', 'option'); ?>
 				</div>
-				<div class="col-xs-12 col-sm-8">					
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-					<?php endwhile; endif; ?>
+				<div class="col-xs-12 col-sm-8">
+					<div class="row">
+						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+							<div class="col-xs-12 col-sm-6 col-md-4 speaker">
+								<?php echo $post->ID; ?>
+								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+							</div>
+						<?php endwhile; endif; ?>
+					</div>
 				</div>
 			</div>
 		</div>

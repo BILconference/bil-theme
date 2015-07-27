@@ -9,5 +9,9 @@ body.post-type-archive-speaker {
 
 	#speakers-list {
 		@extend %module;
+
+		.speaker {
+			min-height:150px;
+		}
 	}
 }

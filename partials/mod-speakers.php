@@ -1,15 +1,15 @@
 <?php $module = get_module_by_slug('speakers') ?>
 <?php $speakers = new WP_Query( array(
-	'post_type' => 'speak',
-	'orderby' => 'menu_order',
-	'posts_per_page' => 3,
-	'tax_query' => array(
-		array(
-			'taxonomy' => 'group',
-			'field'    => 'slug',
-			'terms'    => 'featured'
-		)
-	)
+	'post_type' => 'speaker',
+	//'orderby' => 'menu_order',
+	'posts_per_page' => 3
+	// 'tax_query' => array(
+	// 	array(
+	// 		'taxonomy' => 'group',
+	// 		'field'    => 'slug',
+	// 		'terms'    => 'featured'
+	// 	)
+	// )
 )); ?>
 
 <div id="module-speakers">

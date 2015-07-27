@@ -16,7 +16,6 @@
 
 function cpt_archive_speaker($query) {
     if ($query->is_main_query() && $query->is_post_type_archive('speaker') && !is_admin())
-        echo "111";
         $taxquery = array(
 			array(
 				'taxonomy' => 'group',

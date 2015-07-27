@@ -2,7 +2,7 @@
 <?php $speakers = new WP_Query( array(
 	'post_type' => 'speaker',
 	'orderby' => 'menu_order',
-	'posts_per_page' => -1,
+	'posts_per_page' => 5,
 	'tax_query' => array(
 		array(
 			'taxonomy' => 'group',

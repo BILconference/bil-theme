@@ -3,6 +3,7 @@
 	'post_type' => 'speaker',
 	'orderby' => 'menu_order',
 	'posts_per_page' => -1,
+	'order' => 'ASC',
 	'tax_query' => array(
 		array(
 			'taxonomy' => 'group',

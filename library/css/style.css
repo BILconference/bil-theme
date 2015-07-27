@@ -1341,7 +1341,9 @@ footer#footer {
     color: #fff;
     padding-left: 65px; }
     #module-map #full-event-list ul li {
-      white-space: nowrap; }
+      white-space: nowrap;
+      line-height: 1.3em;
+      font-size: 12.9px; }
     #module-map #full-event-list ul a, #module-map #full-event-list ul a:visited {
       color: #fff; }
 

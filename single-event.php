@@ -140,6 +140,13 @@
 				<div class="col-xs-12">
 					<h2>Call to Action</h2>
 					<span>Contact:</span> <a href="mailto:<?php the_field('organizer_email'); ?>"><?php the_field('organizer_name'); ?></a>
+					<?php if (get_field('event_contact')) {
+						$target = get_field('event_contact');
+					} else {
+						$target = get_option('admin_email');
+					} ?>
+					<strong><?php echo $target; ?></strong>
+					<?php echo do_shortcode( '[gravityform id="2" title="false" description="false" field_values="event_email=' . $target . '"]' ); ?>
 				</div>
 			</div>
 		</div>

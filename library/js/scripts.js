@@ -119,9 +119,11 @@ jQuery(document).ready(function($) {
   var $btns = $('.btn').click(function() {
 	  if (this.id == 'all') {
 	    $('#parent > div').fadeIn(450);
+	    console.log('all Fade In');
 	  } else {
 	    var $el = $('.' + this.id).fadeIn(450);
 	    $('#parent > div').not($el).hide();
+	    console.log('show ' + this.id);
 	  }
 	  $btns.removeClass('active');
 	  $(this).addClass('active');

@@ -28,15 +28,17 @@
 					<div class="row">
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 							<div class="col-xs-12 col-sm-6 col-md-4 speaker">
-								<?php if ( has_post_thumbnail() ) {
-									$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), '300x300' ); 
-									if ($image) {
-										echo '<img src="' . $image[0] . '" class="img-responsive" />';
-									}
-								} else {
-									echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/library/images/blank-person.png" class="img-responsive" />';
-								} ?>
-								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+								<a href="<?php the_permalink(); ?>">
+									<?php if ( has_post_thumbnail() ) {
+										$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), '300x300' ); 
+										if ($image) {
+											echo '<img src="' . $image[0] . '" class="img-responsive" />';
+										}
+									} else {
+										echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/library/images/blank-person.png" class="img-responsive" />';
+									} ?>
+									<h3><?php the_title(); ?></h3>
+								</a>
 							</div>
 						<?php endwhile; endif; ?>
 					</div>

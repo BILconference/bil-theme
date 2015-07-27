@@ -1,8 +1,8 @@
 <?php $module = get_module_by_slug('speakers') ?>
-<?php $spkrs = new WP_Query( array(
+<?php $speakers = new WP_Query( array(
 	'post_type' => 'speaker',
 	'orderby' => 'menu_order',
-	'posts_per_page' => 3,
+	'posts_per_page' => -1,
 	'tax_query' => array(
 		array(
 			'taxonomy' => 'group',
@@ -20,8 +20,8 @@
 			</div>
 		</div>
 		<div class="row">
-			<?php if ( $spkrs->have_posts() ) : ?>
-				<?php while ( $spkrs->have_posts() ) : $spkrs->the_post(); ?>
+			<?php if ( $speakers->have_posts() ) : ?>
+				<?php while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
 					<div class="speaker col-xs-12 col-sm-3 col-md-2">
 						<?php the_post_thumbnail( '300x300', $attr ); ?>
 						<h4><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>

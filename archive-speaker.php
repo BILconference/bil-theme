@@ -29,8 +29,10 @@
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 							<div class="col-xs-12 col-sm-6 col-md-4 speaker">
 								<?php if ( has_post_thumbnail() ) {
-									$img2 = get_the_post_thumbnail('200x200', array( 'class' => 'img-responsive' ) );
-									echo $img2;
+									$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), '300x300' ); 
+									if ($image) {
+										echo '<img src="' . $image[0]; .'" class="img-responsive" />';
+									}
 								} else {
 									echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/library/images/blank-person.png" class="img-responsive" />';
 								} ?>

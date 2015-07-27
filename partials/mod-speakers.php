@@ -1,15 +1,15 @@
 <?php $module = get_module_by_slug('speakers') ?>
-<?php $speakers = new WP_Query( array(
+<?php $spkrs = new WP_Query( array(
 	'post_type' => 'speaker',
-	//'orderby' => 'menu_order',
-	'posts_per_page' => 3
-	// 'tax_query' => array(
-	// 	array(
-	// 		'taxonomy' => 'group',
-	// 		'field'    => 'slug',
-	// 		'terms'    => 'featured'
-	// 	)
-	// )
+	'orderby' => 'menu_order',
+	'posts_per_page' => 3,
+	'tax_query' => array(
+		array(
+			'taxonomy' => 'group',
+			'field'    => 'slug',
+			'terms'    => 'featured'
+		)
+	)
 )); ?>
 
 <div id="module-speakers">
@@ -20,9 +20,9 @@
 			</div>
 		</div>
 		<div class="row">
-			<?php if ( $speakers->have_posts() ) : ?>
-				<?php while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
-					<div class="speaker col-xs-12 col-sm-3">
+			<?php if ( $spkrs->have_posts() ) : ?>
+				<?php while ( $spkrs->have_posts() ) : $spkrs->the_post(); ?>
+					<div class="speaker col-xs-12 col-sm-3 col-md-2">
 						<?php the_post_thumbnail( '300x300', $attr ); ?>
 						<h4><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
 						<h5><?php the_field('association') ?></h5>

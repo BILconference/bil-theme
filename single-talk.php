@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-	<?php $youtube = get_field(''); ?>
+	<?php $youtube = get_field('youtube'); ?>
 	<?php $speaker = get_field('speaker'); ?>
 	<?php $event = get_field('event'); ?>
 

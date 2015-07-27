@@ -11,7 +11,7 @@
 					  ); 
 				?>
 					<div class='post-featured-image'>
-						<?php the_post_thumbnail( 'large', $attr );  ?>
+						<?php the_post_thumbnail( 'full', $attr );  ?>
 					</div>
 				<?php } ?>
 

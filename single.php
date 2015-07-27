@@ -28,7 +28,7 @@
 					<?php the_content(); ?>
 				</div>
 
-				<div class="author">
+				<div class="author col-xs-12 col-md-8">
 					<div class="row">
 						<div class="col-xs-12 col-sm-4">
 							<?php echo $author_image; ?>

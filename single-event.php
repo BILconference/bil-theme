@@ -145,7 +145,7 @@
 					} else {
 						$target = get_option('admin_email');
 					} ?>
-					<?php echo $target; ?>
+					<strong><?php echo $target; ?></strong>
 					<?php echo do_shortcode( '[gravityform id="2" title="false" description="false" field_values="event_email=' . $target . '"]' ); ?>
 				</div>
 			</div>

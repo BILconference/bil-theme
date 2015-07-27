@@ -31,7 +31,7 @@
 								<?php if ( has_post_thumbnail() ) {
 									$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), '300x300' ); 
 									if ($image) {
-										echo '<img src="' . $image[0]; .'" class="img-responsive" />';
+										echo '<img src="' . $image[0] . '" class="img-responsive" />';
 									}
 								} else {
 									echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/library/images/blank-person.png" class="img-responsive" />';

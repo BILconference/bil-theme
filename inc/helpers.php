@@ -117,3 +117,28 @@ function get_youtube_video_id($youtube) {
 function get_youtube_embed_url($id) {
 	echo 'https://www.youtube.com/embed/' . $id;
 }
+
+
+
+
+/********************
+ * FILTER HELPERS
+*********************/
+function get_talk_categories() {
+	return '';
+}
+
+function list_filter_taxonomies($tax_name) {
+
+	//list terms in a given taxonomy (useful as a widget for twentyten)
+	$taxonomy = $tax_name;
+	$tax_terms = get_terms($taxonomy);
+
+	echo '<ul class="filter-categories">';
+	echo '<li><button class="active btn" id="all">Show All</button></li>';
+	foreach ($tax_terms as $tax_term) {
+		echo '<li>' . '<button' . $tax_term->name.'</button></li>';
+	}
+	echo '</ul>';
+
+}

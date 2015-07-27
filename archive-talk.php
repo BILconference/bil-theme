@@ -1,17 +1,17 @@
 <?php get_header(); ?>
 
+<?php $image = get_field('talk_image', 'option'); ?>
+<?php if( !empty($image) ): ?>
 	<div id="talks-hero" class="jumbotron">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<?php $image = get_field('talk_image', 'option'); ?>
-					<?php if( !empty($image) ): ?>
-						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-					<?php endif; ?>
+					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 				</div>
 			</div>
 		</div>
 	</div>
+<?php endif; ?>
 
 	<div id="talks-list">
 		<div class="container">

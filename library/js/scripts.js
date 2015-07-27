@@ -111,10 +111,12 @@ function loadGravatars() {
 */
 jQuery(document).ready(function($) {
 
+  // Allows us to use a class to create DIV TEXT FILLING GOODNESS. 
   $(".bigtext").bigtext();
 
 
   // FILTERS
+  // ToDo: We will want to make an Ajax call in future to grab all related taxonomy terms to the particular filter.
   // TALKS
   var $btns = $('.btn').click(function() {
 	  if (this.id == 'all') {

@@ -6,8 +6,8 @@
 	'tax_query' => array(
 		array(
 			'taxonomy' => 'group',
-			'field'    => 'slug',
-			'terms'    => 'featured',
+			'field'    => 'id',
+			'terms'    => 4
 		)
 	)
 )); ?>

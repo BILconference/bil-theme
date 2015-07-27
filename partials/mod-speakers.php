@@ -12,6 +12,8 @@
 	)
 )); ?>
 
+<?php echo count($speakers); ?>
+
 <div id="module-speakers">
 	<div class="container">
 		<div class="row">
@@ -22,7 +24,7 @@
 		<div class="row">
 			<?php if ( $speakers->have_posts() ) : ?>
 				<?php while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
-					<div class="speaker col-xs-12 col-sm-3 col-md-2">
+					<div class="speaker col-xs-12 col-sm-3">
 						<?php the_post_thumbnail( '200x200', $attr ); ?>
 						<h4><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
 						<h5><?php the_field('association') ?></h5>

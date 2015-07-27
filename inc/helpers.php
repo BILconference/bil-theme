@@ -104,10 +104,11 @@ function get_youtube_video_id($youtube) {
 	parse_str( $parts['query'], $params );
 
 	if ( in_array( 'v', $params ) ){
-		// return the value of the 'v' query property
-		return $params['v'];
+		return end( explode( '=', $params['v'] ) );
 	} else if ( !in_array( 'v', $params ) ) {
-		return end(explode('/', $youtube));
+		return end( explode( '/', $youtube ) );
+	} else {
+		return 'uknown video id';
 	}
 }
 

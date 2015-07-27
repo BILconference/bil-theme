@@ -1459,9 +1459,7 @@ body.single-speaker #speaker-hero {
     color: #fff; }
 
 body.single-talk #talk-hero {
-  background-color: #323944;
-  background: url("../images/banner-brain.jpg") 50% 50% no-repeat transparent;
-  background-size: cover; }
+  background-color: #323944; }
   body.single-talk #talk-hero .content {
     color: #fff; }
 body.single-talk .video-container {

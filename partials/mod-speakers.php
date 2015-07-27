@@ -1,6 +1,6 @@
 <?php $module = get_module_by_slug('speakers') ?>
 <?php $speakers = new WP_Query( array(
-	'post_type' => 'speaker',
+	'post_type' => 'speak',
 	'orderby' => 'menu_order',
 	'posts_per_page' => 3,
 	'tax_query' => array(

@@ -23,8 +23,8 @@ function cpt_archive_speaker($query) {
 				'terms' => 4
 			)
 		);
-
 		$query->set('tax_query', $taxquery );
+		$query->set('orderby', 'menu_order');
 		$query->set('posts_per_page', -1);
 }
  

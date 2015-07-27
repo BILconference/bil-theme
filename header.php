@@ -65,7 +65,7 @@
 						?>
 
 						<ul class="soc nav navbar-nav navbar-right visible-lg">
-							<li><a class="soc-youtube" href="http://youtube.com/biltalks"></a></li>
+							<li><a class="soc-twitter" href="http://twitter.com/bilconf"></a></li>
 							<li><a class="soc-facebook" href="http://facebook.com/bilconference"></a></li>
 							<li><a class="soc-github" href="http://github.com/bilconference"></a></li>
 							<li class="slack"><a href="/slack/"><img src="http://bil-slack.herokuapp.com/badge.svg"></a></li>

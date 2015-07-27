@@ -105,7 +105,7 @@ function get_youtube_video_id($youtube) {
 	//var_dump($params);
 	//var_dump($params['v']);
 
-	if ( in_array( 'v', $params ) ){
+	if ( $params['v'] != null || $params['v'] != '' ) {
 		return $params['v'] ;
 	} else if ( !in_array( 'v', $params ) ) {
 		return end( explode( '/', $youtube ) );

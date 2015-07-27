@@ -137,7 +137,7 @@ function list_filter_taxonomies($tax_name) {
 	echo '<ul class="filter-categories">';
 	echo '<li><button class="active btn" id="all">Show All</button></li>';
 	foreach ($tax_terms as $tax_term) {
-		echo '<li>' . '<button' . $tax_term->name.'</button></li>';
+		echo '<li><button id="' . $tax_term->name . '">' . $tax_term->name .'</button></li>';
 	}
 	echo '</ul>';
 

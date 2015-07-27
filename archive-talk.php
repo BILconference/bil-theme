@@ -39,6 +39,14 @@
 								<?php echo $event->post_title; ?>
 							</a>
 						<?php } ?>
+
+						<?php $youtube = get_field('youtube');
+						$youtube_id = get_youtube_video_id( $youtube ); ?>
+						<?php if ( $youtube_id ) { ?>
+						<div class="thumbnail-container">
+							<img src='http://img.youtube.com/vi/<?php echo $youtube_id; ?>/default.jpg' />
+						</div>
+						<?php } ?>
 					</div>
 				<?php endwhile; endif; ?>
 			</div>

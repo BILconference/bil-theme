@@ -1,0 +1,33 @@
+ ul.filter-categories {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+
+    li {
+    	display:inline-block;
+	    padding: 0 4px 0 0;
+	    margin: 5px 0;
+
+    	button,
+    	button.btn {
+    		padding: 3px 8px;
+		    font-size: 12px;
+		    background-color: #eee;
+
+		    &.active {
+			    outline: 0;
+			    -webkit-box-shadow: none;
+			    box-shadow: none;
+			    background-color: $bil-blue;
+		    	color: $white;
+		    }
+
+		    &:hover, 
+		    &:active {
+		    	background-color: $bil-blue;
+		    	color: $white;
+		    }
+    	}
+    }
+
+}

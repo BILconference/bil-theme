@@ -1439,7 +1439,6 @@ body.post-type-archive-speaker #speakers-list .speaker {
   margin-bottom: 20px; }
 
 .post-type-archive-press #press-hero {
-  min-height: 500px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-color: #2ea3f2;

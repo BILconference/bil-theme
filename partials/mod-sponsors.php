@@ -8,7 +8,7 @@
 				<?php if ( $sponsors->have_posts() ) : ?>
 					<?php while ( $sponsors->have_posts() ) : $sponsors->the_post(); ?>
 						<?php $imgObj = get_field('white_image');
-						 	  $image = $imgObj['sizes'][ '600x600' ]; 
+						 	  $image = $imgObj['sizes'][ '1000x200' ]; 
 						 	  $sponsor_url = get_field('url'); ?>
 
 						<li class="sponsor-wrap">

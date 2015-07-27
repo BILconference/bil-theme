@@ -28,7 +28,11 @@
 					<div class="row">
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 							<div class="col-xs-12 col-sm-6 col-md-4 speaker">
-								<?php echo $post->ID; ?>
+								<?php if ( has_post_thumbnail() ) {
+									the_post_thumbnail('200x200', array( 'class' => 'img-responsive' ) );
+								} else {
+									echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/library/images/blank-person.png" class="img-responsive" />';
+								} ?>
 								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 							</div>
 						<?php endwhile; endif; ?>

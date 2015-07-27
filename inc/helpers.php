@@ -126,7 +126,7 @@ function get_youtube_embed_url($id) {
 *********************/
 function get_talk_categories($post_id, $taxonomy) {
 	$term_list = get_the_terms( $post_id, $taxonomy );
-	$term_string = ''
+	$term_string = '';
 	foreach( $term_list as $term ) {
 		// Print the name method from $term which is an OBJECT
 		 $term_string .= $term->name . ' ';

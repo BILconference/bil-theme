@@ -1,12 +1,21 @@
 <?php get_header(); ?>
 
-	<div id="speaker-list">
+	<?php if (get_field('speakers_hero_background', 'option')) { 
+		$hero_bg_obj = get_field('speakers_hero_background', 'option');
+		$hero_bg = $hero_bg_obj['sizes']['full-width'];
+	} ?>
+
+	<div id="speakers-hero" class="jumbotron" style="background-image: url('<?php echo $hero_bg; ?>');" >
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
 					<h1>Speakers</h1>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div id="speakers-list">
+		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

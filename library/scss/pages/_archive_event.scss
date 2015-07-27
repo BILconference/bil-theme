@@ -1,5 +1,5 @@
 body.post-type-archive-event {
-	#event-hero {
+	#events-hero {
 		min-height:500px;
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
@@ -7,7 +7,7 @@ body.post-type-archive-event {
 		background-size: cover;
 	}
 
-	#event-list {
+	#events-list {
 		@extend %module;
 	}
 }

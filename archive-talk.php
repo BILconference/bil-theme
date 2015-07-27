@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<div id="talk-hero" class="jumbotron">
+	<div id="talks-hero" class="jumbotron">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
@@ -13,7 +13,7 @@
 		</div>
 	</div>
 
-	<div id="talk-list">
+	<div id="talks-list">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">

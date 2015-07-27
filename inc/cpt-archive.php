@@ -19,8 +19,8 @@ function cpt_archive_speaker($query) {
         $taxquery = array(
 			array(
 				'taxonomy' => 'group',
-				'field' => 'id',
-				'terms' => 4
+				'field' => 'slug',
+				'terms' => 'featured'
 			)
 		);
 		$query->set('tax_query', $taxquery );

@@ -91,3 +91,27 @@ function list_countries_and_codes() {
 		echo $key . " : " . $value . "\r\n <br>";
 	}
 }
+
+/********************
+ * VIDEO HELPERS
+*********************/
+
+// Youtube Embed
+function get_youtube_video_id($youtube) {
+	// break apart the URL
+	$parts = parse_url( $youtube );
+	// pare string for query variables and assign to array
+	parse_str( $parts['query'], $params );
+
+	if ( in_array( 'v', $params ) ){
+		return end( explode( '=', $params['v'] ) );
+	} else if ( !in_array( 'v', $params ) ) {
+		return end( explode( '/', $youtube ) );
+	} else {
+		return 'uknown video id';
+	}
+}
+
+function get_youtube_embed_url($id) {
+	echo 'https://www.youtube.com/embed/' . $id;
+}

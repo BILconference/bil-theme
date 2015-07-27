@@ -26,4 +26,12 @@ if( function_exists('acf_add_options_sub_page') ) {
         'capability' => 'manage_options'
     ));
 
+    acf_add_options_sub_page(array(
+        'title' => 'Speakers Options',
+        'menu' => 'Speakers Options',
+        'parent' => 'edit.php?post_type=speaker',
+        'slug' => 'speakers_options',
+        'capability' => 'manage_options'
+    ));
+
 }

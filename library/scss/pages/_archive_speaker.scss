@@ -1,5 +1,5 @@
-body.post-type-archive-talk {
-	#talks-hero {
+body.post-type-archive-speaker {
+	#speakers-hero {
 		min-height:500px;
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
@@ -7,12 +7,7 @@ body.post-type-archive-talk {
 		background-size: cover;
 	}
 
-	#talks-list {
+	#speakers-list {
 		@extend %module;
-
-		 .talk {
-			min-height: 150px;
-			overflow: hidden;
-		}
 	}
 }

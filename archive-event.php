@@ -4,7 +4,7 @@
 		$hero_bg_obj = get_field('events_hero_background', 'option');
 		$hero_bg = $hero_bg_obj['sizes']['full-width'];
 	} ?>
-	<div id="event-hero" class="jumbotron" style="background-image: url('<?php echo $hero_bg; ?>');" >
+	<div id="events-hero" class="jumbotron" style="background-image: url('<?php echo $hero_bg; ?>');" >
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
@@ -16,12 +16,12 @@
 			</div>
 		</div>
 	</div>
-	<div id="event-list">
+	<div id="events-list">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-4">
 					<h1>Events</h1>
-					<?php the_field('event_content', 'option'); ?>
+					<?php the_field('events_content', 'option'); ?>
 				</div>
 				<div class="col-xs-12 col-sm-8">
 					<?php $upcoming_bils = upcoming_bils(); ?>

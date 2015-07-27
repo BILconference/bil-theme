@@ -18,6 +18,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<h1>Talks</h1>
+					<?php the_field('talks_content', 'option'); ?>
 				</div>
 			</div>
 			<div class="row">

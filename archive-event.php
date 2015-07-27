@@ -21,7 +21,7 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-4">
 					<h1>Events</h1>
-					<?php the_field('event_content', 'option'); ?>
+					<?php the_field('events_content', 'option'); ?>
 				</div>
 				<div class="col-xs-12 col-sm-8">
 					<?php $upcoming_bils = upcoming_bils(); ?>

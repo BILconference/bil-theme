@@ -1196,7 +1196,9 @@ ul.filter-categories {
       ul.filter-categories li button .active {
         outline: 0;
         -webkit-box-shadow: none;
-        box-shadow: none; }
+        box-shadow: none;
+        background-color: #2ea3f2;
+        color: #fff; }
       ul.filter-categories li button:hover, ul.filter-categories li button:active {
         background-color: #2ea3f2;
         color: #fff; }

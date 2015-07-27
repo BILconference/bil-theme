@@ -129,7 +129,7 @@ function get_talk_categories($post_id, $taxonomy) {
 	$term_string = '';
 	foreach( $term_list as $term ) {
 		// Print the name method from $term which is an OBJECT
-		 $term_string .= $term->name . ' ';
+		 $term_string .= ' ' . $term->name;
 		// Get rid of the other data stored in the object, since it's not needed
 		unset($term);
 	}

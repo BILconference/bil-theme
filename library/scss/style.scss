@@ -9,8 +9,10 @@
 
 // import mixins
 @import "utilities/mixins";
-
 @import "utilities/flags";
+
+// buttons
+@import "utilities/filter_buttons";
 
 // header and footer
 @import "template/header";

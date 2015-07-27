@@ -6,6 +6,7 @@ add_image_size( '600x600', 600, 600, true);
 add_image_size( '600x150', 600, 150, true );
 add_image_size( '300x100', 300, 100, true );
 add_image_size( '200x200', 200, 200, true );
+add_image_size( '1000x400', 1000, 400, false );
 add_image_size( 'full-width', 1920, 1050, true );
 
 

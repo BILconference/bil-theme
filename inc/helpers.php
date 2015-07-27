@@ -103,10 +103,10 @@ function get_youtube_video_id($youtube) {
 	// pare string for query variables and assign to array
 	parse_str( $parts['query'], $params );
 
-	if ( exists( $params['v'] ) ){
+	if ( in_array( 'v', $params ) ){
 		// return the value of the 'v' query property
 		return $params['v'];
-	} else if ( !exists( $params['v'] ) ) {
+	} else if ( !in_array( 'v', $params ) ) {
 		return end(explode('/', $youtube));
 	}
 }

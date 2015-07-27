@@ -24,7 +24,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					Talk Filters: <br>
-					<?php list_filter_taxonomies('talk-subjects'); ?>
+					<?php list_filter_taxonomies('subject'); ?>
 				</div>
 			</div>
 			<div class="row">

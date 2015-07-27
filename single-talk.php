@@ -5,7 +5,7 @@
 			$youtube = get_field('youtube');
 			$youtube_id = get_youtube_video_id( $youtube );
 
-			echo 'youtube url: ' . $youtube . "\r\n" . 'youtube id: '. $youtube_id;
+			//echo 'youtube url: ' . $youtube . "\r\n" . 'youtube id: '. $youtube_id;
 	?>
 	<?php 	$speaker = get_field('speaker'); ?>
 	<?php 	$event = get_field('event'); ?>

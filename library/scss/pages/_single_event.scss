@@ -7,6 +7,12 @@ body.single-event {
 		.content {
 			color: $white;
 		}
+
+		.organizers-list ul {
+			list-style-type: none;
+			margin:0;
+			padding:0;
+		}
 	}
 
 	#event-about {

@@ -1,6 +1,5 @@
 <?php
-global $post;
-echo '---' . $post->ID;
+
 //************************************************************************
 //
 // Event Contact Email or Default to Site Admin Email (info@)
@@ -8,6 +7,8 @@ echo '---' . $post->ID;
 //************************************************************************
 
 function gfdv_event_email($value) {
+	global $post;
+
 	if (get_field('event_contact')) {
 		return get_field('event_contact', $post->ID);
 	} else {
@@ -26,6 +27,8 @@ add_filter('gform_field_value_event_email', 'gfdv_event_email');
 //************************************************************************
 
 function gfdv_event_name($value) {
+	global $post;
+
 	return $post->post_title;
 }
 

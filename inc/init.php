@@ -1,6 +1,6 @@
 <?php
 
-function bones_head_cleanup() {
+function bil_head_cleanup() {
 	remove_action( 'wp_head', 'feed_links_extra');			// Display the links to the extra feeds such as category feeds
 	remove_action( 'wp_head', 'feed_links'); 				// Display the links to the general feeds: Post and Comment Feed
 	remove_action( 'wp_head', 'rsd_link'); 					// Display the link to the Really Simple Discovery service endpoint, EditURI link
@@ -17,7 +17,7 @@ function bones_head_cleanup() {
 	add_filter( 'script_loader_src', 'bones_remove_wp_ver_css_js', 9999 );
 }
 
-add_action( 'init', 'bones_head_cleanup' );
+add_action( 'init', 'bil_head_cleanup' );
 
 
 

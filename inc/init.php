@@ -45,9 +45,6 @@ function themeInit() {
 	// clean up gallery output in wp (library/bones.php)
 	add_filter( 'gallery_style', 'bones_gallery_style' );
 
-	// enqueue base scripts and styles (library/bones.php)
-	// add_action( 'wp_enqueue_scripts', 'bones_scripts_and_styles', 999 );
-
 	// launching this stuff after theme setup (library/bones.php)
 	bones_theme_support();
 

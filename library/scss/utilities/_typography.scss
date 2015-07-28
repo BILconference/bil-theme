@@ -46,6 +46,8 @@ p {
           font-feature-settings: "liga", "dlig";
 }
 
+
+
 //************************************************************************
 //
 // Social Icons
@@ -69,4 +71,12 @@ p {
         font-family:si;
         src: url(../fonts/socicon.svg) format(svg);
     }
+}
+
+body {
+  font-family: $content-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
 }

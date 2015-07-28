@@ -1,13 +1,5 @@
 <?php
 
-/*********************
-WP_HEAD GOODNESS
-The default wordpress head is
-a mess. Let's clean it up by
-removing all the junk we don't
-need.
-*********************/
-
 function bones_head_cleanup() {
 	remove_action( 'wp_head', 'feed_links_extra');			// Display the links to the extra feeds such as category feeds
 	remove_action( 'wp_head', 'feed_links'); 				// Display the links to the general feeds: Post and Comment Feed
@@ -23,7 +15,6 @@ function bones_head_cleanup() {
 	add_filter( 'style_loader_src', 'bones_remove_wp_ver_css_js', 9999 );
 	// remove Wp version from scripts
 	add_filter( 'script_loader_src', 'bones_remove_wp_ver_css_js', 9999 );
-
 }
 
 // A better title

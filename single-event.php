@@ -43,34 +43,42 @@
 	<div id="event-about">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-md-8 content">
-					<h2>About</h2>
-					<?php the_content(); ?>
+				<div class="col-xs-12 col-md-8">
+					<div class="about">
+						<h2>About</h2>
+						<?php the_content(); ?>
+					</div>
 					
-					<h2>Address</h2>
-					<address><?php the_field('specific_location'); ?></address>
+					<div class="address">
+						<h2>Address</h2>
+						<address><?php the_field('specific_location'); ?></address>
+					</div>
 					
-					<h2>Social</h2>
-					<?php if (get_field('facebook_event')) { ?>
-						<a href="<?php the_field('facebook_event'); ?>">Facebook Event</a>
-					<?php } ?>
-					<?php if (get_field('facebook_page')) { ?>
-						| <a href="<?php the_field('facebook_page'); ?>">Facebook Page</a>
-					<?php } ?>
-					<?php if (get_field('twitter')) { ?>
-						| <a href="<?php the_field('twitter'); ?>">Twitter</a>
-					<?php } ?>
-					<?php if (get_field('ticketing')) { ?>
-						<a href="<?php the_field('ticketing'); ?>">Tickets</a>
-					<?php } ?>
+					<div class="social">
+						<h2>Social</h2>
+						<?php if (get_field('facebook_event')) { ?>
+							<a href="<?php the_field('facebook_event'); ?>">Facebook Event</a>
+						<?php } ?>
+						<?php if (get_field('facebook_page')) { ?>
+							| <a href="<?php the_field('facebook_page'); ?>">Facebook Page</a>
+						<?php } ?>
+						<?php if (get_field('twitter')) { ?>
+							| <a href="<?php the_field('twitter'); ?>">Twitter</a>
+						<?php } ?>
+						<?php if (get_field('ticketing')) { ?>
+							<a href="<?php the_field('ticketing'); ?>">Tickets</a>
+						<?php } ?>
+					</div>
 
-					<?php if (get_field('ticketing_embed_code')) { ?>
-						<h2>Ticketing</h2>
-						<?php $embed = get_field('ticketing_embed_code'); ?>
-						<?php echo sprintf($embed); ?>
-					<?php } ?>
+					<div class="ticketing">
+						<?php if (get_field('ticketing_embed_code')) { ?>
+							<h2>Ticketing</h2>
+							<?php $embed = get_field('ticketing_embed_code'); ?>
+							<?php echo sprintf($embed); ?>
+						<?php } ?>
+					</div>
 				</div>
-				<div class="col-xs-12 col-md-4">
+				<div class="col-xs-12 col-md-4 organizers-list">
 					<h2>Organizers</h2>
 					<?php if( have_rows('organizers') ): ?>
 						<ul>
@@ -80,7 +88,7 @@
 							<?php endwhile; ?>
 						</li>
 					<?php else: ?>
-						Organizers not listed, yet.
+						<p>Organizers not listed.</p>
 					<?php endif; ?>
 				</div>
 			</div>

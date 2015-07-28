@@ -22,6 +22,7 @@ header#header {
 	background-color: $bil-blue;
 	border: 0px;
     max-height: 50px;
+    overflow: hidden;
 
 	.navbar-brand {
 	    float: left;

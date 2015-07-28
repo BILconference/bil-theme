@@ -27,7 +27,7 @@ add_filter('gform_field_value_event_email', 'gfdv_event_email');
 //************************************************************************
 
 function gfdv_event_name($value) {
-	echo '---' . $post->post_title;
+	echo '---' . $post->ID;
 	return $post->post_title;
 }
 

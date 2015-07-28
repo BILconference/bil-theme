@@ -15,10 +15,10 @@
 			wp_register_style( 'bootstrap-cdn', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', array(), '3.3.5', false );
 
 			// register main stylesheet
-			wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
+			wp_register_style( 'bil-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
 
 			// ie-only style sheet
-			wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
+			wp_register_style( 'bil-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
 
 		// ***********************************************************************
 		//
@@ -26,8 +26,8 @@
 		//
 		// *********************************************************************** 
 			wp_enqueue_style( 'bootstrap-cdn' );
-			wp_enqueue_style( 'bones-stylesheet' );
-			wp_enqueue_style( 'bones-ie-only' );
+			wp_enqueue_style( 'bil-stylesheet' );
+			wp_enqueue_style( 'bil-ie-only' );
 
-			$wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
+			$wp_styles->add_data( 'bil-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 	}

@@ -41,6 +41,7 @@ function themeInit() {
 	// add filter to prevent "slack.png" from occupying the "slack" slug
 	add_filter( 'wp_unique_post_slug_is_bad_attachment_slug', '__return_true' );
 
+
 }
 
 add_action( 'after_setup_theme', 'themeInit' );

@@ -9,28 +9,22 @@ need.
 *********************/
 
 function bones_head_cleanup() {
-	// category feeds
-	// remove_action( 'wp_head', 'feed_links_extra', 3 );
-	// post and comment feeds
-	// remove_action( 'wp_head', 'feed_links', 2 );
-	// EditURI link
-	remove_action( 'wp_head', 'rsd_link' );
-	// windows live writer
-	remove_action( 'wp_head', 'wlwmanifest_link' );
-	// previous link
-	remove_action( 'wp_head', 'parent_post_rel_link', 10, 0 );
-	// start link
-	remove_action( 'wp_head', 'start_post_rel_link', 10, 0 );
-	// links for adjacent posts
-	remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
-	// WP version
-	remove_action( 'wp_head', 'wp_generator' );
+	remove_action( 'wp_head', 'feed_links_extra');			// Display the links to the extra feeds such as category feeds
+	remove_action( 'wp_head', 'feed_links'); 				// Display the links to the general feeds: Post and Comment Feed
+	remove_action( 'wp_head', 'rsd_link'); 					// Display the link to the Really Simple Discovery service endpoint, EditURI link
+	remove_action( 'wp_head', 'wlwmanifest_link');			// Display the link to the Windows Live Writer manifest file.
+	remove_action( 'wp_head', 'index_rel_link');			// index link
+	remove_action( 'wp_head', 'parent_post_rel_link');		// prev link
+	remove_action( 'wp_head', 'start_post_rel_link');		// start link
+	remove_action( 'wp_head', 'adjacent_posts_rel_link'); 	// Display relational links for the posts adjacent to the current post.
+	remove_action( 'wp_head', 'wp_generator'); 				// Display the XHTML generator that is generated on the wp_head hook, WP version
+
 	// remove WP version from css
 	add_filter( 'style_loader_src', 'bones_remove_wp_ver_css_js', 9999 );
 	// remove Wp version from scripts
 	add_filter( 'script_loader_src', 'bones_remove_wp_ver_css_js', 9999 );
 
-} /* end bones head cleanup */
+}
 
 // A better title
 // http://www.deluxeblogtips.com/2012/03/better-title-meta-tag.html
@@ -61,7 +55,7 @@ function rw_title( $title, $sep, $seplocation ) {
 
   return $title;
 
-} // end better title
+}
 
 // remove WP version from RSS
 function bones_rss_version() { return ''; }
@@ -218,7 +212,3 @@ function bones_excerpt_more($more) {
 	// edit here if you like
 	return '...  <a class="excerpt-read-more" href="'. get_permalink( $post->ID ) . '" title="'. __( 'Read ', 'bonestheme' ) . esc_attr( get_the_title( $post->ID ) ).'">'. __( 'Read more &raquo;', 'bonestheme' ) .'</a>';
 }
-
-
-
-?>

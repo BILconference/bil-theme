@@ -1,12 +1,9 @@
 <?php 
 
-function bones_fonts() {
-  wp_enqueue_style('googleFonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
-}
-
 function bil_fonts() {
+	wp_enqueue_style('hind', 'http://fonts.googleapis.com/css?family=Hind:700,400,300');
+	wp_enqueue_style('opensans', 'http://fonts.googleapis.com/css?family=Open+Sans:400,700,300');
 
 }
 
-add_action('wp_enqueue_scripts', 'bones_fonts');
 add_action('wp_enqueue_scripts', 'bil_fonts');

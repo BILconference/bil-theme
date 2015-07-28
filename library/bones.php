@@ -73,18 +73,18 @@ function bones_theme_support() {
 
 	set_post_thumbnail_size(125, 125, true);
 
-	add_theme_support( 'custom-background',
-	    array(
-	    'default-image' => '',    // background image default
-	    'default-color' => '',    // background color default (dont add the #)
-	    'wp-head-callback' => '_custom_background_cb',
-	    'admin-head-callback' => '',
-	    'admin-preview-callback' => ''
-	    )
-	);
+	// add_theme_support( 'custom-background',
+	//     array(
+	//     'default-image' => '',    // background image default
+	//     'default-color' => '',    // background color default (dont add the #)
+	//     'wp-head-callback' => '_custom_background_cb',
+	//     'admin-head-callback' => '',
+	//     'admin-preview-callback' => ''
+	//     )
+	// );
 
 	// rss thingy
-	add_theme_support('automatic-feed-links');
+	//add_theme_support('automatic-feed-links');
 
 	// to add header image support go here: http://themble.com/support/adding-header-background-image-support/
 
@@ -102,8 +102,6 @@ function bones_theme_support() {
 			'chat'               // chat transcript
 		)
 	);
-
-
 
 	// Enable support for HTML5 markup.
 	add_theme_support( 'html5', array(

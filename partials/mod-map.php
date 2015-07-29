@@ -4,11 +4,11 @@
 	<div class="container">
 		<div class="row">
 			<div id="bil-global-statistics" class="col-xs-12 col-md-8 bigtext">
-				<div>9 Years Running</div> 
-				<div>7 Countries</div>		
-				<div>33 Cities</div>
-				<div>thousands and thousands of</div>
-				<div>BILders</div>
+				<div><?php the_field('line_1'); ?></div> 
+				<div><?php the_field('line_2'); ?></div> 
+				<div><?php the_field('line_3'); ?></div> 
+				<div><?php the_field('line_4'); ?></div> 
+				<div><?php the_field('line_5'); ?></div> 
 			</div>
 			<div id="full-event-list" class="col-xs-12 col-md-4">				
 				<?php $all_bils = all_bils(); ?>

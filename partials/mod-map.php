@@ -4,11 +4,11 @@
 	<div class="container">
 		<div class="row">
 			<div id="bil-global-statistics" class="col-xs-12 col-md-8 bigtext">
-				<div><?php the_field('line_1'); ?></div> 
-				<div><?php the_field('line_2'); ?></div> 
-				<div><?php the_field('line_3'); ?></div> 
-				<div><?php the_field('line_4'); ?></div> 
-				<div><?php the_field('line_5'); ?></div> 
+				<div><?php the_field('line_1', $module->ID); ?></div> 
+				<div><?php the_field('line_2', $module->ID); ?></div> 
+				<div><?php the_field('line_3', $module->ID); ?></div> 
+				<div><?php the_field('line_4', $module->ID); ?></div> 
+				<div><?php the_field('line_5', $module->ID); ?></div> 
 			</div>
 			<div id="full-event-list" class="col-xs-12 col-md-4">				
 				<?php $all_bils = all_bils(); ?>

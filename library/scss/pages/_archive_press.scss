@@ -1,4 +1,8 @@
 .post-type-archive-press {
+	.hero.jumbotron {
+		@extend %hero-jumbotron;
+	}
+
 	#press-list {
 		@extend %module;
 	}

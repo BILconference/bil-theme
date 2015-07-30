@@ -1,4 +1,8 @@
 body.post-type-archive-speaker {
+	.hero.jumbotron {
+		@extend %hero-jumbotron;
+	}
+
 	#speakers-list {
 		@extend %module;
 

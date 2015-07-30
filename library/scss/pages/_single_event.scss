@@ -1,4 +1,8 @@
 body.single-event {
+	.hero.jumbotron {
+		@extend %hero-jumbotron;
+	}
+
 	#event-about {
 		@extend %module;
 

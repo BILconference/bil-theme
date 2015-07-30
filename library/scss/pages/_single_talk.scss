@@ -1,4 +1,8 @@
 body.single-talk {
+	.hero.jumbotron {
+		@extend %hero-jumbotron;
+	}
+
 	#talk-about {
 		@extend %module;
 	}

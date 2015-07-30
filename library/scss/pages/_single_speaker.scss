@@ -1,4 +1,8 @@
 body.single-speaker {
+	.hero.jumbotron {
+		@extend %hero-jumbotron;
+	}
+
 	#speaker-about {
 		@extend %module;
 	}

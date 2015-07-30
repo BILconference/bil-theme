@@ -1,6 +1,10 @@
-<?php $image = get_field('talk_image', 'option'); ?>
-<?php if( !empty($image) ): ?>
-	<div id="talks-hero" class="jumbotron">
+<?php if (get_field('talks_hero_background', 'option')) { 
+		$hero_bg_obj = get_field('speakers_hero_background', 'option');
+		$hero_bg = $hero_bg_obj['sizes']['full-width'];
+} ?>
+
+<?php if( !empty($hero_bg) ): ?>
+	<div id="talks-hero" class="jumbotron" style="background-image: url('<?php echo $hero_bg; ?>');">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">

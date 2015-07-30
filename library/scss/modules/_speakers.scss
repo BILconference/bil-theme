@@ -3,8 +3,8 @@
 	background-image: url('../images/square_bg.png');
 
 	.speaker {
-	    padding-left: 0;
-	    padding-right: 0;
+		padding-left: 0;
+		padding-right: 0;
 
 		@include breakpoint(xs) {
 			&:nth-child(1n) {
@@ -30,16 +30,15 @@
 			}
 		}
 
-	    a {
-	    	min-height:300px;
-	    	display:block;
+		a {
+			display:block;
 			text-decoration: none;
 
 			&:hover {
 				text-decoration: none;
 				color:$white;
 				background-color:$bil-blue;
-			}	    	
-	    }
+			}
+		}
 	}
 }

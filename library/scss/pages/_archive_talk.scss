@@ -3,6 +3,14 @@ body.post-type-archive-talk {
 		@extend %hero-jumbotron;
 	}
 
+	#talks-intro {
+		@extend %module;
+	}
+
+	#talks-subject {
+		@extend %module;
+	}
+	
 	#talks-list {
 		@extend %module;
 

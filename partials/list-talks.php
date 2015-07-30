@@ -14,7 +14,7 @@
 		</div>
 	</div>
 <?php endif; ?>
-<div id="talks-list">
+<div id="talks-intro">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
@@ -22,12 +22,20 @@
 				<?php the_field('talks_content', 'option'); ?>
 			</div>
 		</div>
+	</div>
+</div>
+<div id="talks-subject">
+	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
 				<p>Browse by subject</p>
 				<?php list_filter_taxonomies('subject'); ?>
 			</div>
 		</div>
+	</div>
+</div>
+<div id="talks-list">
+	<div class="container">
 		<div id="parent" class="row">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<div class="col-xs-12 col-sm-6 col-md-4 talk box <?php echo get_talk_categories( the_ID(), 'subject' ); ?>">

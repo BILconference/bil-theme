@@ -13,6 +13,7 @@ body.post-type-archive-talk {
 		.talk {
 			min-height: 150px;
 			overflow: hidden;
+			padding-bottom: 25px;
 
 			@include breakpoint(sm) {
 				&:nth-child(1n) {

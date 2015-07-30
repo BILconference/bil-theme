@@ -39,9 +39,13 @@
 					<?php $youtube = get_field('youtube');
 					$youtube_id = get_youtube_video_id( $youtube ); ?>
 					<?php if ( $youtube_id ) { ?>
-					<div class="thumbnail-container">
-						<img class="img-responsive" src='http://img.youtube.com/vi/<?php echo $youtube_id; ?>/maxresdefault.jpg' />
-					</div>
+						<div class="thumbnail-container">
+							<img class="img-responsive" src="http://img.youtube.com/vi/<?php echo $youtube_id; ?>/maxresdefault.jpg" />
+						</div>
+					<?php } else { ?>
+						<div class="thumbnail-container">
+							<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/library/images/no-video.gif" />
+						</div>
 					<?php } ?>
 					<hr>
 					<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>

@@ -22,10 +22,6 @@
 				<?php the_field('talks_content', 'option'); ?>
 			</div>
 		</div>
-	</div>
-</div>
-<div id="talks-subject">
-	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
 				<p>Browse by subject</p>

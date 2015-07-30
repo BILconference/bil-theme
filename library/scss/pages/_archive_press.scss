@@ -1,6 +1,7 @@
 .post-type-archive-press {
 	.hero.jumbotron {
 		@extend %hero-jumbotron;
+		background-color:$bil-blue;
 	}
 
 	#press-list {

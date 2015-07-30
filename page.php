@@ -9,7 +9,7 @@
 					<?php the_content(); ?>
 				</div>
 				<div class="col-xs-12 col-md-4 col-md-pull-8">
-					sidebar
+					<?php get_sidebar(); ?>
 				</div>
 			</div>
 		</div>

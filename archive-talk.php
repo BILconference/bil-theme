@@ -23,7 +23,7 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-12">
-					Talk Filters: <br>
+					<p>Browse by subject</p>
 					<?php list_filter_taxonomies('subject'); ?>
 				</div>
 			</div>

@@ -1,16 +1,5 @@
 body.single-speaker {
-
-	#speaker-hero {
-		background: url('../images/banner-brain.jpg') 50% 50% no-repeat transparent;
-		background-size: cover;
-
-		.content {
-			color: $white;
-		}
-	}
-
 	#speaker-about {
 		@extend %module;
 	}
-
 }

@@ -1,11 +1,4 @@
 body.single-event {
-
-	#event-hero {
-		background: url('../images/banner-brain.jpg') 50% 50% no-repeat transparent;
-		background-size: cover;
-		color: $white;
-	}
-
 	#event-about {
 		@extend %module;
 

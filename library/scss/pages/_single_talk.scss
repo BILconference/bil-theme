@@ -1,13 +1,4 @@
 body.single-talk {
-
-	#talk-hero {
-		background-color: $black;
-
-		.content {
-			color: $white;
-		}
-	}
-
 	#talk-about {
 		@extend %module;
 	}

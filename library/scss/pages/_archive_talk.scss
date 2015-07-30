@@ -15,13 +15,19 @@ body.post-type-archive-talk {
 			overflow: hidden;
 
 			@include breakpoint(md) {
+				&:nth-child(1n) {
+					clear:none;
+				}
 				&:nth-child(3n+1) {
 					clear:left;
 				}
 			}
 
 			@include breakpoint(sm) {
-				&:nth-child(3n+1) {
+				&:nth-child(1n) {
+					clear:none;
+				}
+				&:nth-child(2n+1) {
 					clear:left;
 				}
 			}

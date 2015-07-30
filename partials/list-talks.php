@@ -4,7 +4,7 @@
 } ?>
 
 <?php if( !empty($hero_bg) ): ?>
-	<div id="talks-hero" class="jumbotron" style="background-image: url('<?php echo $hero_bg; ?>');">
+	<div id="talks-hero" class="hero jumbotron" style="background-image: url('<?php echo $hero_bg; ?>');">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">

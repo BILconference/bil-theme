@@ -2,7 +2,7 @@
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-	<div id="speaker-hero" class="jumbotron">
+	<div id="speaker-hero" class="hero jumbotron">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 content bigtext">

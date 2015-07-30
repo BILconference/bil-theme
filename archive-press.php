@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php $image = get_field('press_hero_foreground', 'option'); ?>
 <?php if( !empty($image) ): ?>
-	<div id="press-hero" class="jumbotron">
+	<div id="press-hero" class="hero jumbotron">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">

@@ -24,7 +24,8 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12">
-				<p>Browse by subject</p>
+				<hr>
+				<h2>Browse by subject</h2>
 				<?php list_filter_taxonomies('subject'); ?>
 			</div>
 		</div>

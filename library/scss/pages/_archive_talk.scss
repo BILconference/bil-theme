@@ -10,9 +10,15 @@ body.post-type-archive-talk {
 	#talks-list {
 		@extend %module;
 
-		 .talk {
+		.talk {
 			min-height: 150px;
 			overflow: hidden;
+
+			@include breakpoint(lg) {
+				&:nth-child(3n+1) {
+					clear:left;
+				}
+			}
 		}
 	}
 }

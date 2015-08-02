@@ -9,7 +9,7 @@
 	<?php 	$speaker = get_field('speaker'); ?>
 	<?php 	$event = get_field('event'); ?>
 
-	<div id="talk-hero" >
+	<div id="talk-hero" class="hero jumbotron">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">

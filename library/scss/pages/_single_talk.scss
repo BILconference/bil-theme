@@ -1,11 +1,6 @@
 body.single-talk {
-
-	#talk-hero {
-		background-color: $black;
-
-		.content {
-			color: $white;
-		}
+	.hero.jumbotron {
+		@extend %hero-jumbotron;
 	}
 
 	#talk-about {

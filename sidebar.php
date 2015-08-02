@@ -1,1 +1,1 @@
-SIDEBAR GOES HERE, BUT WE'RE PROBABLY NOT USING IT.
+<?php wp_nav_menu( array('menu' => 'sidebar')); ?>

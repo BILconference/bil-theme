@@ -1,10 +1,6 @@
 body.post-type-archive-event {
-	#events-hero {
-		min-height:500px;
-		background-repeat: no-repeat;
-		background-position: 50% 50%;
-		background-color: $white;
-		background-size: cover;
+	.hero.jumbotron {
+		@extend %hero-jumbotron;
 	}
 
 	#events-list {

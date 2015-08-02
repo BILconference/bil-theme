@@ -7,7 +7,7 @@
 	
 	<?php $image = get_field('events_hero_foreground', 'option'); ?>
 	<?php if( !empty($image) ) { ?>
-		<div id="events-hero" class="jumbotron" style="background-image: url('<?php echo $hero_bg; ?>');" >
+		<div id="events-hero" class="hero jumbotron" style="background-image: url('<?php echo $hero_bg; ?>');" >
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">

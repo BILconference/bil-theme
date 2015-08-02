@@ -33,8 +33,10 @@
 							} else {
 								echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/library/images/blank-person.png" class="img-responsive" />';
 							} ?>
-							<h4><?php the_title(); ?></h4>
-							<h5><?php the_field('association') ?></h5>
+							<div class="caption">
+								<h4><?php the_title(); ?></h4>
+								<h5><?php the_field('association') ?></h5>
+							</div>
 						</a>
 					</div>
 				<?php endwhile; ?>

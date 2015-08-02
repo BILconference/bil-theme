@@ -1,18 +1,44 @@
 body.post-type-archive-talk {
-	#talks-hero {
-		min-height:500px;
-		background-repeat: no-repeat;
-		background-position: 50% 50%;
-		background-color: $white;
-		background-size: cover;
+	.hero.jumbotron {
+		@extend %hero-jumbotron;
 	}
 
+	#talks-intro {
+		@extend %module;
+	}
+	
 	#talks-list {
 		@extend %module;
 
-		 .talk {
+		.talk {
 			min-height: 150px;
 			overflow: hidden;
+			padding-bottom: 25px;
+
+			div.thumbnail-container {
+
+					img {
+						width:100%;
+					}
+			}
+
+			@include breakpoint(sm) {
+				&:nth-child(1n) {
+					clear:none;
+				}
+				&:nth-child(2n+1) {
+					clear:left;
+				}
+			}
+
+			@include breakpoint(md) {
+				&:nth-child(1n) {
+					clear:none;
+				}
+				&:nth-child(3n+1) {
+					clear:left;
+				}
+			}
 		}
 	}
 }

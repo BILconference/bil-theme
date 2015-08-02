@@ -9,6 +9,7 @@
 
 // import mixins
 @import "utilities/mixins";
+@import "utilities/breakpoints";
 @import "utilities/flags";
 
 // buttons
@@ -17,6 +18,7 @@
 // header and footer
 @import "template/header";
 @import "template/footer";
+@import "template/sidebar";
 
 // styling helpers
 //@import "template/buttons";

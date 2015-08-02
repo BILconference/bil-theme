@@ -2,7 +2,7 @@
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-	<div id="sponsor-hero" style="background-image: url('<?php echo $image; ?>');" >
+	<div id="sponsor-hero" class="hero jumbotron" style="background-image: url('<?php echo $image; ?>');" >
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">

@@ -3,19 +3,44 @@
 	background-image: url('../images/square_bg.png');
 
 	.speaker {
-	    padding-left: 0;
-	    padding-right: 0;
+		padding-left: 0;
+		padding-right: 0;
 
-	    a {
-	    	min-height:300px;
-	    	display:block;
+		@include breakpoint(xs) {
+			&:nth-child(1n) {
+				clear:none;
+			}
+		}
+
+		@include breakpoint(sm) {
+			&:nth-child(1n) {
+				clear:none;
+			}
+			&:nth-child(4n+1) {
+				clear:left;
+			}
+		}
+
+		@include breakpoint(md) {
+			&:nth-child(1n) {
+				clear:none;
+			}
+			&:nth-child(6n+1) {
+				clear:left;
+			}
+		}
+
+		a {
+			display:block;
 			text-decoration: none;
+
+			div.caption {
+				padding-left: .3em;
+			}
 
 			&:hover {
 				text-decoration: none;
-				color:$white;
-				background-color:$bil-blue;
-			}	    	
-	    }
+			}
+		}
 	}
 }

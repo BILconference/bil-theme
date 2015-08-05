@@ -31,7 +31,7 @@
 				<div class="author col-xs-12 col-md-8">
 					<div class="row">
 						<div class="col-xs-12 col-sm-4">
-							<?php echo $author_image; ?>
+							
 						</div>
 						<div class="col-xs-12 col-sm-8">
 							<span class="author-name"><?php echo $author_name; ?></span>

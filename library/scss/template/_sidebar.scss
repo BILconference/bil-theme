@@ -7,9 +7,15 @@
 		padding:0;
 
 		li {
+			margin-bottom:5px;
+
+			&:hover {
+				background: $bil-light-blue;
+			}
+
 			a {
 				padding: 5px;
-				margin-bottom:5px;
+				font-size:17px
 			}
 		}
 	}

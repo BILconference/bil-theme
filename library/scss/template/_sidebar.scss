@@ -11,6 +11,11 @@
 
 			&:hover {
 				background: $bil-light-blue;
+
+				a {
+					color:$white;
+					text-decoration: none;
+				}
 			}
 
 			a {

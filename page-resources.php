@@ -11,7 +11,27 @@ get_header();
 		<div class="row">
 			
 			<div class="col-xs-12 col-sm-3">
-				<?php // add the menu code here ?>
+				<?php // MENU
+				if( have_rows('resources_page') ): ?>
+
+					<ul class="sections">
+
+					<?php while( have_rows('resources_page') ): the_row(); 
+						
+						$section_title = get_sub_field('resource_title');
+						$section_content = get_sub_field('resource_content');
+		
+						?>
+
+						<li class="section">
+							<?php echo $section_title; ?>
+						</li>
+
+					<?php endwhile; ?>
+
+					</ul>
+
+				<?php endif; ?>
 			</div>
 			
 			<div class="col-xs-12 col-sm-9">

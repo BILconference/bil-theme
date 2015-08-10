@@ -14,7 +14,7 @@ get_header();
 				<?php // MENU
 				if( have_rows('resources_page') ): ?>
 
-					<ul id="sidebar-menu" class="sections" data-spy="affix" data-offset-top="280">
+					<ul id="sidebar-menu" class="sections" data-spy="affix" data-offset-top="120">
 
 					<?php while( have_rows('resources_page') ): the_row(); 
 						

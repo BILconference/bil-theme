@@ -112,14 +112,14 @@ function loadGravatars() {
 jQuery(document).ready(function($) {
 
 
-  // Allows us to use a class to create DIV TEXT FILLING GOODNESS. 
-  $(".bigtext").bigtext();
+	// Allows us to use a class to create DIV TEXT FILLING GOODNESS. 
+	$(".bigtext").bigtext();
 
 
-  // FILTERS
-  // ToDo: We will want to make an Ajax call in future to grab all related taxonomy terms to the particular filter.
-  // TALKS
-  var $btns = $('.btn').click(function() {
+	// FILTERS
+	// ToDo: We will want to make an Ajax call in future to grab all related taxonomy terms to the particular filter.
+	// TALKS
+	var $btns = $('.btn').click(function() {
 	  if (this.id == 'all') {
 	    $('#parent > div').fadeIn(450);
 	    console.log('all Fade In');
@@ -132,8 +132,23 @@ jQuery(document).ready(function($) {
 	  $(this).addClass('active');
 	});
 
-  // Scroll Spy for Resources Menu and About Menu
-  $('body').scrollspy({ target: '.sidebar', offset:80 });
+	// Scroll Spy for Resources Menu and About Menu
+	$('body').scrollspy({ target: '.sidebar', offset:80 });
+
+  	var clicked = false;
+	$('.sidebar li a').click(
+	function(){
+		//$('#mycontent > div > h2').css('padding-top',0);
+		$( $( this ).attr('href') ).css('padding-top','50px');
+		clicked = true;
+		}
+	);	
+
+	$('body').on('activate.bs.scrollspy', function () {
+	  console.log('scrolling...');
+	  //if(!clicked)$('#mycontent > div > h2').css('padding-top',0);
+	  clicked = false;
+	});
 
 
 });

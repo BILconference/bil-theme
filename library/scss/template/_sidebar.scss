@@ -9,7 +9,7 @@
 		li {
 			margin-bottom:5px;
 
-			&:hover {
+			&:hover, &.active {
 				background: $bil-light-blue;
 
 				a {
@@ -23,6 +23,16 @@
 				font-size:17px;
 				display:block;
 			}
+
+		}
+
+		&.affix-top{
+			position: static;
+		}
+
+		&.affix {
+			position: fixed;
 		}
 	}
 }
+

@@ -111,6 +111,7 @@ function loadGravatars() {
 */
 jQuery(document).ready(function($) {
 
+
   // Allows us to use a class to create DIV TEXT FILLING GOODNESS. 
   $(".bigtext").bigtext();
 
@@ -130,6 +131,9 @@ jQuery(document).ready(function($) {
 	  $btns.removeClass('active');
 	  $(this).addClass('active');
 	});
+
+  // Scroll Spy for Resources Menu and About Menu
+  $('body').scrollspy({ target: '.sidebar', offset:80 });
 
 
 });

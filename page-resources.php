@@ -10,7 +10,7 @@ get_header();
 	<div class="container">
 		<div class="row">
 			
-			<div class="col-xs-12 col-sm-3">
+			<div class="sidebar col-xs-12 col-sm-3">
 				<?php // MENU
 				if( have_rows('resources_page') ): ?>
 
@@ -20,11 +20,11 @@ get_header();
 						
 						$section_title = get_sub_field('resource_title');
 						$section_content = get_sub_field('resource_content');
-		
+						$section_anchor = get_sub_field('resource_anchor');
 						?>
 
 						<li class="section">
-							<a href="#"><?php echo $section_title; ?></a>
+							<a href="#<?php echo $section_anchor; ?>"><?php echo $section_title; ?></a>
 						</li>
 
 					<?php endwhile; ?>
@@ -45,12 +45,12 @@ get_header();
 						
 						$section_title = get_sub_field('resource_title');
 						$section_content = get_sub_field('resource_content');
-						//interior slug
-						//short title
+						$section_anchor = get_sub_field('resource_anchor');
+						
 
 						?>
 
-						<li class="section">
+						<li id="<?php echo $section_anchor; ?>" class="section">
 
 
 								<?php echo $section_title; ?>

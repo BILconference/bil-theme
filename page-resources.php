@@ -24,7 +24,7 @@ get_header();
 						?>
 
 						<li class="section">
-							<?php echo $section_title; ?>
+							<a href="#"><?php echo $section_title; ?></a>
 						</li>
 
 					<?php endwhile; ?>

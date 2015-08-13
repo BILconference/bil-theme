@@ -1,4 +1,3 @@
-
 <?php $background = get_field("footer_background", 'option'); ?>
 <?php $image = $background['sizes']['full-width']; ?>
 

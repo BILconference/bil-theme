@@ -7,14 +7,20 @@
 
 	$redirect = get_post_meta($post->ID, 'redirect', true);
 	if (redirect) wp_redirect(clean_url($field), 301);
-
 ?>
 
 <?php get_header(); ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<?php if (get_field("hero_background")) {
+		$background = get_field("hero_background");
+		$image = $background['sizes']['full-width'];
+	} else {
+		$background = get_field("event_hero_background", "option");
+		$image = $background['sizes']['full-width'];
+	} ?>
 
-	<div id="event-hero" class="hero jumbotron">
+	<div id="event-hero" class="hero jumbotron" style="background-image: url('<?php echo $image; ?>');">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 content bigtext">

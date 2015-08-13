@@ -1,5 +1,8 @@
 #module-hero {
 	@extend %module-home;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 0% 0%;
 
 	img.bil-logo {
 		display: block;

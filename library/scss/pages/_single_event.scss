@@ -1,6 +1,11 @@
 body.single-event {
 	.hero.jumbotron {
 		@extend %hero-jumbotron;
+
+		.event-vitals {
+			position:absolute;
+			bottom:0;
+		}
 	}
 
 	#event-about {

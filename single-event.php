@@ -24,23 +24,25 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 content">
-					<h1 class="text-center"><?php the_title(); ?></h1>
-					<p class="text-center">
-						<?php the_field('general_location'); ?><br>
-						<?php if (get_field('start_date')) { 
-							$start_date = DateTime::createFromFormat('Ymd', get_field('start_date'));
-							echo $start_date->format('F jS, Y');
-						} ?>
+					<div class="event-vitals">
+						<h1><?php the_title(); ?></h1>
+						<p>
+							<?php the_field('general_location'); ?><br>
+							<?php if (get_field('start_date')) { 
+								$start_date = DateTime::createFromFormat('Ymd', get_field('start_date'));
+								echo $start_date->format('F jS, Y');
+							} ?>
 						
-						<?php if (get_field('end_date')) {
-							$end_date = DateTime::createFromFormat('Ymd', get_field('end_date'));
+							<?php if (get_field('end_date')) {
+								$end_date = DateTime::createFromFormat('Ymd', get_field('end_date'));
 
-							if ($end_date != $start_date) { // Case for one day event(s)
-								echo '&nbsp;-&nbsp;';
-								echo $end_date->format('F jS, Y');
-							}
-						} ?>
-					</p>
+								if ($end_date != $start_date) { // Case for one day event(s)
+									echo '&nbsp;-&nbsp;';
+									echo $end_date->format('F jS, Y');
+								}
+							} ?>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>

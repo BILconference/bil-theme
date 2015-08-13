@@ -8,9 +8,8 @@
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 							<div class="col-xs-12 post">
 								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-								<p class="by-line">
-									<?php the_time('j F Y') ?> by <?php the_author() ?>
-								</p>
+								<p class="by-line"><?php the_time('j F Y') ?> by <?php the_author() ?></p>
+								<hr>
 								<?php the_excerpt(); ?>
 							</div>
 						<?php endwhile; endif; ?>

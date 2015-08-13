@@ -68,10 +68,10 @@
 						<div class="row">
 							<div class="col-xs-12" style="padding: 2em">
 								<a href="https://en.wikipedia.org/wiki/BIL_Conference" class="image">
-									<img alt="Wikipedia" src="<?php echo get_stylesheet_directory_uri() ?>/library/images/logo-wikipedia.gif">
+									<img alt="Wikipedia" src="<?php echo get_stylesheet_directory_uri() ?>/library/images/logo-wikipedia.png">
 								</a> 
 								<a href="http://creativecommons.org/" rel="nofollow">
-									<img alt="Creative Commons" src="<?php echo get_stylesheet_directory_uri() ?>/library/images/logo-creative-commons.gif">
+									<img alt="Creative Commons" src="<?php echo get_stylesheet_directory_uri() ?>/library/images/logo-creative-commons.png">
 								</a>
 							</div>
 							<div class="col-xs-12">

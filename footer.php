@@ -1,4 +1,8 @@
-		<footer id="footer">
+
+<?php $background = get_field("footer_background", 'option'); ?>
+<?php $image = $background['sizes']['full-width']; ?>
+
+		<footer id="footer" style="background-image: url('<?php echo $image; ?>');">
 			<div class="container">
 				
 				<div class="row">

@@ -34,4 +34,13 @@ if( function_exists('acf_add_options_sub_page') ) {
         'capability' => 'manage_options'
     ));
 
+    acf_add_options_sub_page(array(
+        'title' => 'Site Options',
+        'menu' => 'Site Options',
+        'parent' => 'options-general.php',
+        'slug' => 'site_options',
+        'capability' => 'manage_options'
+    ));
+
+
 }

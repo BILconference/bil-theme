@@ -75,8 +75,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-xs-12" id="colophon">
+				<div class="row" id="colophon">
+					<div class="col-xs-12">
 						<p><img src="/wp-content/uploads/2015/07/cc.large_.png" class="tiny-cc-logo" alt="creative commons icon"/> 2007-<?php echo date('Y');?> BIL Conference </p>
 					</div>
 				</div>

@@ -62,11 +62,9 @@
 						</div>
 					</div><!-- end footer left-->
 
-				
-
 					<div id="footer-right" class="col-xs-12 col-sm-6">
 						<div class="row">
-							<div class="col-xs-12" style="padding: 2em">
+							<div class="col-xs-12">
 								<a href="https://en.wikipedia.org/wiki/BIL_Conference" class="image">
 									<img alt="Wikipedia" src="<?php echo get_stylesheet_directory_uri() ?>/library/images/logo-wikipedia.png">
 								</a> 
@@ -74,14 +72,13 @@
 									<img alt="Creative Commons" src="<?php echo get_stylesheet_directory_uri() ?>/library/images/logo-creative-commons.png">
 								</a>
 							</div>
-							<div class="col-xs-12">
-								<section class="meta">
-								    <p class="colophon"><img src="/wp-content/uploads/2015/07/cc.large_.png" class="tiny-cc-logo" alt="creative commons icon"/> 2007-<?php echo date('Y');?> BIL Conference </p>
-								 </section>
-							</div>
 						</div>
 					</div>
-				
+				</div>
+				<div class="row">
+					<div class="col-xs-12" id="colophon">
+						<p><img src="/wp-content/uploads/2015/07/cc.large_.png" class="tiny-cc-logo" alt="creative commons icon"/> 2007-<?php echo date('Y');?> BIL Conference </p>
+					</div>
 				</div>
 			</div>
 		</footer>

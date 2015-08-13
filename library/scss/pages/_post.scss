@@ -2,6 +2,6 @@ body.single-post div.content {
 	@extend %module;
 }
 
-.post {
-
+.post .byline {
+	color:$light-gray;
 }

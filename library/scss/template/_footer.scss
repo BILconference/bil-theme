@@ -5,8 +5,9 @@ footer#footer {
 	padding-top:50px;
     border-top: 40px solid #2ea3f2;
 	color:$white;
-	background-size:cover;
 	background-repeat:no-repeat;
+	background-position-y:400%;
+	background-position-x:0%;
 
 	h2 {
 	    font-size: 80px;

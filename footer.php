@@ -68,10 +68,10 @@
 						<div class="row">
 							<div class="col-xs-12" style="padding: 2em">
 								<a href="https://en.wikipedia.org/wiki/BIL_Conference" class="image">
-									<img alt="Wp wordmark pos rgb.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/03/Wp_wordmark_pos_rgb.svg/175px-Wp_wordmark_pos_rgb.svg.png" width="175" height="44" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/03/Wp_wordmark_pos_rgb.svg/263px-Wp_wordmark_pos_rgb.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/03/Wp_wordmark_pos_rgb.svg/350px-Wp_wordmark_pos_rgb.svg.png 2x" data-file-width="132" data-file-height="33">
+									<img alt="Wikipedia" src="<?php get_stylesheet_directory_uri() ?>/library/images/logo-wikipedia.gif">
 								</a> 
 								<a href="http://creativecommons.org/" rel="nofollow">
-									<img alt="CreativeCommons logo trademark.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/7a/CreativeCommons_logo_trademark.svg/150px-CreativeCommons_logo_trademark.svg.png" width="150" height="39" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/7a/CreativeCommons_logo_trademark.svg/225px-CreativeCommons_logo_trademark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/7a/CreativeCommons_logo_trademark.svg/300px-CreativeCommons_logo_trademark.svg.png 2x" data-file-width="280" data-file-height="72">
+									<img alt="Creative Commons" src="<?php get_stylesheet_directory_uri() ?>/library/images/logo-creative-commons.gif">
 								</a>
 							</div>
 							<div class="col-xs-12">

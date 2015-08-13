@@ -1,5 +1,9 @@
 body.blog div.content {
 	@extend %module;
+
+	.post {
+		margin-bottom:5em;
+	}
 }
 
 // the post formatting is in _post.scss

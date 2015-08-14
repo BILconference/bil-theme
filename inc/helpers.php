@@ -157,7 +157,7 @@ function non_featured_speakers() {
 		'posts_per_page' => -1,
 		'post_type'      => 'speaker',
 		'orderby'        => 'title',
-		'order'          => 'DESC',
+		'order'          => 'ASC',
 		'tax_query'      => array(
 			array(
 				'taxonomy' => 'group',

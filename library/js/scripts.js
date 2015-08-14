@@ -153,7 +153,7 @@ jQuery(document).ready(function($) {
 	$('.affix').affix({
 		offset: {
 			bottom: function () {
-			return (this.bottom = $('.footer').outerHeight(true))
+			return (this.bottom = $('#footer').outerHeight(true))
 		}
 	}
 })

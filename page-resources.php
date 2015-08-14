@@ -10,13 +10,8 @@
 						<h2><?php the_title(); ?></h2>
 						<ul id="sidebar-menu" class="sections">
 							<?php while( have_rows('resources_page') ): the_row(); ?>
-								<?php
-									$section_title = get_sub_field('resource_title');
-									$section_anchor = get_sub_field('resource_anchor');
-								?>
-
 								<li class="section">
-									<a href="#<?php echo $section_anchor; ?>"><?php echo $section_title; ?></a>
+									<a href="#<?php echo get_sub_field('resource_anchor'); ?>"><?php echo get_sub_field('resource_title'); ?></a>
 								</li>
 							<?php endwhile; ?>
 						</ul>

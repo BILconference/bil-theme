@@ -87,12 +87,13 @@
 				<div class="col-xs-12 col-md-4 organizers-list">
 					<h2>Organizers</h2>
 					<?php if( have_rows('organizers') ): ?>
-						<ul>
+						<dl>
 							<?php while ( have_rows('organizers') ) : the_row(); ?>
 								<?php $organizer = get_sub_field('organizer'); ?>
-								<li><strong><?php echo $organizer->post_title; ?></strong><br><?php the_sub_field('duties'); ?></li>
+								<dt><?php echo $organizer->post_title; ?></dt>
+								<dd><?php the_sub_field('duties'); ?></dd>
 							<?php endwhile; ?>
-						</li>
+						</dl>
 					<?php else: ?>
 						<p>Organizers not listed.</p>
 					<?php endif; ?>

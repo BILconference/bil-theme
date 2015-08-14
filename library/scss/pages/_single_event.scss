@@ -18,7 +18,7 @@ body.single-event {
 
 	#event-talks {
 		background-color:$bil-blue;
-		color:#fff;
+		color:$white;
 
 		@extend %module;
 	}
@@ -28,6 +28,9 @@ body.single-event {
 	}
 
 	#event-cta {
+		background-color:$dark-gray;
+		color:$white;
+
 		@extend %module;
 	}
 

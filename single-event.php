@@ -134,9 +134,7 @@
 							<?php endforeach; ?>
 						</ul>
 					<?php } else { ?>
-						<div class="well">
-							<p>No talks found.</p>
-						</div>
+						<p>No talks found.</p>
 					<?php } ?>
 				</div>
 			</div>

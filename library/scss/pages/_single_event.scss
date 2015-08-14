@@ -5,6 +5,8 @@ body.single-event {
 
 	#event-about {
 		@extend %module;
+		background-color:$bil-blue;
+		color:#fff;
 
 		.organizers-list dl {
 			margin:0;

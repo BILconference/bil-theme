@@ -139,6 +139,10 @@ jQuery(document).ready(function($) {
 	$('.sidebar li a').click(
 	function(){
 		//$('#mycontent > div > h2').css('padding-top',0);
+
+		// I want to kill this next line. It adds that padding, but can be done a better way so when you scroll to the top it doesn't look like shit.
+		// https://www.dropbox.com/s/6ilpfzro6xej5b4/Screenshot%202015-08-14%2016.41.40.png?dl=0
+
 		$( $( this ).attr('href') ).css('padding-top','50px');
 		clicked = true;
 		}

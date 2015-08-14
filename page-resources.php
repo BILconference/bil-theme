@@ -12,19 +12,22 @@ get_header();
 			<div class="sidebar col-xs-12 col-sm-3">
 				<?php // MENU
 				if( have_rows('resources_page') ): ?>
-					<ul id="sidebar-menu" class="sections">
-						<?php while( have_rows('resources_page') ): the_row(); ?>
-							<?php
-								$section_title = get_sub_field('resource_title');
-								$section_content = get_sub_field('resource_content');
-								$section_anchor = get_sub_field('resource_anchor');
-							?>
+					<div id="sidebar-menu">
+						<h2><?php the_title(); ?></h2>
+						<ul class="sections">
+							<?php while( have_rows('resources_page') ): the_row(); ?>
+								<?php
+									$section_title = get_sub_field('resource_title');
+									$section_content = get_sub_field('resource_content');
+									$section_anchor = get_sub_field('resource_anchor');
+								?>
 
-							<li class="section">
-								<a href="#<?php echo $section_anchor; ?>"><?php echo $section_title; ?></a>
-							</li>
-						<?php endwhile; ?>
-					</ul>
+								<li class="section">
+									<a href="#<?php echo $section_anchor; ?>"><?php echo $section_title; ?></a>
+								</li>
+							<?php endwhile; ?>
+						</ul>
+					</div>
 				<?php endif; ?>
 			</div>
 			

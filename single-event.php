@@ -62,18 +62,20 @@
 						
 						<div class="social col-xs-12 col-md-6">
 							<h2>Social</h2>
-							<?php if (get_field('facebook_event')) { ?>
-								<a href="<?php the_field('facebook_event'); ?>">Facebook Event</a>
-							<?php } ?>
-							<?php if (get_field('facebook_page')) { ?>
-								| <a href="<?php the_field('facebook_page'); ?>">Facebook Page</a>
-							<?php } ?>
-							<?php if (get_field('twitter')) { ?>
-								| <a href="<?php the_field('twitter'); ?>">Twitter</a>
-							<?php } ?>
-							<?php if (get_field('ticketing')) { ?>
-								<a href="<?php the_field('ticketing'); ?>">Tickets</a>
-							<?php } ?>
+							<ul>
+								<?php if (get_field('facebook_event')) { ?>
+									<li><a href="<?php the_field('facebook_event'); ?>">Facebook Event</a></li>
+								<?php } ?>
+								<?php if (get_field('facebook_page')) { ?>
+									<li><a href="<?php the_field('facebook_page'); ?>">Facebook Page</a></li>
+								<?php } ?>
+								<?php if (get_field('twitter')) { ?>
+									<li><a href="<?php the_field('twitter'); ?>">Twitter</a></li>
+								<?php } ?>
+								<?php if (get_field('ticketing')) { ?>
+									<li><a href="<?php the_field('ticketing'); ?>">Tickets</a></li>
+								<?php } ?>
+							</ul>
 						</div>
 					</div>
 

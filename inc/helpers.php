@@ -151,3 +151,23 @@ function list_filter_taxonomies($tax_name) {
 	echo '</ul>';
 
 }
+
+function non_featured_speakers() {
+	$args = array (
+		'posts_per_page' => -1,
+		'post_type'      => 'speaker',
+		'orderby'        => 'title',
+		'order'          => 'DESC',
+		'tax_query'      => array(
+			array(
+				'taxonomy' => 'group',
+				'field'    => 'slug',
+				'terms'    => 'featued',
+				'operator' => 'NOT IN'
+		))
+	);
+
+	$nfs = new WP_Query($args);
+
+	return $nfs;
+}

@@ -21,7 +21,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<?php if ( $speakers->have_posts() ) : ?>
+			<?php if ( $speakers->have_posts() ) { ?>
 				<?php while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
 					<div class="speaker col-xs-12 col-sm-3 col-md-2">
 						<a href="<?php the_permalink();?>">
@@ -41,7 +41,7 @@
 					</div>
 				<?php endwhile; ?>
 				<?php wp_reset_postdata(); ?>
-			<?php endif; ?>
+			<?php } ?>
 		</div>
 	</div>
 </div>

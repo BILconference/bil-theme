@@ -30,7 +30,7 @@ get_header();
 				<?php endif; ?>
 			</div>
 			
-			<div class="col-xs-12 col-sm-9">
+			<div class="content col-xs-12 col-sm-9">
 				<?php if( have_rows('resources_page') ): ?>
 
 					<ul class="sections">

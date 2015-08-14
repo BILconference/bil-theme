@@ -41,15 +41,18 @@
 								</a>
 							</div>
 						<?php endwhile; endif; ?>
-
-						<?php $nfs = non_featured_speakers(); ?>
-						<?php if ( $nfs->have_posts() ) { ?>
-							<div class="nfs_list">
-								<?php while ( $nfs->have_posts() ) : $nfs->the_post(); ?>
-									<span class="speaker"><?php the_title(); ?></span>
-								<?php endwhile; ?>
-							</div>
-						<?php } ?>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<?php $nfs = non_featured_speakers(); ?>
+							<?php if ( $nfs->have_posts() ) { ?>
+								<div class="nfs_list">
+									<?php while ( $nfs->have_posts() ) : $nfs->the_post(); ?>
+										<span class="speaker"><?php the_title(); ?></span>
+									<?php endwhile; ?>
+								</div>
+							<?php } ?>
+						</div>
 					</div>
 				</div>
 			</div>

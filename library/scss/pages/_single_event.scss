@@ -6,10 +6,13 @@ body.single-event {
 	#event-about {
 		@extend %module;
 
-		.organizers-list ul {
-			list-style-type: none;
+		.organizers-list dl {
 			margin:0;
 			padding:0;
+
+			dd {
+				margin-bottom:.5em;
+			}
 		}
 	}
 

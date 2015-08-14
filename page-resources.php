@@ -9,11 +9,11 @@ get_header();
 <div id="documentation">
 	<div class="container">
 		<div class="row">			
-			<div class="sidebar col-xs-12 col-sm-3">
+			<div class="sidebar col-xs-12 col-sm-3 affix">
 				<?php // MENU
 				if( have_rows('resources_page') ): ?>
 
-					<ul id="sidebar-menu" class="sections affix">
+					<ul id="sidebar-menu" class="sections">
 
 					<?php while( have_rows('resources_page') ): the_row(); ?>
 							<?php

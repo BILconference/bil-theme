@@ -118,7 +118,7 @@
 							)
 						)
 					)); ?>
-					<?php if( $talks ): ?>
+					<?php if( $talks ) { ?>
 						<ul>
 							<?php foreach( $talks as $talk ): ?>
 								<?php $speaker = get_field('speaker', $talk->ID); ?>
@@ -133,7 +133,11 @@
 								</li>
 							<?php endforeach; ?>
 						</ul>
-					<?php endif; ?>
+					<?php } else { ?>
+						<div class="well">
+							<p>No talks found.</p>
+						</div>
+					<?php } ?>
 				</div>
 			</div>
 		</div>

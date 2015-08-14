@@ -162,7 +162,7 @@ function non_featured_speakers() {
 			array(
 				'taxonomy' => 'group',
 				'field'    => 'slug',
-				'terms'    => 'featued',
+				'terms'    => 'featured',
 				'operator' => 'NOT IN'
 		))
 	);

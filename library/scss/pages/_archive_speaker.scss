@@ -15,9 +15,12 @@ body.post-type-archive-speaker {
 		}
 		#non-featured {
 			.speaker {
+				display:inline-block;
 				padding:1em;
 				border:1px solid $bil-blue;
 				border-radius:3px;
+				white-space: nowrap;
+          		overflow: hidden;
 			}
 		}
 	}

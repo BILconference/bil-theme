@@ -29,7 +29,7 @@
 								$section_anchor = get_sub_field('resource_anchor');
 							?>
 
-							<div id="<?php echo $section_anchor; ?>" class="section">
+							<li id="<?php echo $section_anchor; ?>" class="section">
 								<h2><?php echo $section_title; ?></h2>
 								<hr>
 								<?php echo $section_content; ?>

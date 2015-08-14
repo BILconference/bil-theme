@@ -6,7 +6,7 @@ get_header();
 ?>
 
 
-<div id="documentation" class="content">
+<div id="documentation">
 	<div class="container">
 		<div class="row">			
 			<div class="sidebar col-xs-12 col-sm-3">

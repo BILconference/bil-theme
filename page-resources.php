@@ -38,8 +38,8 @@ get_header();
 								$section_anchor = get_sub_field('resource_anchor');
 							?>
 
-							<li id="<?php echo $section_anchor; ?>" class="section">
-								<?php echo $section_title; ?>
+							<div id="<?php echo $section_anchor; ?>" class="section">
+								<h2><?php echo $section_title; ?></h2>
 								<br/>
 								<?php echo $section_content; ?>
 							</li>

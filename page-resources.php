@@ -8,29 +8,25 @@ get_header();
 
 <div id="documentation" class="content">
 	<div class="container">
-		<div class="row">
-			
+		<div class="row">			
 			<div class="sidebar col-xs-12 col-sm-3">
 				<?php // MENU
 				if( have_rows('resources_page') ): ?>
 
-					<ul id="sidebar-menu" class="sections" data-spy="affix" data-offset-top="120">
+					<ul id="sidebar-menu" class="sections" data-spy="affix" xdata-offset-top="120">
 
-					<?php while( have_rows('resources_page') ): the_row(); 
-						
-						$section_title = get_sub_field('resource_title');
-						$section_content = get_sub_field('resource_content');
-						$section_anchor = get_sub_field('resource_anchor');
-						?>
+					<?php while( have_rows('resources_page') ): the_row(); ?>
+							<?php
+								$section_title = get_sub_field('resource_title');
+								$section_content = get_sub_field('resource_content');
+								$section_anchor = get_sub_field('resource_anchor');
+							?>
 
-						<li class="section">
-							<a href="#<?php echo $section_anchor; ?>"><?php echo $section_title; ?></a>
-						</li>
-
-					<?php endwhile; ?>
-
+							<li class="section">
+								<a href="#<?php echo $section_anchor; ?>"><?php echo $section_title; ?></a>
+							</li>
+						<?php endwhile; ?>
 					</ul>
-
 				<?php endif; ?>
 			</div>
 			

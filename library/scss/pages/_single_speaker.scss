@@ -1,9 +1,9 @@
 body.single-speaker {
-	.hero.jumbotron {
-		@extend %hero-jumbotron;
+	.content {
+		@extend %module;
 	}
 
-	#speaker-about {
-		@extend %module;
+	.sidebar {
+		@extend %module;	
 	}
 }

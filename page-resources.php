@@ -1,10 +1,4 @@
-<?php
-// TODO: 
-//
-
-get_header();
-?>
-
+<?php get_header(); ?>
 
 <div id="documentation">
 	<div class="container">
@@ -12,13 +6,12 @@ get_header();
 			<div class="sidebar col-xs-12 col-sm-3">
 				<?php // MENU
 				if( have_rows('resources_page') ): ?>
-					<div id="sidebar-menu">
+					<div id="menu_affix">
 						<h2><?php the_title(); ?></h2>
-						<ul class="sections">
+						<ul id="sidebar-menu" class="sections">
 							<?php while( have_rows('resources_page') ): the_row(); ?>
 								<?php
 									$section_title = get_sub_field('resource_title');
-									$section_content = get_sub_field('resource_content');
 									$section_anchor = get_sub_field('resource_anchor');
 								?>
 
@@ -43,7 +36,7 @@ get_header();
 
 							<div id="<?php echo $section_anchor; ?>" class="section">
 								<h2><?php echo $section_title; ?></h2>
-								<br/>
+								<hr>
 								<?php echo $section_content; ?>
 							</li>
 						<?php endwhile; ?>
@@ -53,8 +46,5 @@ get_header();
 		</div>
 	</div>
 </div>
-
-
-
 
 <?php get_footer(); ?>

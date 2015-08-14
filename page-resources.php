@@ -9,7 +9,7 @@ get_header();
 <div id="documentation">
 	<div class="container">
 		<div class="row">			
-			<div class="sidebar col-xs-12 col-sm-3 affix">
+			<div class="sidebar col-xs-12 col-sm-3">
 				<?php // MENU
 				if( have_rows('resources_page') ): ?>
 

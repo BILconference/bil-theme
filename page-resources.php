@@ -12,10 +12,8 @@ get_header();
 			<div class="sidebar col-xs-12 col-sm-3">
 				<?php // MENU
 				if( have_rows('resources_page') ): ?>
-
-					<ul id="sidebar-menu" class="sections affix">
-
-					<?php while( have_rows('resources_page') ): the_row(); ?>
+					<ul id="sidebar-menu" class="sections">
+						<?php while( have_rows('resources_page') ): the_row(); ?>
 							<?php
 								$section_title = get_sub_field('resource_title');
 								$section_content = get_sub_field('resource_content');
@@ -32,42 +30,24 @@ get_header();
 			
 			<div class="content col-xs-12 col-sm-9">
 				<?php if( have_rows('resources_page') ): ?>
-
 					<ul class="sections">
+						<?php while( have_rows('resources_page') ): the_row(); ?>
+							<?php
+								$section_title = get_sub_field('resource_title');
+								$section_content = get_sub_field('resource_content');
+								$section_anchor = get_sub_field('resource_anchor');
+							?>
 
-					<?php while( have_rows('resources_page') ): the_row(); 
-
-						// vars
-						
-						$section_title = get_sub_field('resource_title');
-						$section_content = get_sub_field('resource_content');
-						$section_anchor = get_sub_field('resource_anchor');
-						
-
-						?>
-
-						<li id="<?php echo $section_anchor; ?>" class="section">
-
-
+							<li id="<?php echo $section_anchor; ?>" class="section">
 								<?php echo $section_title; ?>
 								<br/>
 								<?php echo $section_content; ?>
-
-							
-
-						</li>
-
-					<?php endwhile; ?>
-
+							</li>
+						<?php endwhile; ?>
 					</ul>
-
 				<?php endif; ?>
-				
 			</div>
-
 		</div>
-
-		
 	</div>
 </div>
 

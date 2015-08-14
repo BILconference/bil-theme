@@ -98,7 +98,7 @@ jQuery(document).ready(function($) {
 	$('#menu_affix').affix({
 		offset: {
 			bottom: function () {
-			return (this.bottom = $('#footer').outerHeight(true) + 150)
+			return (this.bottom = $('#footer').outerHeight(true) + 50)
 		}
 	}
 })

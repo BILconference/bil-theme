@@ -13,7 +13,7 @@ get_header();
 				<?php // MENU
 				if( have_rows('resources_page') ): ?>
 
-					<ul id="sidebar-menu" class="sections">
+					<ul id="sidebar-menu" class="sections affix">
 
 					<?php while( have_rows('resources_page') ): the_row(); ?>
 							<?php

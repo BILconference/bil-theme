@@ -54,26 +54,27 @@
 						<h2>About</h2>
 						<?php the_content(); ?>
 					</div>
-					
-					<div class="address">
-						<h2>Address</h2>
-						<address><?php the_field('specific_location'); ?></address>
-					</div>
-					
-					<div class="social">
-						<h2>Social</h2>
-						<?php if (get_field('facebook_event')) { ?>
-							<a href="<?php the_field('facebook_event'); ?>">Facebook Event</a>
-						<?php } ?>
-						<?php if (get_field('facebook_page')) { ?>
-							| <a href="<?php the_field('facebook_page'); ?>">Facebook Page</a>
-						<?php } ?>
-						<?php if (get_field('twitter')) { ?>
-							| <a href="<?php the_field('twitter'); ?>">Twitter</a>
-						<?php } ?>
-						<?php if (get_field('ticketing')) { ?>
-							<a href="<?php the_field('ticketing'); ?>">Tickets</a>
-						<?php } ?>
+					<div class="row">
+						<div class="address" class="col-xs-12 col-md-6">
+							<h2>Address</h2>
+							<address><?php the_field('specific_location'); ?></address>
+						</div>
+						
+						<div class="social" class="col-xs-12 col-md-6">
+							<h2>Social</h2>
+							<?php if (get_field('facebook_event')) { ?>
+								<a href="<?php the_field('facebook_event'); ?>">Facebook Event</a>
+							<?php } ?>
+							<?php if (get_field('facebook_page')) { ?>
+								| <a href="<?php the_field('facebook_page'); ?>">Facebook Page</a>
+							<?php } ?>
+							<?php if (get_field('twitter')) { ?>
+								| <a href="<?php the_field('twitter'); ?>">Twitter</a>
+							<?php } ?>
+							<?php if (get_field('ticketing')) { ?>
+								<a href="<?php the_field('ticketing'); ?>">Tickets</a>
+							<?php } ?>
+						</div>
 					</div>
 
 					<div class="ticketing">

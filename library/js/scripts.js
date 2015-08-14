@@ -150,7 +150,7 @@ jQuery(document).ready(function($) {
 	  clicked = false;
 	});
 
-	$('.affix').affix({
+	$('#sidebar-menu').affix({
 		offset: {
 			bottom: function () {
 			return (this.bottom = $('#footer').outerHeight(true))

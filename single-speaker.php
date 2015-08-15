@@ -15,7 +15,12 @@
 			<div class="col-xs-12 col-md-9 content">
 				<div id="speaker-about">
 					<h2>Biography</h2>
-					<?php the_content(); ?>
+					<?php $content = get_the_content(); ?>
+					<?php if (strlen($content) > 5) {
+						echo $content;
+					} else { ?>
+						<p>No bio found.</p>
+					<?php } ?>
 				</div>
 				<div id="talks-given">
 					<h2>Talks Given</h2>

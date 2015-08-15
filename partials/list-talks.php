@@ -44,7 +44,7 @@
 						</div>
 					<?php } else { ?>
 						<div class="thumbnail-container">
-							<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/library/images/no-video.gif" />
+							<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/library/images/no-video.jpg" />
 						</div>
 					<?php } ?>
 					<hr>

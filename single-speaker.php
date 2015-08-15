@@ -29,7 +29,7 @@
 							)
 						)
 					)); ?>
-					<?php if( $talks ): ?>
+					<?php if( $talks ) { ?>
 						<ul>
 							<?php foreach( $talks as $talk ): ?>
 								<?php $event = get_field('event', $talk->ID); ?>
@@ -44,7 +44,9 @@
 								</li>
 							<?php endforeach; ?>
 						</ul>
-					<?php endif; ?>
+					<?php } else { ?>
+						<p>No talks listed.</p>
+					<?php } ?>
 				</div>
 			</div>
 		</div>

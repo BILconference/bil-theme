@@ -7,7 +7,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<img class="bil-logo" src="wp-content/uploads/2015/07/bil-white-500.png"/>
+				<img class="bil-logo img-responsive" src="wp-content/uploads/2015/07/bil-white-500.png"/>
 				<?php echo $text ?>
 			</div>
 		</div>

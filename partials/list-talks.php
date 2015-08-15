@@ -40,7 +40,7 @@
 					$youtube_id = get_youtube_video_id( $youtube ); ?>
 					<?php if ( $youtube_id ) { ?>
 						<div class="thumbnail-container">
-							<img class="img-responsive" src="http://img.youtube.com/vi/<?php echo $youtube_id; ?>/maxresdefault.jpg" />
+							<img class="img-responsive" src="http://img.youtube.com/vi/<?php echo $youtube_id; ?>/0.jpg" />
 						</div>
 					<?php } else { ?>
 						<div class="thumbnail-container">

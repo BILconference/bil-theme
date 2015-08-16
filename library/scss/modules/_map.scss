@@ -26,11 +26,11 @@
 	#full-event-list {
 		ul {
 			@include breakpoint(xs) {
-				padding-left:65px;
+				padding:0;
 			}
 		
 			@include breakpoint(md) {
-				padding:0;
+				padding-left:65px;
 			}
 
 			margin-top: 10px;

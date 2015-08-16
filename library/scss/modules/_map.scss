@@ -45,8 +45,8 @@
 				@include breakpoint(xs) {
 					display: inline-block;
 					font-size: 15px;
-					padding:.5em;
-					display:justify;
+					padding: .5em;
+					text-align: justify;
 				}
 			
 				@include breakpoint(md) {

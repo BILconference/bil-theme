@@ -26,7 +26,7 @@
 	#full-event-list {
 		ul {
 			@include breakpoint(xs) {
-				padding:0;
+				padding:40px;
 			}
 		
 			@include breakpoint(md) {

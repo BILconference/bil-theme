@@ -25,6 +25,10 @@
 
 	#full-event-list {
 		ul {
+			margin-top: 10px;
+			list-style: none;
+			color: $white;
+
 			@include breakpoint(xs) {
 				padding: 40px;
 				text-align: justify;
@@ -34,10 +38,6 @@
 				padding: 0 0 0 65px;
 				text-align: left;
 			}
-
-			margin-top: 10px;
-			list-style: none;
-			color:$white;
 			
 			li {
 
@@ -55,7 +55,7 @@
 					white-space: nowrap;
 					display: block;
 					font-size: 12.9px;
-					line-height: 1.3em;
+					line-height: 1.35em;
 
 					&:after {
 						content: "";

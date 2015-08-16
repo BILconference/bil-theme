@@ -26,12 +26,12 @@
 	#full-event-list {
 		ul {
 			@include breakpoint(xs) {
-				padding:40px;
+				padding: 40px;
 				text-align: justify;
 			}
 		
 			@include breakpoint(md) {
-				padding-left: 65px;
+				padding: 0 0 0 65px;
 				text-align: left;
 			}
 

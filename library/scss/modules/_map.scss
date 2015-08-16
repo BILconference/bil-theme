@@ -43,7 +43,7 @@
 				font-size: 12.9px;
 
 				@include breakpoint(xs) {
-					display: inline-block;
+					display: inline;
 					font-size: 15px;
 					padding: .5em;
 					text-align: justify;

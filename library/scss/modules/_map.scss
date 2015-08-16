@@ -47,11 +47,21 @@
 				@include breakpoint(xs) {
 					display: inline;
 					font-size: 15px;
+					line-height: 2em;
+
+					&:after {
+						content: " | ";
+					}
 				}
 			
 				@include breakpoint(md) {
 					white-space: nowrap;
 					display: block;
+
+					&:after {
+						content: "";
+					}
+
 				}
 
 			}

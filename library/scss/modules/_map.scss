@@ -27,10 +27,12 @@
 		ul {
 			@include breakpoint(xs) {
 				padding:40px;
+				text-align: justify;
 			}
 		
 			@include breakpoint(md) {
-				padding-left:65px;
+				padding-left: 65px;
+				text-align: left;
 			}
 
 			margin-top: 10px;
@@ -46,7 +48,6 @@
 					display: inline;
 					font-size: 15px;
 					padding: .5em;
-					text-align: justify;
 				}
 			
 				@include breakpoint(md) {

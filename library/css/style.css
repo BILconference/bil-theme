@@ -1191,7 +1191,9 @@ ul.filter-categories {
         color: #fff; }
 
 .gform_wrapper form .gform_body ul {
-  margin-left: 0; }
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none; }
 
 header#header nav#nav.navbar {
   margin-bottom: 0px; }

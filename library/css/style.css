@@ -1479,6 +1479,8 @@ footer#footer {
       text-decoration: none; }
       #module-speakers .speaker a div.caption {
         padding-left: .3em; }
+        #module-speakers .speaker a div.caption h5 {
+          color: #888888; }
       #module-speakers .speaker a:hover {
         text-decoration: none; }
 

@@ -111,7 +111,7 @@
     							<li role="presentation" <?php if ($tab_i == 0) { ?>class="active"<?php } ?>>
     								<a href="#<?php sanitize_title(get_sub_field('subject')) ?>" aria-controls="<?php sanitize_title(get_sub_field('subject')) ?>" role="tab" data-toggle="tab"><?php the_sub_field('subject'); ?></a>
     							</li>
-    							<?php $i++ ?>
+    							<?php $tab_i++ ?>
     						<?php endwhile; ?>
 						</ul>
 						<div class="tab-content">
@@ -120,6 +120,7 @@
 								<div role="tabpanel" class="tab-pane <?php if ($tab_i == 0) { ?>active<?php } ?>" id="<?php sanitize_title(get_sub_field('subject')) ?>">
 									<?php the_sub_field('info'); ?>	
 								</div>
+								<?php $panel_i++ ?>
 							<?php endwhile; ?>
   						</div>
 					</div>

@@ -102,6 +102,18 @@
 					<?php endif; ?>
 				</div>
 			</div>
+			<?php if( have_rows('sections') ) { ?>
+				<div class="row">
+					<div class="col-xs-12">
+						<?php while ( have_rows('sections') ) : the_row(); ?>
+							<h3><?php the_sub_field('subject'); ?></h3>
+							<div class="section-content">
+								<?php the_sub_field('info'); ?>
+							</div>
+						<?php endwhile; ?>
+					</div>
+				</div>
+			<?php } ?>
 		</div>
 	</div>
 

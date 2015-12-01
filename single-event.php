@@ -178,9 +178,9 @@
 						<h2>Sponsors</h2>
 						<?php foreach( $sponsors as $sponsor): ?>
 							<?php setup_postdata($sponsor); ?>
-							<?php $imgObj = get_field('white_image');
+							<?php $imgObj = get_field('white_image', $sponsor);
 						 	  $image = $imgObj['sizes'][ '1000x400' ]; 
-						 	  $sponsor_url = get_field('url'); ?>
+						 	  $sponsor_url = get_field('url', $sponsor); ?>
 
 							<li class="sponsor-wrap">
 								<a href="<?php echo $sponsor_url; ?>" target="_blank"><img alt="<?php the_title(); ?>" src="<?php echo $image; ?>"></a>

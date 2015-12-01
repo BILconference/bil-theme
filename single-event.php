@@ -106,7 +106,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<ul class="nav nav-tabs" role="tablist">
-							<?php var $i = 0 ?>
+							<?php $i = 0; ?>
 							<?php while ( have_rows('sections') ) : the_row(); ?>
     							<li role="presentation" <?php ($i == 0) ? echo 'class="active"'; ?>><a href="#tab-<?php echo $i; ?>" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
     							<?php $i++ ?>

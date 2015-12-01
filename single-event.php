@@ -137,7 +137,7 @@
 							<?php endforeach; ?>
 						</ul>
 					<?php } else { ?>
-						<p>No talks found.</p>
+						<p>No talks listed, yet.</p>
 					<?php } ?>
 				</div>
 			</div>
@@ -158,7 +158,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<h2>Call to Action</h2>
+					<h2>Get ahold of us...</h2>
 					<span>Contact:</span> <a href="mailto:<?php the_field('organizer_email'); ?>"><?php the_field('organizer_name'); ?></a>
 					<strong><?php echo $target; ?></strong>
 					<?php // echo do_shortcode( '[gravityform id="2" title="false" description="false" field_values="event_email=' . $target . '"]' ); ?>

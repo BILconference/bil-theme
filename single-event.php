@@ -176,7 +176,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<h2>Sponsors</h2>
-						<ul>
+						<ul class="sponsors">
 							<?php foreach( $sponsors as $sponsor): ?>
 								<?php setup_postdata($sponsor); ?>
 								<?php $imgObj = get_field('white_image', $sponsor); ?>

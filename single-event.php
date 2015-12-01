@@ -108,7 +108,7 @@
 						<ul class="nav nav-tabs" role="tablist">
 							<?php $i = 0; ?>
 							<?php while ( have_rows('sections') ) : the_row(); ?>
-    							<li role="presentation" <?php echo ($i == 0) ? 'class="active"'; ?>><a href="#tab-<?php echo $i; ?>" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    							<li role="presentation" <?php echo ($i == 0) ? 'class="active"' ?>><a href="#tab-<?php echo $i; ?>" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
     							<?php $i++ ?>
     						<?php endwhile; ?>
 						</ul>

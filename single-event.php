@@ -118,6 +118,7 @@
 							<?php $panel_i = 0; ?>
 							<?php while ( have_rows('sections') ) : the_row(); ?>
 								<div role="tabpanel" class="tab-pane <?php if ($panel_i == 0) { ?>active<?php } ?>" id="<?php echo sanitize_title(get_sub_field('subject')) ?>">
+									<h3><?php the_sub_field('subject'); ?></h3>
 									<?php the_sub_field('info'); ?>	
 								</div>
 								<?php $panel_i++ ?>

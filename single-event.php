@@ -109,7 +109,7 @@
 							<?php $i = 0; ?>
 							<?php while ( have_rows('sections') ) : the_row(); ?>
     							<li role="presentation" <?php if ($i == 0) { ?>class="active"<?php } ?>>
-    								<a href="#tab-<?php echo $i; ?>" aria-controls="home" role="tab" data-toggle="tab">Home</a>
+    								<a href="#<?php sanitize_title(get_the_sub_field('subject')) ?>" aria-controls="home" role="tab" data-toggle="tab"><?php the_sub_field('subject'); ?></a>
     							</li>
     							<?php $i++ ?>
     						<?php endwhile; ?>
@@ -119,7 +119,7 @@
 
 
 						<?php while ( have_rows('sections') ) : the_row(); ?>
-							<h3><?php the_sub_field('subject'); ?></h3>
+							<h3></h3>
 							<div class="section-content">
 								<?php the_sub_field('info'); ?>
 							</div>

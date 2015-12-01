@@ -149,7 +149,7 @@
 					<div class="col-xs-12">
 						<h2>Talks</h2>
 						<ul>
-							<?php foreach( $talks as $talk ): ?>
+							<?php foreach ( $talks as $talk ): ?>
 								<?php $speaker = get_field('speaker', $talk->ID); ?>
 								<li>
 									<a href="<?php echo get_permalink( $talk->ID ); ?>">
@@ -167,16 +167,31 @@
 			</div>
 		</div>
 	<?php } ?>
+	
+	<?php $sponsors = get_field('sponsors'); ?>
 
-	<div id="event-sponsors">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<h2>Sponsors</h2>
+	<?php if ( $sponsors) :?>
+		<div id="event-sponsors">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h2>Sponsors</h2>
+						<?php foreach( $sponsors as $sponsor): ?>
+							<?php setup_postdata($sponsor); ?>
+							<?php $imgObj = get_field('white_image');
+						 	  $image = $imgObj['sizes'][ '1000x400' ]; 
+						 	  $sponsor_url = get_field('url'); ?>
+
+							<li class="sponsor-wrap">
+								<a href="<?php echo $sponsor_url; ?>" target="_blank"><img alt="<?php the_title(); ?>" src="<?php echo $image; ?>"></a>
+							</li>
+						<?php endforeach; ?>
+						<?php wp_reset_postdata(); ?>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	<?php endif; ?>
 
 	<div id="event-cta">
 		<div class="container">

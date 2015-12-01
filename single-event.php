@@ -176,17 +176,18 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<h2>Sponsors</h2>
-						<?php foreach( $sponsors as $sponsor): ?>
-							<?php setup_postdata($sponsor); ?>
-							<?php $imgObj = get_field('white_image', $sponsor);
-						 	  $image = $imgObj['sizes'][ '1000x400' ]; 
-						 	  $sponsor_url = get_field('url', $sponsor); ?>
-
-							<li class="sponsor-wrap">
-								<a href="<?php echo $sponsor_url; ?>" target="_blank"><img alt="<?php the_title(); ?>" src="<?php echo $image; ?>"></a>
-							</li>
-						<?php endforeach; ?>
-						<?php wp_reset_postdata(); ?>
+						<ul>
+							<?php foreach( $sponsors as $sponsor): ?>
+								<?php setup_postdata($sponsor); ?>
+								<?php $imgObj = get_field('white_image', $sponsor); ?>
+								<?php $image = $imgObj['sizes'][ '1000x400' ]; ?>
+							 	<?php $sponsor_url = get_field('url', $sponsor); ?>
+								<li class="sponsor-wrap">
+									<a href="<?php echo $sponsor_url; ?>" target="_blank"><img alt="<?php the_title(); ?>" src="<?php echo $image; ?>"></a>
+								</li>
+							<?php endforeach; ?>
+							<?php wp_reset_postdata(); ?>
+						</ul>
 					</div>
 				</div>
 			</div>

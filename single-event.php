@@ -130,23 +130,24 @@
 		</div>
 	</div>
 
-	<div id="event-talks">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<h2>Talks</h2>
-					<?php $talks = get_posts(array(
-						'post_type' => 'talk',
-						'posts_per_page' => '50',
-						'meta_query' => array(
-							array(
-								'key' => 'event', // name of custom field
-								'value' => $post->ID, // matches exaclty "123", not just 123. This prevents a match for "1234"
-								'compare' => '='
-							)
-						)
-					)); ?>
-					<?php if( $talks ) { ?>
+	<?php $talks = get_posts(array(
+		'post_type' => 'talk',
+		'posts_per_page' => '50',
+		'meta_query' => array(
+			array(
+				'key' => 'event', // name of custom field
+				'value' => $post->ID, // matches exaclty "123", not just 123. This prevents a match for "1234"
+				'compare' => '='
+			)
+		)
+	)); ?>
+
+	<?php if( $talks ) { ?>
+		<div id="event-talks">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h2>Talks</h2>
 						<ul>
 							<?php foreach( $talks as $talk ): ?>
 								<?php $speaker = get_field('speaker', $talk->ID); ?>
@@ -161,13 +162,11 @@
 								</li>
 							<?php endforeach; ?>
 						</ul>
-					<?php } else { ?>
-						<p>No talks listed, yet.</p>
-					<?php } ?>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	<?php } ?>
 
 	<div id="event-sponsors">
 		<div class="container">

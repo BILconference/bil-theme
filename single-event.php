@@ -120,6 +120,7 @@
 								<div role="tabpanel" class="tab-pane <?php if ($tab_i == 0) { ?>active<?php } ?>" id="<?php sanitize_title(get_sub_field('subject')) ?>">
 									<?php the_sub_field('info'); ?>	
 								</div>
+							<?php endwhile; ?>
   						</div>
 					</div>
 				</div>

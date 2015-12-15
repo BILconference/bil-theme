@@ -96,7 +96,7 @@
 							<?php while ( have_rows('organizers') ) : the_row(); ?>
 								<?php $organizer = get_sub_field('organizer'); ?>
 								<dt><?php echo $organizer->post_title; ?></dt>
-								<dd><?php the_sub_field('duties'); ?></dd>
+								<dd><?php the_sub_field('duties'); ?> <?php the_sub_field('organizer_photo'); ?></dd>
 							<?php endwhile; ?>
 						</dl>
 					<?php else: ?>

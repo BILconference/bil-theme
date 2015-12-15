@@ -15,6 +15,8 @@
 	<?php if (get_field("hero_background")) {
 		$background = get_field("hero_background");
 		$image = $background['sizes']['full-width'];
+	} else if ( has_post_thumbnail() ) {
+		$image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 	} else {
 		$background = get_field("event_hero_background", "option");
 		$image = $background['sizes']['full-width'];

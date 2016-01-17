@@ -70,4 +70,16 @@ body.single-event {
 		@extend %module;
 	}
 
+	#event-press {
+		background-color:$bil-blue;
+		color:#fff;
+
+		a {
+			color:#fff;
+		}
+
+		@extend %module;
+
+	}
+
 }

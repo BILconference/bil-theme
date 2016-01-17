@@ -133,6 +133,8 @@
 		</div>
 	</div>
 
+	<?php // Talks -------------------------------------------------- ?>
+
 	<?php $talks = get_posts(array(
 		'post_type' => 'talk',
 		'posts_per_page' => '50',
@@ -171,6 +173,8 @@
 		</div>
 	<?php } ?>
 	
+	<?php // Sponsors ------------------------------------------------- ?>
+
 	<?php $sponsors = get_field('sponsors'); ?>
 
 	<?php if ( $sponsors) :?>
@@ -196,6 +200,32 @@
 			</div>
 		</div>
 	<?php endif; ?>
+
+	<?php // Press -------------------------------------------------- ?>
+
+	<?php $articles = get_field('press');?>
+
+	<?php if( $articles ) { ?>
+		<div id="event-press">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h2>Press</h2>
+						<ul>
+							<?php foreach ( $articles as $article ): ?>
+								<?php $speaker = get_field('speaker', $article->ID); ?>
+								<li>
+									<a href="<?php echo get_permalink( $article->ID ); ?>">
+										<?php echo $article->post_title; ?>
+									</a>
+								</li>
+							<?php endforeach; ?>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	<?php } ?>
 
 	<div id="event-cta">
 		<div class="container">

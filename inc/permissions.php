@@ -6,5 +6,3 @@ function add_gf_cap()
 }
 
 add_action( 'admin_init', 'add_gf_cap' );
-
-?>

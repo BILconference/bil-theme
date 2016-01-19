@@ -65,4 +65,4 @@ require_once get_template_directory() . '/inc/admin-cpt-list.php';
 require_once get_template_directory() . '/inc/gravity-forms-dyn-values.php';
 
 // Custom Permissions
-require_once get_template_directory() . 'inc/permissions.php';
+require_once get_template_directory() . '/inc/permissions.php';

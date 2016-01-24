@@ -1552,6 +1552,8 @@ body.blog div.content .post {
       height: 1200px;
       border: 0; }
 
+body.single-event #event-hero .content {
+  text-shadow: 1px 1px 5px #000; }
 body.single-event #event-about .organizers-list dl {
   margin: 0;
   padding: 0; }

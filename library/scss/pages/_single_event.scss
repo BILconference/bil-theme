@@ -6,13 +6,22 @@ body.single-event {
 	#event-about {
 		@extend %module;
 
-		.organizers-list dl {
-			margin:0;
-			padding:0;
+		.organizers-list {
+			
 
-			dd {
-				margin-bottom:.5em;
+			dl {
+				margin:0;
+				padding:0;
+
+				dd {
+					margin-bottom:.5em;
+				}
+				.organizer-photo-container {
+					display:none;
+				}
 			}
+
+
 		}
 	}
 

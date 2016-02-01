@@ -72,3 +72,15 @@ function add_slug_body_class( $classes ) {
 }
 
 add_filter( 'body_class', 'add_slug_body_class' );
+
+
+// add the ability for the Editors to embed iframes and other HTML entities.
+function add_theme_caps() {
+    // gets the author role
+    $role = get_role( 'editor' );
+
+    // This only works, because it accesses the class instance.
+    // would allow the author to edit others' posts for current theme only
+    $role->add_cap( 'unfiltered_html' ); 
+}
+add_action( 'admin_init', 'add_theme_caps');

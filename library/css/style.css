@@ -1369,7 +1369,7 @@ footer#footer {
     @media (min-width: 992px) {
       #module-map #bil-global-statistics {
         padding: 0; } }
-  #module-map .map-cta {
+  #module-map #map-cta {
     text-align: center; }
   #module-map #full-event-list ul {
     margin-top: 10px;

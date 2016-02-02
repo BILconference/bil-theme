@@ -1,4 +1,11 @@
- ul.filter-categories {
+button.pink {
+	background-color: $cta-pink;
+	color: #fff;
+	font-size: 1em;
+}
+
+
+ul.filter-categories {
     list-style: none;
     margin-left: 0;
     padding-left: 0;

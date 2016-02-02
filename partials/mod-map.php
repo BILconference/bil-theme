@@ -9,7 +9,11 @@
 				<div><?php the_field('line_3', $module->ID); ?></div> 
 				<div><?php the_field('line_4', $module->ID); ?></div> 
 				<div><?php the_field('line_5', $module->ID); ?></div> 
+				<div id="map-cta">
+					<button class="pink hidden">Organize BIL in your City</button>
+				</div>
 			</div>
+
 			<div id="full-event-list" class="col-xs-12 col-md-4">				
 				<?php $all_bils = all_bils(); ?>
 				<?php if ($all_bils->have_posts() ) : ?>

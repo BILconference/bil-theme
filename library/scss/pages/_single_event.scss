@@ -51,6 +51,9 @@ body.single-event {
 
 		.organizers-list {
 			
+			max-height: 320px;
+			position: relative;
+			overflow: hidden;
 
 			dl {
 				margin:0;
@@ -62,6 +65,17 @@ body.single-event {
 				.organizer-photo-container {
 					display:none;
 				}
+			}
+
+			.more {
+				position: absolute; 
+				bottom: 0; 
+				left: 0;
+				width: 100%; 
+				text-align: center; 
+				margin: 0; padding: 20px 0; 
+
+				background-image: linear-gradient(to bottom, transparent, white);
 			}
 
 

@@ -89,7 +89,16 @@
 						<?php } ?>
 					</div>
 				</div>
+
 				<div class="col-xs-12 col-md-4 organizers-list">
+					<?php 
+					$logo = get_field("logo");
+					if ( $logo ): ?>
+
+					<?php else: ?>
+
+					<?php endif; ?>
+
 					<h2>Organizers</h2>
 					<?php if( have_rows('organizers') ): ?>
 						<dl>
@@ -108,7 +117,7 @@
 			<?php if( have_rows('sections') ) { ?>
 				<div class="row">
 					<div class="col-xs-12">
-						<ul class="nav nav-tabs" role="tablist">
+						<ul id="single-event-nav-tabs" class="nav nav-tabs" role="tablist">
 							<?php $tab_i = 0; ?>
 							<?php while ( have_rows('sections') ) : the_row(); ?>
     							<li role="presentation" <?php if ($tab_i == 0) { ?>class="active"<?php } ?>>

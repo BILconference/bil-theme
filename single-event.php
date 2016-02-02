@@ -93,29 +93,34 @@
 
 				</div>
 
-				<div class="col-xs-12 col-md-4 organizers-list">
-					<?php 
-					$logo = get_field("logo");
-					if ( $logo ): ?>
+				<div id="single-event-sidebar" class="col-xs-12 col-md-4 ">
+					<div id="single-event-logo">
+						<?php 
+						$logo = get_field("logo");
+						if ( $logo ): ?>
 
-					<?php else: ?>
+						<?php else: ?>
 
-					<?php endif; ?>
+						<?php endif; ?>
+					</div>
 
-					<h2>Organizers</h2>
-					<?php if( have_rows('organizers') ): ?>
-						<dl>
-							<?php while ( have_rows('organizers') ) : the_row(); ?>
-								<?php $organizer = get_sub_field('organizer'); ?>
-								<div class="organizer-photo-container"><?php echo $organizer->organizer_photo; ?></div>
-								<dt><?php echo $organizer->post_title; ?></dt>
-								<dd><?php the_sub_field('duties'); ?> </dd>
-							<?php endwhile; ?>
-						</dl>
-					<?php else: ?>
-						<p>Organizers not listed.</p>
-					<?php endif; ?>
+					<div id="single-event-organizers" class="organizers-list">
+						<h2>Organizers</h2>
+						<?php if( have_rows('organizers') ): ?>
+							<dl>
+								<?php while ( have_rows('organizers') ) : the_row(); ?>
+									<?php $organizer = get_sub_field('organizer'); ?>
+									<div class="organizer-photo-container"><?php echo $organizer->organizer_photo; ?></div>
+									<dt><?php echo $organizer->post_title; ?></dt>
+									<dd><?php the_sub_field('duties'); ?> </dd>
+								<?php endwhile; ?>
+							</dl>
+						<?php else: ?>
+							<p>Organizers not listed.</p>
+						<?php endif; ?>
+					</div>
 				</div>
+			
 			</div>
 
 			

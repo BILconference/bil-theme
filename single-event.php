@@ -52,56 +52,45 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<ul id="single-event-nav-tabs" class="nav nav-tabs" role="tablist">
-						<li role="presentation" class="active">
-							<a href="#general" aria-controls="general" role="tab" data-toggle="tab">General</a>
-						</li>
-						<?php $tab_i = 0; ?>
-						<?php while ( have_rows('sections') ) : the_row(); ?>
-							<li role="presentation" <?php if ($tab_i == 0) { ?><?php } ?>>
-								<a href="#<?php echo sanitize_title(get_sub_field('subject')) ?>" aria-controls="<?php echo sanitize_title(get_sub_field('subject')) ?>" role="tab" data-toggle="tab"><?php the_sub_field('subject'); ?></a>
+					<?php if( have_rows('sections') ) { ?>
+						<ul id="single-event-nav-tabs" class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active">
+								<a href="#general" aria-controls="general" role="tab" data-toggle="tab">General</a>
 							</li>
-							<?php $tab_i++ ?>
-						<?php endwhile; ?>
-					</ul>
+							<?php $tab_i = 0; ?>
+							<?php while ( have_rows('sections') ) : the_row(); ?>
+								<li role="presentation" <?php if ($tab_i == 0) { ?><?php } ?>>
+									<a href="#<?php echo sanitize_title(get_sub_field('subject')) ?>" aria-controls="<?php echo sanitize_title(get_sub_field('subject')) ?>" role="tab" data-toggle="tab"><?php the_sub_field('subject'); ?></a>
+								</li>
+								<?php $tab_i++ ?>
+							<?php endwhile; ?>
+						</ul>
+					<?php } ?>
 				</div>
 				<div class="col-xs-12 col-md-8">
-					<div class="about">
-						<h2>About</h2>
-						<?php the_content(); ?>
-					</div>
-					<div class="row">
-						<div class="address col-xs-12 col-md-6">
-							<h2>Address</h2>
-							<address><?php the_field('specific_location'); ?></address>
+					<?php if( have_rows('sections') ) { ?>
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="general">
+								<h3>General</h3>
+								<?php the_content(); ?>	
+							</div>
+							<?php $panel_i = 0; ?>
+							<?php while ( have_rows('sections') ) : the_row(); ?>
+								<div role="tabpanel" class="tab-pane" id="<?php echo sanitize_title(get_sub_field('subject')) ?>">
+									<h3><?php the_sub_field('subject'); ?></h3>
+									<?php the_sub_field('info'); ?>	
+								</div>
+								<?php $panel_i++ ?>
+							<?php endwhile; ?>
 						</div>
-						
-						<div class="social col-xs-12 col-md-6">
-							<h2>Social</h2>
-							<ul>
-								<?php if (get_field('facebook_event')) { ?>
-									<li><a href="<?php the_field('facebook_event'); ?>">Facebook Event</a></li>
-								<?php } ?>
-								<?php if (get_field('facebook_page')) { ?>
-									<li><a href="<?php the_field('facebook_page'); ?>">Facebook Page</a></li>
-								<?php } ?>
-								<?php if (get_field('twitter')) { ?>
-									<li><a href="<?php the_field('twitter'); ?>">Twitter</a></li>
-								<?php } ?>
-								<?php if (get_field('ticketing')) { ?>
-									<li><a href="<?php the_field('ticketing'); ?>">Tickets</a></li>
-								<?php } ?>
-							</ul>
+					<?php } else { ?>
+						<div class="about">
+							<h2>About</h2>
+							<?php the_content(); ?>
 						</div>
-					</div>
 
-					<div class="ticketing">
-						<?php if (get_field('ticketing_embed_code')) { ?>
-							<h2>Ticketing</h2>
-							<?php $embed = get_field('ticketing_embed_code'); ?>
-							<?php echo sprintf($embed); ?>
-						<?php } ?>
-					</div>
+					<?php } ?>
+
 				</div>
 
 				<div class="col-xs-12 col-md-4 organizers-list">
@@ -129,27 +118,7 @@
 				</div>
 			</div>
 
-			<?php if( have_rows('sections') ) { ?>
-				<div class="row">
-					<div class="col-xs-12">
-						
-						<div class="tab-content">
-							<div role="tabpanel" class="tab-pane active" id="general">
-								<h3>General</h3>
-								<?php the_content(); ?>	
-							</div>
-							<?php $panel_i = 0; ?>
-							<?php while ( have_rows('sections') ) : the_row(); ?>
-								<div role="tabpanel" class="tab-pane" id="<?php echo sanitize_title(get_sub_field('subject')) ?>">
-									<h3><?php the_sub_field('subject'); ?></h3>
-									<?php the_sub_field('info'); ?>	
-								</div>
-								<?php $panel_i++ ?>
-							<?php endwhile; ?>
-  						</div>
-					</div>
-				</div>
-			<?php } ?>
+			
 		</div>
 	</div>
 

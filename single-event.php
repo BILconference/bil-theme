@@ -51,6 +51,20 @@
 	<div id="event-about">
 		<div class="container">
 			<div class="row">
+				<div class="col-xs-12">
+					<ul id="single-event-nav-tabs" class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active">
+							<a href="#general" aria-controls="general" role="tab" data-toggle="tab">General</a>
+						</li>
+						<?php $tab_i = 0; ?>
+						<?php while ( have_rows('sections') ) : the_row(); ?>
+							<li role="presentation" <?php if ($tab_i == 0) { ?><?php } ?>>
+								<a href="#<?php echo sanitize_title(get_sub_field('subject')) ?>" aria-controls="<?php echo sanitize_title(get_sub_field('subject')) ?>" role="tab" data-toggle="tab"><?php the_sub_field('subject'); ?></a>
+							</li>
+							<?php $tab_i++ ?>
+						<?php endwhile; ?>
+					</ul>
+				</div>
 				<div class="col-xs-12 col-md-8">
 					<div class="about">
 						<h2>About</h2>
@@ -118,18 +132,7 @@
 			<?php if( have_rows('sections') ) { ?>
 				<div class="row">
 					<div class="col-xs-12">
-						<ul id="single-event-nav-tabs" class="nav nav-tabs" role="tablist">
-							<li role="presentation" class="active">
-								<a href="#general" aria-controls="general" role="tab" data-toggle="tab">General</a>
-							</li>
-							<?php $tab_i = 0; ?>
-							<?php while ( have_rows('sections') ) : the_row(); ?>
-    							<li role="presentation" <?php if ($tab_i == 0) { ?><?php } ?>>
-    								<a href="#<?php echo sanitize_title(get_sub_field('subject')) ?>" aria-controls="<?php echo sanitize_title(get_sub_field('subject')) ?>" role="tab" data-toggle="tab"><?php the_sub_field('subject'); ?></a>
-    							</li>
-    							<?php $tab_i++ ?>
-    						<?php endwhile; ?>
-						</ul>
+						
 						<div class="tab-content">
 							<div role="tabpanel" class="tab-pane active" id="general">
 								<h3>General</h3>

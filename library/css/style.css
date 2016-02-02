@@ -1596,12 +1596,12 @@ body.single-event #event-about .organizers-list {
     text-align: center;
     margin: 0;
     padding: 20px 0;
-    background-color: #fff;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#fff));
-    background-image: -webkit-linear-gradient(top, transparent, #fff);
-    background-image: -moz-linear-gradient(top, transparent, #fff);
-    background-image: -o-linear-gradient(top, transparent, #fff);
-    background-image: linear-gradient(to bottom, transparent, #fff); }
+    background-color: white;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), white);
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0), white);
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0), white);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white); }
 body.single-event #event-sponsors {
   background-color: #2ea3f2;
   color: #fff; }

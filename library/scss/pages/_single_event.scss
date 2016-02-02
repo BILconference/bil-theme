@@ -75,7 +75,7 @@ body.single-event {
 				text-align: center; 
 				margin: 0; padding: 20px 0; 
 
-				@include css-gradient(transparent,#fff);
+				@include css-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 100));
 			}
 
 

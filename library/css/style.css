@@ -1560,8 +1560,7 @@ body.single-event #event-hero .content {
   text-shadow: 1px 1px 5px #000; }
 body.single-event #event-about .single-event-nav-container.cloned {
   background: #fff;
-  border-bottom: 1px solid #E8E8E8;
-  width: 100% !important; }
+  border-bottom: 1px solid #E8E8E8; }
 body.single-event #event-about #single-event-nav-tabs {
   border-bottom: none;
   font-size: 1.2em; }

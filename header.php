@@ -67,8 +67,8 @@
 						<ul class="soc nav navbar-nav navbar-right visible-md visible-lg visible-xl">
 							<li><a class="soc-twitter" href="http://twitter.com/bilconf" target="_blank"></a></li>
 							<li><a class="soc-facebook" href="http://facebook.com/bilconference" target="_blank"></a></li>
-							<li><a class="soc-github" href="http://github.com/bilconference" target="_blank"></a></li>
-							<li class="slack"><a href="/slack/"><img src="http://bil-slack.herokuapp.com/badge.svg"></a></li>
+							<li class="hidden"><a class="soc-github" href="http://github.com/bilconference" target="_blank"></a></li>
+							<li class="slack hidden"><a href="/slack/"><img src="http://bil-slack.herokuapp.com/badge.svg"></a></li>
 						</ul>
 					</div>
 				</div>

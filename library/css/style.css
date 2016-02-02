@@ -1566,6 +1566,8 @@ body.single-event #event-about #single-event-nav-tabs {
     cursor: default;
     background-color: #fff;
     border: none; }
+  body.single-event #event-about #single-event-nav-tabs.cloned {
+    background: #fff; }
 body.single-event #event-about .organizers-list dl {
   margin: 0;
   padding: 0; }

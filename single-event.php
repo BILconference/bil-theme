@@ -119,7 +119,6 @@
 									<dd><?php the_sub_field('duties'); ?> </dd>
 								<?php endwhile; ?>
 							</dl>
-							<p class="more"><a href="#" class="button">see all...</a></p>
 						<?php else: ?>
 							<p>Organizers not listed.</p>
 						<?php endif; ?>

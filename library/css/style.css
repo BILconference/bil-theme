@@ -1596,7 +1596,12 @@ body.single-event #event-about .organizers-list {
     text-align: center;
     margin: 0;
     padding: 20px 0;
-    background-image: linear-gradient(to bottom, transparent, white); }
+    background-color: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#fff));
+    background-image: -webkit-linear-gradient(top, transparent, #fff);
+    background-image: -moz-linear-gradient(top, transparent, #fff);
+    background-image: -o-linear-gradient(top, transparent, #fff);
+    background-image: linear-gradient(to bottom, transparent, #fff); }
 body.single-event #event-sponsors {
   background-color: #2ea3f2;
   color: #fff; }

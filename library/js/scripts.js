@@ -72,7 +72,7 @@ jQuery(document).ready(function($) {
 	// Allows us to use a class to create DIV TEXT FILLING GOODNESS. 
 	$(".bigtext").bigtext();
 
-	$("#single-event-nav-container").stickThis({
+	$(".single-event-nav-container").stickThis({
 	    top:        0,      // top position of sticky element, measured from 'ceiling'
 	    minscreenwidth: 960,      // element will not be sticky when viewport width smaller than this
 	    maxscreenwidth: 999999,     // element will not be sticky when viewport width larger than this 

@@ -12,6 +12,12 @@ body.single-event {
 	#event-about {
 		@extend %module;
 
+		#single-event-nav-container {
+			&.cloned {
+				background:#fff;
+			}
+		}
+
 		#single-event-nav-tabs {
 			border-bottom: none;
 			font-size: 1.2em;

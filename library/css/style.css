@@ -1164,7 +1164,8 @@ probably best not to use it. I mean, were you going to anyway? */
 .f32 .ss {
   background-position: 0 -7872px; }
 
-button.pink {
+button.pink,
+a.button.pink {
   background-color: #E01563;
   color: #fff;
   font-size: 1em;

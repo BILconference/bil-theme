@@ -12,6 +12,18 @@ body.single-event {
 	#event-about {
 		@extend %module;
 
+		#single-event-nav-tabs {
+			
+			li.active>a, li.active>a:focus, li.active>a:hover {
+				    color: $bil-blue;
+				    cursor: default;
+				    background-color: #fff;
+				    /* border: 1px solid #ddd; */
+				    /* border-bottom-color: transparent; */
+			
+			}
+		}
+
 		.organizers-list {
 			
 

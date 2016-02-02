@@ -1554,6 +1554,12 @@ body.blog div.content .post {
 
 body.single-event #event-hero .content {
   text-shadow: 1px 1px 5px #000; }
+body.single-event #event-about #single-event-nav-tabs li.active > a, body.single-event #event-about #single-event-nav-tabs li.active > a:focus, body.single-event #event-about #single-event-nav-tabs li.active > a:hover {
+  color: #2ea3f2;
+  cursor: default;
+  background-color: #fff;
+  /* border: 1px solid #ddd; */
+  /* border-bottom-color: transparent; */ }
 body.single-event #event-about .organizers-list dl {
   margin: 0;
   padding: 0; }

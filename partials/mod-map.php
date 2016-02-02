@@ -10,7 +10,7 @@
 				<div><?php the_field('line_4', $module->ID); ?></div> 
 				<div><?php the_field('line_5', $module->ID); ?></div> 
 				<div id="map-cta">
-					<button class="pink hidden">Organize BIL in your City</button>
+					<button class="pink">Organize BIL in your City</button>
 				</div>
 			</div>
 

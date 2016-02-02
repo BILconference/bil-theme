@@ -1167,7 +1167,10 @@ probably best not to use it. I mean, were you going to anyway? */
 button.pink {
   background-color: #E01563;
   color: #fff;
-  font-size: 1em; }
+  font-size: 1em;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-transform: uppercase; }
 
 ul.filter-categories {
   list-style: none;
@@ -1366,6 +1369,8 @@ footer#footer {
     @media (min-width: 992px) {
       #module-map #bil-global-statistics {
         padding: 0; } }
+  #module-map .map-cta {
+    text-align: center; }
   #module-map #full-event-list ul {
     margin-top: 10px;
     list-style: none;

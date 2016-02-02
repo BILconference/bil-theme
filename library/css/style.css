@@ -1200,7 +1200,7 @@ form input, form textarea {
   padding: .5em; }
 
 #wpadminbar {
-  top: auto;
+  top: auto !important;
   bottom: 0; }
 
 header#header nav#nav.navbar {

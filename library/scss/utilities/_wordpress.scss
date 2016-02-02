@@ -1,5 +1,5 @@
 #wpadminbar {
 	// move the WPadmin bar to the bottom so that we can see some of the effects of our sticky menus unobstructed
-	top:auto;
-	bottom:0
+	top:auto !important;
+	bottom:0;
 }

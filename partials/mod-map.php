@@ -12,7 +12,7 @@
 					<div><?php the_field('line_5', $module->ID); ?></div> 
 				</div>
 				<div id="map-cta">
-					<button class="pink">Organize BIL in your City</button>
+					<a href="http://bilconference.com/resources/" class="button pink">Organize BIL in your City</a>
 				</div>
 			</div>
 

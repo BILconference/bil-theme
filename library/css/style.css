@@ -1371,7 +1371,8 @@ footer#footer {
       #module-map #bil-global-statistics {
         padding: 0; } }
   #module-map #map-cta {
-    text-align: center; }
+    text-align: center;
+    padding-top: 20px; }
   #module-map #full-event-list ul {
     margin-top: 10px;
     list-style: none;

@@ -108,6 +108,9 @@ function bil_move_admin_bar() { ?>
         #wpadminbar .ab-top-menu>.menupop>.ab-sub-wrapper {
         	bottom:100%;
         }
+        #wpadminbar .quicklinks .menupop ul {
+		    bottom: 0px;
+		}
     </style>
 <?php }
 // on backend area

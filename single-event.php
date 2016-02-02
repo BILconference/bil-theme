@@ -49,8 +49,8 @@
 	</div>
 
 	<div id="event-about">
-		<div class="container">
-			<div class="row single-event-nav-container">
+		<div class="container single-event-nav-container">
+			<div class="row">
 				<div class="col-xs-12">
 					<?php if( have_rows('sections') ) { ?>
 						<ul id="single-event-nav-tabs" class="nav nav-tabs" role="tablist">
@@ -68,6 +68,8 @@
 					<?php } ?>
 				</div>
 			</div>
+		</div>
+		<div class="container"
 			<div class="row">
 				<div class="col-xs-12 col-md-8">
 					<?php if( have_rows('sections') ) { ?>

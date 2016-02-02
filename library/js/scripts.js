@@ -108,7 +108,7 @@ jQuery(document).ready(function($) {
 	    });
 	  
 	  // fade out read-more
-	  $p.fadeOut();
+	  $p.fadeIn();
 	  
 	  // prevent jump-down
 	  return false;

@@ -89,21 +89,24 @@ add_action( 'admin_init', 'add_theme_caps');
 function bil_move_admin_bar() { ?>
     <style type="text/css">
         body {
-            margin-top: -28px;
-            padding-bottom: 28px;
+            margin-top: -32px;
+            padding-bottom: 32px;
         }
         body.admin-bar #wphead {
             padding-top: 0;
         }
         body.admin-bar #footer {
-            padding-bottom: 28px;
+            padding-bottom: 32px;
         }
         #wpadminbar {
             top: auto !important;
             bottom: 0;
         }
         #wpadminbar .quicklinks .menupop ul {
-            bottom: 28px;
+            bottom: 32px;
+        }
+        #wpadminbar .ab-top-menu>.menupop>.ab-sub-wrapper {
+        	bottom:100%;
         }
     </style>
 <?php }

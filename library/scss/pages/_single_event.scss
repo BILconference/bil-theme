@@ -12,9 +12,10 @@ body.single-event {
 	#event-about {
 		@extend %module;
 
-		#single-event-nav-container {
+		.single-event-nav-container {
 			&.cloned {
 				background:#fff;
+				border-bottom: 1px solid $dark-gray;
 			}
 		}
 

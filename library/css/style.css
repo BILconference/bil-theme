@@ -1552,11 +1552,16 @@ body.blog div.content .post {
       height: 1200px;
       border: 0; }
 
+body.single-event img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
 body.single-event #event-hero .content {
   text-shadow: 1px 1px 5px #000; }
 body.single-event #event-about .single-event-nav-container.cloned {
   background: #fff;
-  border-bottom: 1px solid #888888; }
+  border-bottom: 1px solid #E8E8E8;
+  width: 100% !important; }
 body.single-event #event-about #single-event-nav-tabs {
   border-bottom: none;
   font-size: 1.2em; }

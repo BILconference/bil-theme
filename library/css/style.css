@@ -1199,6 +1199,10 @@ form input, form textarea {
   color: #333;
   padding: .5em; }
 
+#wpadminbar {
+  top: auto;
+  bottom: 0; }
+
 header#header nav#nav.navbar {
   margin-bottom: 0px; }
 

@@ -3,12 +3,14 @@
 <div id="module-map">
 	<div class="container">
 		<div class="row">
-			<div id="bil-global-statistics" class="col-xs-12 col-md-8 bigtext">
-				<div><?php the_field('line_1', $module->ID); ?></div> 
-				<div><?php the_field('line_2', $module->ID); ?></div> 
-				<div><?php the_field('line_3', $module->ID); ?></div> 
-				<div><?php the_field('line_4', $module->ID); ?></div> 
-				<div><?php the_field('line_5', $module->ID); ?></div> 
+			<div class="col-xs-12 col-md-8">
+				<div id="bil-global-statistics" class="bigtext">
+					<div><?php the_field('line_1', $module->ID); ?></div> 
+					<div><?php the_field('line_2', $module->ID); ?></div> 
+					<div><?php the_field('line_3', $module->ID); ?></div> 
+					<div><?php the_field('line_4', $module->ID); ?></div> 
+					<div><?php the_field('line_5', $module->ID); ?></div> 
+				</div>
 				<div id="map-cta">
 					<button class="pink">Organize BIL in your City</button>
 				</div>

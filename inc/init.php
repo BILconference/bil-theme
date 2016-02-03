@@ -88,7 +88,7 @@ add_action( 'admin_init', 'add_theme_caps');
 
 function bil_move_admin_bar() { ?>
     <style type="text/css">
-        body {
+        body.admin-bar {
             margin-top: -32px;
             padding-bottom: 32px;
         }

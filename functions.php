@@ -55,6 +55,9 @@ require_once get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 // Regitster Menus
 require_once get_template_directory() . '/inc/menus.php';
 
+// Allow iframe and other tags
+require_once get_template_directory() . '/inc/allowed-tags.php';
+
 // Dashboard Modifications
 //require_once get_template_directory() . '/inc/dashboard.php';
 

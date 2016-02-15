@@ -152,7 +152,7 @@
 		)
 	)); ?>
 
-	<?php if( $talks ) { ?>
+	<?php if( $talks && $today > $event_end_date ) { ?>
 		<div id="event-talks">
 			<div class="container">
 				<div class="row">

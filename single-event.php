@@ -137,9 +137,6 @@
 	<?php $today = date('U'); ?>
 	<?php $event_end_date = DateTime::createFromFormat('Ymd', get_field('end_date'))->format('U'); ?>
 
-	<?php echo $today; ?>
-	<?php echo $event_end_date; ?>
-	
 	<?php $talks = get_posts(array(
 		'post_type' => 'talk',
 		'posts_per_page' => '50',

@@ -138,7 +138,7 @@
 	<?php $event_end_date = DateTime::createFromFormat('Ymd', get_field('end_date')); ?>
 
 	<?php echo $today; ?>
-	<?php echo $event_end_date; ?>
+	<?php echo $event_end_date->format('Ymd'); ?>
 	
 	<?php $talks = get_posts(array(
 		'post_type' => 'talk',

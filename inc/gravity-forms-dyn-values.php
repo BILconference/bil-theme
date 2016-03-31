@@ -9,8 +9,8 @@
 function gfdv_event_email($value) {
 	global $post;
 
-	if (get_field('event_contact')) {
-		return get_field('event_contact', $post->ID);
+	if (get_field('contact_email')) {
+		return get_field('contact_email', $post->ID);
 	} else {
 		return get_option('admin_email');
 	}

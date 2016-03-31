@@ -234,9 +234,10 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<h2>Get ahold of us...</h2>
-					<span>Contact:</span> <a href="mailto:<?php the_field('organizer_email'); ?>"><?php the_field('organizer_name'); ?></a>
-					<strong><?php echo $target; ?></strong>
-					<?php // echo do_shortcode( '[gravityform id="2" title="false" description="false" field_values="event_email=' . $target . '"]' ); ?>
+					<?php $event_email = get_field( "contact_email" ); ?>
+					<?php if ($event_email) { ?>
+						<span>Contact:</span> <a href="mailto:<?php the_field('contact_email'); ?>"><?php the_field('contact_email'); ?></a>
+					<?php } ?>
 					<?php echo do_shortcode( '[gravityform id="2" title="false" description="false"]' ); ?>
 				</div>
 			</div>

@@ -32,6 +32,7 @@
 
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
+		<script src="https://linked.chat/web/1aoPQe" async></script>
 
 	</head>
 

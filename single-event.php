@@ -12,6 +12,20 @@
 <?php get_header(); ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+	<?php 
+		// add in the custom styling for each individual event
+		// users can add their styling into the custom_css custom field on the event edit page
+
+		if ( get_field( "custom_css" ) ) {
+			echo "<style>";
+			echo get_field( "custom_css" );
+			echo "</style>";
+		}
+
+
+	?>
+
 	<?php if (get_field("hero_background")) {
 		$background = get_field("hero_background");
 		$image = $background['sizes']['full-width'];

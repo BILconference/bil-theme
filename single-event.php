@@ -120,6 +120,9 @@
 					<div class="well">
 						<h3>Details:</h3>
 						<ul>
+							<?php if (get_field('contact_email')): ?>
+								<li>Contact: <a href="mailto:<?php the_field('contact_email'); ?>"><?php the_field('contact_email'); ?></a></li>
+							<?php endif; ?>
 							<?php if (get_field('start_date')): ?>
 								<?php $start_date = DateTime::createFromFormat('Ymd', get_field('start_date')); ?>
 								<li>Start Date: <?php echo $start_date->format('F jS, Y'); ?></li>
@@ -138,9 +141,6 @@
 							<?php endif; ?>
 							<?php if (get_field('ticketing')): ?>
 								<li><a href="<?php the_field('ticketing'); ?>">Event Tickets</a></li>
-							<?php endif; ?>
-							<?php if (get_field('contact_email')): ?>
-								<li>Contact Email: <a href="mailto:<?php the_field('contact_email'); ?>"><?php the_field('contact_email'); ?></a></li>
 							<?php endif; ?>
 						</ul>
 					</div>

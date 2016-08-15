@@ -121,7 +121,8 @@
 						<h3>Details:</h3>
 						<ul>
 							<?php if (get_field('start_date')): ?>
-								<li>Start Date:<?php the_field('start_date'); ?></li>
+								<?php $start_date = DateTime::createFromFormat('Ymd', get_field('start_date')); ?>
+								<li>Start Date: <?php echo $start_date->format('F jS, Y'); ?></li>
 							<?php endif; ?>
 							<?php if (get_field('end_date') && (get_field('end_date') != get_field('start_date'))): ?>
 								<li>End Date:<?php the_field('end_date'); ?></li>

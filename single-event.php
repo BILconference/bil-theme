@@ -22,8 +22,6 @@
 			echo get_field( "custom_css" );
 			echo "</style>";
 		}
-
-
 	?>
 
 	<?php if (get_field("hero_background")) {
@@ -106,15 +104,12 @@
 							<h2>About</h2>
 							<?php the_content(); ?>
 						</div>
-
 					<?php } ?>
-
 				</div>
 
 				<div id="single-event-sidebar" class="col-xs-12 col-md-4 ">
 					<div id="single-event-logo">
-						<?php 
-						$logo = get_field("logo");
+						<?php if ( get_field("logo") ): ?>
 						if ( $logo ): ?>
 
 						<?php else: ?>
@@ -122,6 +117,32 @@
 						<?php endif; ?>
 					</div>
 
+					<div class="well">
+						<h3>Details:</h3>
+						<ul>
+							<?php if (get_field('start_date')): ?>
+								<li>Start Date:<?php the_field('start_date'); ?></li>
+							<?php endif; ?>
+							<?php if (get_field('end_date') && (get_field('end_date') != get_field('start_date'))): ?>
+								<li>End Date:<?php the_field('end_date'); ?></li>
+							<?php endif; ?>
+							<?php if (get_field('specific_location')): ?>
+								<li><?php the_field('specific_location'); ?></li>
+							<?php endif; ?>
+							<?php if (get_field('facebook_event')): ?>
+								<li><a href="<?php the_field('facebook_event'); ?>">Facebook Event</a></li>
+							<?php endif; ?>
+							<?php if (get_field('facebook_page')): ?>
+								<li><a href="<?php the_field('facebook_page'); ?>">Facebook Page</a></li>
+							<?php endif; ?>
+							<?php if (get_field('ticketing')): ?>
+								<li><a href="<?php the_field('ticketing'); ?>">Event Tickets</a></li>
+							<?php endif; ?>
+							<?php if (get_field('contact_email')): ?>
+								<li>Contact Email: <a href="mailto:<?php the_field('contact_email'); ?>"><?php the_field('contact_email'); ?></a></li>
+							<?php endif; ?>
+						</ul>
+					</div>
 					<div id="single-event-organizers" class="organizers-list">
 						<h2>Organizers</h2>
 						<?php if( have_rows('organizers') ): ?>
@@ -250,7 +271,7 @@
 					<h2>Get ahold of us...</h2>
 					<?php $event_email = get_field( "contact_email" ); ?>
 					<?php if ($event_email) { ?>
-						<span>Contact:</span> <a href="mailto:<?php the_field('contact_email'); ?>"><?php the_field('contact_email'); ?></a>
+						<span>Contact:</span> <a href="mailto:<?php the_field('contact_email'); ?>" style="color:#fff;"><?php the_field('contact_email'); ?></a>
 					<?php } ?>
 					<?php echo do_shortcode( '[gravityform id="2" title="false" description="false"]' ); ?>
 				</div>

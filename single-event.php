@@ -81,7 +81,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="container"
+		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-8">
 					<?php if( have_rows('sections') ) { ?>
@@ -108,15 +108,6 @@
 				</div>
 
 				<div id="single-event-sidebar" class="col-xs-12 col-md-4 ">
-					<div id="single-event-logo">
-						<?php if ( get_field("logo") ): ?>
-						if ( $logo ): ?>
-
-						<?php else: ?>
-
-						<?php endif; ?>
-					</div>
-
 					<div class="well">
 						<h3>Details:</h3>
 						<ul>

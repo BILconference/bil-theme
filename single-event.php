@@ -126,6 +126,7 @@
 							<?php if (get_field('specific_location')): ?>
 								<li><?php the_field('specific_location'); ?></li>
 							<?php endif; ?>
+							<hr>
 							<?php if (get_field('facebook_event')): ?>
 								<li><a href="<?php the_field('facebook_event'); ?>">Facebook Event</a></li>
 							<?php endif; ?>

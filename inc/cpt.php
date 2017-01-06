@@ -414,6 +414,7 @@ function cpt_stream() {
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
 		'capability_type'     => 'post',
+		'rewrite'             => array('slug' => 'global')
 	);
 	register_post_type( 'stream', $args );
 

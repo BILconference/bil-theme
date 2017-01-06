@@ -38,10 +38,9 @@ body.single-event {
 			}
 
 			li.active>a, li.active>a:focus, li.active>a:hover {
-				    color: $bil-blue;
 				    cursor: default;
-				    background-color: #fff;
-				    border: none;			
+				    background-color: #eee;
+				    font-weight:700;
 			}
 
 			&.cloned {

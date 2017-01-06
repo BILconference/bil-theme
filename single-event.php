@@ -86,12 +86,10 @@
 					<?php if( have_rows('sections') ) { ?>
 						<div class="tab-content">
 							<div role="tabpanel" class="tab-pane fade in active" id="general">
-								<h3>General</h3>
 								<?php the_content(); ?>	
 							</div>
 							<?php while ( have_rows('sections') ) : the_row(); ?>
 								<div role="tabpanel" class="tab-pane fade" id="<?php echo sanitize_title(get_sub_field('subject')) ?>">
-									<h3><?php the_sub_field('subject'); ?></h3>
 									<?php the_sub_field('info'); ?>	
 								</div>
 							<?php endwhile; ?>

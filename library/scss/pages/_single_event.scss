@@ -29,7 +29,6 @@ body.single-event {
 		#single-event-nav-tabs {
 			border-bottom: none;
 			font-size: 1.2em;
-			margin-bottom: 15px;
 			
 			li>a {
 			    margin-right: 2px;
@@ -48,6 +47,10 @@ body.single-event {
 			&.cloned {
 				background: #fff;
 			}
+		}
+
+		.tab-content .tab-pane {
+			padding-top:2em;
 		}
 
 		.organizers-list {

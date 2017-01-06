@@ -119,11 +119,10 @@ jQuery(document).ready(function($) {
 	})
 
 	$('.nav-tabs li a').click(function (e) {
-    	e.preventDefault();
-    	$(this).tab('show');
-    	//$('.tab-content > .tab-pane.active').jScrollPane();
+		e.preventDefault();
+		$(this).tab('show');
+		$('.tab-content > .tab-pane.active').jScrollPane();
 	});
-
 
 	// Javascript to enable link to tab
 	var url = document.location.toString();

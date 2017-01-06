@@ -110,16 +110,16 @@
 				<div id="single-event-sidebar" class="col-xs-12 col-md-4 ">
 					<div class="well">
 						<h3>Details:</h3>
-						<ul>
+						<ul class="list-unstyled">
 							<?php if (get_field('contact_email')): ?>
-								<li>Contact: <a href="mailto:<?php the_field('contact_email'); ?>"><?php the_field('contact_email'); ?></a></li>
+								<li><strong>Contact:</strong> <a href="mailto:<?php the_field('contact_email'); ?>"><?php the_field('contact_email'); ?></a></li>
 							<?php endif; ?>
 							<?php if (get_field('start_date')): ?>
 								<?php $start_date = DateTime::createFromFormat('Ymd', get_field('start_date')); ?>
-								<li>Start Date: <?php echo $start_date->format('F jS, Y'); ?></li>
+								<li><strong>Start Date:</strong> <?php echo $start_date->format('F jS, Y'); ?></li>
 							<?php endif; ?>
 							<?php if (get_field('end_date') && (get_field('end_date') != get_field('start_date'))): ?>
-								<li>End Date:<?php the_field('end_date'); ?></li>
+								<li><strong>End Date:</strong> <?php the_field('end_date'); ?></li>
 							<?php endif; ?>
 							<?php if (get_field('specific_location')): ?>
 								<li><?php the_field('specific_location'); ?></li>

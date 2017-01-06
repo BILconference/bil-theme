@@ -119,8 +119,10 @@
 								<li><strong>Start Date:</strong> <?php echo $start_date->format('F jS, Y'); ?></li>
 							<?php endif; ?>
 							<?php if (get_field('end_date') && (get_field('end_date') != get_field('start_date'))): ?>
-								<li><strong>End Date:</strong> <?php the_field('end_date'); ?></li>
+								<?php $end_date = DateTime::createFromFormat('Ymd', get_field('end_date')); ?>
+								<li><strong>End Date:</strong> <?php echo $end_date->format('F jS, Y'); ?></li>
 							<?php endif; ?>
+							<hr>
 							<?php if (get_field('specific_location')): ?>
 								<li><?php the_field('specific_location'); ?></li>
 							<?php endif; ?>

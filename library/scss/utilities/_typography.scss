@@ -23,9 +23,9 @@ $content-font: 'Open Sans', $sans-serif;
 //
 //************************************************************************
 
-p, ul {
-  font-size:18px;
-  line-height:1.5em;
+p, ul, ol, dl {
+  font-size:17px;
+  line-height:1.6em;
 
   -ms-word-wrap: break-word;
   word-break: break-word; //non-standart css for webkit

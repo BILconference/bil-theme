@@ -13,3 +13,7 @@ body .gform_wrapper .field_sublabel_below div[class*=gfield_date_].ginput_contai
 body .gform_wrapper .field_sublabel_below div[class*=gfield_time_].ginput_container label {
     font-size: 12px;
 }
+
+.ui-datepicker-title select {
+    color: #000;
+}

@@ -69,12 +69,11 @@
 							<li role="presentation" class="active">
 								<a href="#general" aria-controls="general" role="tab" data-toggle="tab">General</a>
 							</li>
-							<?php $tab_i = 0; ?>
 							<?php while ( have_rows('sections') ) : the_row(); ?>
-								<li role="presentation" <?php if ($tab_i == 0) { ?><?php } ?>>
-									<a href="#<?php echo sanitize_title(get_sub_field('subject')) ?>" aria-controls="<?php echo sanitize_title(get_sub_field('subject')) ?>" role="tab" data-toggle="tab"><?php the_sub_field('subject'); ?></a>
+								<?php $tabslug = sanitize_title(get_sub_field('subject')); ?>
+								<li role="presentation">
+									<a href="#<?php echo $tabslug ?>" aria-controls="<?php echo $tabslug ?>" role="tab" data-toggle="tab"><?php the_sub_field('subject'); ?></a>
 								</li>
-								<?php $tab_i++ ?>
 							<?php endwhile; ?>
 						</ul>
 					<?php } ?>
@@ -90,13 +89,11 @@
 								<h3>General</h3>
 								<?php the_content(); ?>	
 							</div>
-							<?php $panel_i = 0; ?>
 							<?php while ( have_rows('sections') ) : the_row(); ?>
 								<div role="tabpanel" class="tab-pane fade" id="<?php echo sanitize_title(get_sub_field('subject')) ?>">
 									<h3><?php the_sub_field('subject'); ?></h3>
 									<?php the_sub_field('info'); ?>	
 								</div>
-								<?php $panel_i++ ?>
 							<?php endwhile; ?>
 						</div>
 					<?php } else { ?>
@@ -138,6 +135,7 @@
 							<?php endif; ?>
 						</ul>
 					</div>
+
 					<div id="single-event-organizers" class="organizers-list">
 						<h2>Organizers</h2>
 						<?php if( have_rows('organizers') ): ?>
@@ -158,7 +156,6 @@
 			
 			</div>
 
-			
 		</div>
 	</div>
 

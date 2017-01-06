@@ -108,21 +108,20 @@ jQuery(document).ready(function($) {
 	// 	$( $( this ).attr('href') ).css('padding-top','50px');
 	// 	clicked = true;
 	// 	}
-	// );	
+	// );
 
 	$('#menu_affix').affix({
 		offset: {
 			bottom: function () {
-			return (this.bottom = $('#footer').outerHeight(true) + 50)
+				return (this.bottom = $('#footer').outerHeight(true) + 50);
 			}
 		}
-	})
-
-	$('.nav-tabs li a').click(function (e) {
-		e.preventDefault();
-		$(this).tab('show');
-		$('.tab-content > .tab-pane.active').jScrollPane();
 	});
+
+	// $('.nav-tabs li a').click(function(e) {
+	// 	e.preventDefault();
+	// 	$(this).tab('show');
+	// });
 
 	// Javascript to enable link to tab
 	var url = document.location.toString();

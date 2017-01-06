@@ -97,7 +97,7 @@ jQuery(document).ready(function($) {
 	  $(this).addClass('active');
 	});
 
- 	//  var clicked = false;
+	//  var clicked = false;
 	// $('.sidebar li a').click(
 	// function(){
 	// 	//$('#mycontent > div > h2').css('padding-top',0);
@@ -117,6 +117,12 @@ jQuery(document).ready(function($) {
 			}
 		}
 	})
+
+	$('.nav-tabs li a').click(function (e) {
+    	e.preventDefault();
+    	$(this).tab('show');
+    	//$('.tab-content > .tab-pane.active').jScrollPane();
+	});
 
 
 	// Javascript to enable link to tab

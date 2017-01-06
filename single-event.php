@@ -72,7 +72,7 @@
 							<?php while ( have_rows('sections') ) : the_row(); ?>
 								<?php $tabslug = sanitize_title(get_sub_field('subject')); ?>
 								<li role="presentation">
-									<a href="#<?php echo $tabslug ?>" aria-controls="<?php echo $tabslug ?>" role="tab" data-toggle="tab"><?php the_sub_field('subject'); ?></a>
+									<a aria-controls="<?php echo $tabslug ?>" role="tab" data-toggle="tab"><?php the_sub_field('subject'); ?></a>
 								</li>
 							<?php endwhile; ?>
 						</ul>

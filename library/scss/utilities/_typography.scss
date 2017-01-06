@@ -24,6 +24,8 @@ $content-font: 'Open Sans', $sans-serif;
 //************************************************************************
 
 p {
+  font-size:18px;
+
   -ms-word-wrap: break-word;
   word-break: break-word; //non-standart css for webkit
   word-wrap: break-word;

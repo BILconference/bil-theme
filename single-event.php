@@ -104,7 +104,9 @@
 
 				<div id="single-event-sidebar" class="col-xs-12 col-md-4 ">
 					<?php if (get_field('sidebar_button')): ?>
-						<?php the_field('sidebar_button'); ?>
+						<div class="center-block">
+							<?php the_field('sidebar_button'); ?>
+						</div>
 					<?php endif; ?>
 					<div class="well">
 						<h3>Details:</h3>

@@ -103,40 +103,47 @@
 				</div>
 
 				<div id="single-event-sidebar" class="col-xs-12 col-md-4 ">
-					<?php if (get_field('sidebar_button')): ?>
-						<div class="center-block">
-							<?php the_field('sidebar_button'); ?>
-						</div>
-					<?php endif; ?>
 					<div class="well">
 						<h3>Details:</h3>
 						<ul class="list-unstyled">
 							<?php if (get_field('contact_email')): ?>
 								<li><strong>Contact:</strong> <a href="mailto:<?php the_field('contact_email'); ?>"><?php the_field('contact_email'); ?></a></li>
 							<?php endif; ?>
+
 							<?php if (get_field('start_date')): ?>
 								<?php $start_date = DateTime::createFromFormat('Ymd', get_field('start_date')); ?>
 								<li><strong>Start Date:</strong> <?php echo $start_date->format('F jS, Y'); ?></li>
 							<?php endif; ?>
+
 							<?php if (get_field('end_date') && (get_field('end_date') != get_field('start_date'))): ?>
 								<?php $end_date = DateTime::createFromFormat('Ymd', get_field('end_date')); ?>
 								<li><strong>End Date:</strong> <?php echo $end_date->format('F jS, Y'); ?></li>
 							<?php endif; ?>
+
 							<hr>
+
 							<?php if (get_field('specific_location')): ?>
 								<li><?php the_field('specific_location'); ?></li>
 							<?php endif; ?>
+
 							<hr>
+
 							<?php if (get_field('facebook_event')): ?>
 								<li><a href="<?php the_field('facebook_event'); ?>">Facebook Event</a></li>
 							<?php endif; ?>
+
 							<?php if (get_field('facebook_page')): ?>
 								<li><a href="<?php the_field('facebook_page'); ?>">Facebook Page</a></li>
 							<?php endif; ?>
+
 							<?php if (get_field('ticketing')): ?>
-								<li><a href="<?php the_field('ticketing'); ?>">Event Tickets</a></li>
+								<li><a href="<?php the_field('ticketing'); ?>">Event Registration</a></li>
 							<?php endif; ?>
 						</ul>
+
+						<?php if (get_field('sidebar_button')): ?>
+								<?php the_field('sidebar_button'); ?>
+						<?php endif; ?>
 					</div>
 
 					<div id="single-event-organizers" class="organizers-list">

@@ -1,0 +1,11 @@
+.post-type-archive-stream {
+	.hero.jumbotron {
+		@extend %hero-jumbotron;
+		background-color:$bil-blue;
+	}
+
+	#stream-list {
+		@extend %module;
+	}
+	
+}

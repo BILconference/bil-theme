@@ -275,7 +275,7 @@
 					<?php if ($event_email) { ?>
 						<span>Contact:</span> <a href="mailto:<?php the_field('contact_email'); ?>" style="color:#fff;"><?php the_field('contact_email'); ?></a>
 					<?php } ?>
-					<?php echo do_shortcode( '[gravityform id="2" title="false" description="false"]' ); ?>
+					<?php //echo do_shortcode( '[gravityform id="2" title="false" description="false"]' ); ?>
 				</div>
 			</div>
 		</div>

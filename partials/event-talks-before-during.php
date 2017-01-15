@@ -34,15 +34,15 @@
 									<td><?php echo $talk->start_time; ?></td>
 									<td><?php echo $talk->start_time; ?></td>
 									<td>
-										<a href="<?php echo get_permalink( $talk->ID ); ?>">
-											<?php echo $talk->post_title; ?>
-										</a>
-									</td>
-									<td>
 										<a href="<?php echo get_permalink($speaker->ID); ?>">
 											<?php echo $speaker->post_title; ?>
 										</a>
 									</td>
+									<td>
+										<a href="<?php echo get_permalink( $talk->ID ); ?>">
+											<?php echo $talk->post_title; ?>
+										</a>
+									</td>									
 								</tr>
 							<?php endforeach; ?>
 						</table>

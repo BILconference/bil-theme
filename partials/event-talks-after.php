@@ -9,27 +9,28 @@
 		)
 	)
 )); ?>
-
-<div id="event-talks">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<h2>Talks</h2>
-				<ul>
-					<?php foreach ( $talks as $talk ): ?>
-						<?php $speaker = get_field('speaker', $talk->ID); ?>
-						<li>
-							<a href="<?php echo get_permalink( $talk->ID ); ?>">
-								<?php echo $talk->post_title; ?>
-							</a>
-							 by 
-							<a href="<?php echo get_permalink($speaker->ID); ?>">
-								<?php echo $speaker->post_title; ?>
-							</a>
-						</li>
-					<?php endforeach; ?>
-				</ul>
+<?php if($talks) { ?>
+	<div id="event-talks">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>Talks</h2>
+					<ul>
+						<?php foreach ( $talks as $talk ): ?>
+							<?php $speaker = get_field('speaker', $talk->ID); ?>
+							<li>
+								<a href="<?php echo get_permalink( $talk->ID ); ?>">
+									<?php echo $talk->post_title; ?>
+								</a>
+								 by 
+								<a href="<?php echo get_permalink($speaker->ID); ?>">
+									<?php echo $speaker->post_title; ?>
+								</a>
+							</li>
+						<?php endforeach; ?>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+<?php }

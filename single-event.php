@@ -60,6 +60,19 @@
 		</div>
 	</div>
 
+	<?php // Talks ---------------------------------------------------- ?>
+
+	<?php $today = date('U'); ?>
+	<?php $event_end_date = DateTime::createFromFormat('Ymd', get_field('end_date'))->format('U'); ?>
+
+	<?php if($today > $event_end_date) { ?>
+		<?php get_template_part( 'partials/event-talks', 'after' ); ?>
+	<?php } else { ?>
+		<?php get_template_part( 'partials/event-talks', 'before-during' ); ?>
+	<?php } ?>
+
+	<?php // Event About ---------------------------------------------- ?>
+
 	<div id="event-about">
 		<div class="container single-event-nav-container">
 			<div class="row">
@@ -168,49 +181,6 @@
 
 		</div>
 	</div>
-
-	<?php // Talks -------------------------------------------------- ?>
-
-	<?php $today = date('U'); ?>
-	<?php $event_end_date = DateTime::createFromFormat('Ymd', get_field('end_date'))->format('U'); ?>
-
-	<?php $talks = get_posts(array(
-		'post_type' => 'talk',
-		'posts_per_page' => '50',
-		'meta_query' => array(
-			array(
-				'key' => 'event', // name of custom field
-				'value' => $post->ID, // matches exaclty "123", not just 123. This prevents a match for "1234"
-				'compare' => '='
-			)
-		)
-	)); ?>
-
-	<?php if( $talks && $today > $event_end_date ) { ?>
-		<div id="event-talks">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<h2>Talks</h2>
-						<ul>
-							<?php foreach ( $talks as $talk ): ?>
-								<?php $speaker = get_field('speaker', $talk->ID); ?>
-								<li>
-									<a href="<?php echo get_permalink( $talk->ID ); ?>">
-										<?php echo $talk->post_title; ?>
-									</a>
-									 by 
-									<a href="<?php echo get_permalink($speaker->ID); ?>">
-										<?php echo $speaker->post_title; ?>
-									</a>
-								</li>
-							<?php endforeach; ?>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	<?php } ?>
 	
 	<?php // Sponsors ------------------------------------------------- ?>
 
@@ -240,7 +210,7 @@
 		</div>
 	<?php endif; ?>
 
-	<?php // Press -------------------------------------------------- ?>
+	<?php // Press ---------------------------------------------------- ?>
 
 	<?php $articles = get_field('press');?>
 
@@ -265,6 +235,8 @@
 			</div>
 		</div>
 	<?php } ?>
+
+	<?php // CTA ------------------------------------------------------ ?>
 
 	<div id="event-cta">
 		<div class="container">

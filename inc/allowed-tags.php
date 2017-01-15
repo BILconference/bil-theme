@@ -2,7 +2,7 @@
 
 add_filter( 'wp_kses_allowed_html', 'bil_allowed_tags', 1, 1);
 
-function esw_author_cap_filter( $allowedposttags ) {
+function bil_allowed_tags( $allowedposttags ) {
 
 	if ( !current_user_can( 'publish_posts' ) ) {
 		return $allowedposttags;

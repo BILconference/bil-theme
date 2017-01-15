@@ -65,6 +65,8 @@
 	<?php $today = date('U'); ?>
 	<?php $event_end_date = DateTime::createFromFormat('Ymd', get_field('end_date'))->format('U'); ?>
 
+aaaaaaaa
+
 	<?php if($today > $event_end_date) { ?>
 		<?php get_template_part( 'partials/event-talks', 'after' ); ?>
 	<?php } else { ?>

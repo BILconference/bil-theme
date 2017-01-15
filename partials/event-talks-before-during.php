@@ -9,7 +9,7 @@
 		)
 	)
 )); ?>
-
+xxxx
 <?php if($talks) { ?>
 	<div id="event-talks">
 		<div class="container">

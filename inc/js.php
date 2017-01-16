@@ -9,7 +9,7 @@
 		// ***********************************************************************
 
 			wp_deregister_script('jquery');
-			wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', null, null, false);
+			wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', null, null, false);
 			wp_register_script('mainjs', get_stylesheet_directory_uri() . '/dist/js/main.min.js', ['jquery'], null, true);
 
 		// ***********************************************************************

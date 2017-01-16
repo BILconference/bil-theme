@@ -19,7 +19,7 @@
 				<div class="col-xs-12">
 					<h2>Schedule</h2>
 					<div class="table-responsive">
-						<table class="table table-striped">
+						<table id="sched" class="table table-striped">
 							<thead>
 								<tr>
 									<th>Date</th>
@@ -31,8 +31,8 @@
 							<?php foreach ( $talks as $talk ): ?>
 								<?php $speaker = get_field('speaker', $talk->ID); ?>
 								<tr>
-									<td><?php the_field('start_time', $talk->ID); ?></td>
-									<td><?php the_field('start_time', $talk->ID); ?></td>
+									<td data-date="<?php the_field('start_time', $talk->ID); ?>" data-format=""></td>
+									<td data-date="<?php the_field('start_time', $talk->ID); ?>"></td>
 									<td>
 										<a href="<?php echo get_permalink($speaker->ID); ?>">
 											<?php echo $speaker->post_title; ?>

@@ -4631,11 +4631,10 @@ jQuery(document).ready(function($) {
 
 	$('[data-date]').each(function(i, x) {
 		var fmt = $(x).data('format');
-		var unixtime = $(x).data(date);
+		var unixtime = $(x).data('date');
 		var date = moment.unix(unixtime);
-		console.log(date);
-		//var text = date.tz(localtz).format(fmt);
 
-		//$(x).text(text);
+		var text = date.tz(localtz).format(fmt);
+		$(x).text(text);
 	});
 });

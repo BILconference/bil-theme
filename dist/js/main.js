@@ -5221,7 +5221,7 @@ jQuery(document).ready(function($) {
 		window.location.hash = e.target.hash;
 	});
 
-	$('.sched').each(function(sched) {
+	$('#sched').each(function(sched) {
 		console.log(sched);
 	});
 });

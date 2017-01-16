@@ -1,0 +1,27 @@
+{
+  "name": "bil-theme",
+  "version": "1.0.0",
+  "description": "Theme used on http://bilconference.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BILconference/bil-theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BILconference/bil-theme/issues"
+  },
+  "homepage": "https://github.com/BILconference/bil-theme#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0"
+  }
+}

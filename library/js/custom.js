@@ -15,4 +15,12 @@ jQuery(document).ready(function($) {
 
 	var localtz = moment.tz.guess();
 	console.log(localtz);
+
+	$('[data-date]').each(function(i, x) {
+		var fmt = $(x).data(format);
+		var date = moment($(x).data(date));
+		var text = date.tz("America/Los_Angeles").format(fmt);
+
+		$(x).text(text);
+	});
 });

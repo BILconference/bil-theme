@@ -31,8 +31,8 @@
 							<?php foreach ( $talks as $talk ): ?>
 								<?php $speaker = get_field('speaker', $talk->ID); ?>
 								<tr>
-									<td><?php echo $talk->start_time; ?></td>
-									<td><?php echo $talk->start_time; ?></td>
+									<td><?php the_field('start_time', $talk->ID); ?></td>
+									<td><?php the_field('start_time', $talk->ID); ?></td>
 									<td>
 										<a href="<?php echo get_permalink($speaker->ID); ?>">
 											<?php echo $speaker->post_title; ?>

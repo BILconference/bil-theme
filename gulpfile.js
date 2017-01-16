@@ -6,7 +6,7 @@ const rename = require('gulp-rename');
 const notify = require('gulp-notify');
 
 const jsFiles = [
-	'library/js/libs/modernizr/dist/modernizr-build.js',
+	'library/js/modernizr.js',
 	'library/js/libs/jquery/dist/jquery.js',
 	'library/js/libs/bootstrap/dist/js/bootstrap.min.js',
 	'library/js/libs/bigtext/dist/bigtext.js',

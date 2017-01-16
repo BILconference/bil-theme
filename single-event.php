@@ -236,22 +236,6 @@
 		</div>
 	<?php } ?>
 
-	<?php // CTA ------------------------------------------------------ ?>
-
-	<div id="event-cta">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<h2>Get ahold of us...</h2>
-					<?php $event_email = get_field( "contact_email" ); ?>
-					<?php if ($event_email) { ?>
-						<span>Contact:</span> <a href="mailto:<?php the_field('contact_email'); ?>" style="color:#fff;"><?php the_field('contact_email'); ?></a>
-					<?php } ?>
-					<?php //echo do_shortcode( '[gravityform id="2" title="false" description="false"]' ); ?>
-				</div>
-			</div>
-		</div>
-	</div>
 <?php endwhile; endif; ?>
 
 <?php get_footer(); ?>

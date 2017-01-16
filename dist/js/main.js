@@ -4632,7 +4632,7 @@ jQuery(document).ready(function($) {
 	$('[data-date]').each(function(i, x) {
 		var fmt = $(x).data('format');
 		var date = moment.unix($(x).data(date));
-		var text = date.tz("America/Los_Angeles").format(fmt);
+		var text = date.tz(localtz).format(fmt);
 
 		$(x).text(text);
 	});

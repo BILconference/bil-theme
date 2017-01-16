@@ -7,8 +7,8 @@ const notify = require('gulp-notify');
 
 const jsFiles = [
 	'library/js/libs/modernizr/dist/modernizr-build.js',
-	'library/js/libs/bootstrap/dist/js/bootstrap.min.js',
 	'library/js/libs/jquery/dist/jquery.js',
+	'library/js/libs/bootstrap/dist/js/bootstrap.min.js',
 	'library/js/libs/bigtext/dist/bigtext.js',
 	'library/js/libs/moment/moment.js',
 	'library/js/libs/moment-timezone/moment-timezone.js',

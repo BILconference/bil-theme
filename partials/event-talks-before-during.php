@@ -19,7 +19,7 @@
 				<div class="col-xs-12">
 					<h2>Schedule</h2>
 					<div class="table-responsive">
-						<table id="sched" class="table table-striped">
+						<table class="table table-striped bil-sched">
 							<thead>
 								<tr>
 									<th>Date</th>

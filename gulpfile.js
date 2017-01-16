@@ -9,8 +9,8 @@ const jsFiles = [
 	'library/js/modernizr.js',
 	'library/js/libs/bootstrap/dist/js/bootstrap.min.js',
 	'library/js/libs/bigtext/dist/bigtext.js',
-	'library/js/libs/moment/moment.js',
-	'library/js/libs/moment-timezone/moment-timezone.js',
+	'library/js/libs/moment/moment.min.js',
+	'library/js/libs/moment-timezone/moment-timezone-with-data.min.js',
 	'library/js/custom.js'
 ];
 

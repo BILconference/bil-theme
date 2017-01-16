@@ -15,6 +15,4 @@ jQuery(document).ready(function($) {
 
 	var localtz = moment.tz.guess();
 	console.log(localtz);
-
-	$('.bil-sched').each()
 });

@@ -32,7 +32,7 @@
 								<?php $speaker = get_field('speaker', $talk->ID); ?>
 								<tr>
 									<td data-date="<?php the_field('start_time', $talk->ID); ?>" data-format="ddd, MMM Do"></td>
-									<td data-date="<?php the_field('start_time', $talk->ID); ?>" data-format="H:m A (Z)"></td>
+									<td data-date="<?php the_field('start_time', $talk->ID); ?>" data-format="H:mm A (Z)"></td>
 									<td>
 										<a href="<?php echo get_permalink($speaker->ID); ?>">
 											<?php echo $speaker->post_title; ?>

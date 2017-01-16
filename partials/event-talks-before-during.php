@@ -9,7 +9,8 @@
 		)
 	),
 	'meta_key' => 'start_time',
-	'orderby' => 'meta_value'
+	'orderby' => 'meta_value',
+	'order' => 'ASC'
 )); ?>
 
 <?php if($talks) { ?>

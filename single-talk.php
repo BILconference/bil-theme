@@ -21,7 +21,7 @@
 				</div>
 				<div class="col-xs-12 col-md-6 col-lg-3">
 					<div class="live-chat-container">
-						<iframe src="<?php get_youtube_live_chat_embed_url($youtube_id, 'bilconference.com'); ?>" frameborder="0" width="560" height="315"></iframe>
+						<iframe src="<?php get_youtube_live_chat_embed_url($youtube_id, 'bilconference.com'); ?>" frameborder="0" width="auto" height="506"></iframe>
 					</div>
 				</div>
 			</div>

@@ -28,7 +28,7 @@ const cssFiles = [
 	'library/scss/admin.scss'
 ];
 
-const imageFiles = [ 'library/images/*' ]
+const imageFiles = [ 'library/images/*' ];
 
 
 gulp.task('default', () => {
@@ -79,7 +79,7 @@ gulp.task('cleanCss', () =>
 
 gulp.task('images', ['cleanImages'], () =>
 	gulp.src(imageFiles)
-	.pipe(image())
+	//.pipe(image())
 	.pipe(gulp.dest('dist/img'))
 	.pipe(notify({ message: 'Images task complete' }))
 );
@@ -88,6 +88,3 @@ gulp.task('cleanImages', () =>
   gulp.src(['dist/img'], { read: false })
 	.pipe(clean())
 );
-
-
-

@@ -118,6 +118,10 @@ function get_youtube_embed_url($id) {
 	echo 'https://www.youtube.com/embed/' . $id;
 }
 
+function get_youtube_live_chat_embed_url($id, $domain='bilconference.com') {
+	echo 'https://www.youtube.com/live_chat?v=' . $id . 'embed_domain=' . $domain;
+}
+
 
 
 

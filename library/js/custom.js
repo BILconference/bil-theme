@@ -14,7 +14,6 @@ jQuery(document).ready(function($) {
 	});
 
 	var localtz = moment.tz.guess();
-	console.log(localtz);
 
 	$('[data-date]').each(function(i, x) {
 		var fmt = $(x).data('format');

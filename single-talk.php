@@ -9,37 +9,22 @@
 	?>
 	<?php 	$speaker = get_field('speaker'); ?>
 	<?php 	$event = get_field('event'); ?>
-	<?php //time functions to help with display of video only vs video with livestream chat ?>
-	<?php $today = date('U'); ?>
-	<?php $event_end_date = DateTime::createFromFormat('Ymd', get_field('end_date'))->format('U'); ?>
 
-	
 
 	<div id="talk-hero" class="hero jumbotron">
 		<div class="container">
-			
-			<?php if($today > $event_end_date) { //FULL SCREEN VIDEO ?>
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="video-container">
-						    <iframe src="<?php get_youtube_embed_url($youtube_id); ?>" frameborder="0" width="560" height="315"></iframe>
-						</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-6 col-lg-9">
+					<div class="video-container">
+					    <iframe src="<?php get_youtube_embed_url($youtube_id); ?>" frameborder="0" width="560" height="315"></iframe>
 					</div>
 				</div>
-			<?php } else { //ADD LIVE CHAT ?>
-				<div class="row">
-					<div class="col-xs-12 col-md-6 col-lg-9">
-						<div class="video-container">
-						    <iframe src="<?php get_youtube_embed_url($youtube_id); ?>" frameborder="0" width="560" height="315"></iframe>
-						</div>
-					</div>
-					<div class="col-xs-12 col-md-6 col-lg-3">
-						<div class="live-chat-container">
-							<iframe src="<?php get_youtube_live_chat_embed_url($youtube_id, 'bilconference.com'); ?>" frameborder="0" width="560" height="315"></iframe>
-						</div>
+				<div class="col-xs-12 col-md-6 col-lg-3">
+					<div class="live-chat-container">
+						<iframe src="<?php get_youtube_live_chat_embed_url($youtube_id, 'bilconference.com'); ?>" frameborder="0" width="560" height="315"></iframe>
 					</div>
 				</div>
-			<?php } ?>
+			</div>
 		</div>
 	</div>
 

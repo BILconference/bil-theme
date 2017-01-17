@@ -2043,6 +2043,9 @@ footer#footer {
       #module-speakers .speaker a:hover {
         text-decoration: none; }
 
+#module-hero .event-hero .content {
+  text-shadow: 1px 1px 5px #000; }
+
 body.post-type-archive-speaker #speakers-list #featured .speaker {
   min-height: 300px;
   max-height: 300px;

@@ -28,13 +28,14 @@ const cssFiles = [
 	'library/scss/admin.scss'
 ];
 
-const imageFiles = [ 'library/images/*' ];
-
+const imageFiles = [ 'library/images/**/*' ];
+const fontFiles = [ 'library/fonts/**/*' ];
 
 gulp.task('default', () => {
 	gulp.watch(jsFiles, ['js']);
 	gulp.watch('library/scss/**/*.scss', ['css']);
 	gulp.watch(imageFiles, ['images']);
+	gulp.watch(fontFiles, ['fonts'])
 });
 
 
@@ -86,5 +87,18 @@ gulp.task('images', ['cleanImages'], () =>
 
 gulp.task('cleanImages', () =>
   gulp.src(['dist/img'], { read: false })
+	.pipe(clean())
+);
+
+
+
+gulp.task('fonts', ['cleanFonts'], () =>
+	gulp.src(fontFiles)
+	.pipe(gulp.dest('dist/fonts'))
+	.pipe(notify({ message: 'Fonts task complete' }))
+);
+
+gulp.task('cleanFonts', () =>
+  gulp.src(['dist/fonts'], { read: false })
 	.pipe(clean())
 );

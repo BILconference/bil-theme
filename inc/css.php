@@ -15,10 +15,10 @@
 			wp_register_style( 'bootstrap-cdn', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', array(), '3.3.5', false );
 
 			// register main stylesheet
-			wp_register_style( 'bil-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
+			wp_register_style( 'bil-stylesheet', get_stylesheet_directory_uri() . '/dist/css/style.min.css', array(), '', 'all' );
 
 			// ie-only style sheet
-			wp_register_style( 'bil-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
+			wp_register_style( 'bil-ie-only', get_stylesheet_directory_uri() . '/dist/css/ie.min.css', array(), '' );
 
 		// ***********************************************************************
 		//

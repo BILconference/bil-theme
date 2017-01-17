@@ -5,16 +5,23 @@
 			$youtube = get_field('youtube');
 			$youtube_id = get_youtube_video_id( $youtube );
 
+
 	?>
 	<?php 	$speaker = get_field('speaker'); ?>
 	<?php 	$event = get_field('event'); ?>
 
+
 	<div id="talk-hero" class="hero jumbotron">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12">
+				<div class="col-xs-12 col-md-6 col-lg-9">
 					<div class="video-container">
 					    <iframe src="<?php get_youtube_embed_url($youtube_id); ?>" frameborder="0" width="560" height="315"></iframe>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6 col-lg-3">
+					<div class="live-chat-container">
+						<iframe src="<?php get_youtube_live_chat_embed_url($youtube_id, 'bilconference.com'); ?>" frameborder="0" width="560" height="315"></iframe>
 					</div>
 				</div>
 			</div>

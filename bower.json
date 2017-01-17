@@ -17,6 +17,9 @@
     "tests"
   ],
   "dependencies": {
-    "bigtext": "zachleat/BigText#^0.1.8"
+    "bigtext": "^0.1.8",
+    "bootstrap": "3.3.5",
+    "moment": "^2.17.1",
+    "moment-timezone": "^0.5.11"
   }
 }

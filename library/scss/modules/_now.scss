@@ -1,7 +1,10 @@
-#module-hero {
+#module-now {
+	@extend %module-home;
+
 	.event-hero {
 		.content {
 		    text-shadow: 1px 1px 5px #000;
+		    color:#fff;
 		}
 	}
 }

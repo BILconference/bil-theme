@@ -24,7 +24,7 @@ http://sachagreif.com/sass-color-variables/
   padding-top: 50px;
   padding-bottom: 50px; }
 
-#module-hero, #module-map, #module-intro, #module-sponsors, #module-cta, #module-speakers {
+#module-hero, #module-map, #module-intro, #module-sponsors, #module-cta, #module-speakers, #module-now {
   padding-top: 100px;
   padding-bottom: 100px; }
 
@@ -2043,8 +2043,9 @@ footer#footer {
       #module-speakers .speaker a:hover {
         text-decoration: none; }
 
-#module-hero .event-hero .content {
-  text-shadow: 1px 1px 5px #000; }
+#module-now .event-hero .content {
+  text-shadow: 1px 1px 5px #000;
+  color: #fff; }
 
 body.post-type-archive-speaker #speakers-list #featured .speaker {
   min-height: 300px;

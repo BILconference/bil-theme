@@ -9,7 +9,11 @@
 		<div class="event-hero" class="hero jumbotron">
 			<div class="container">
 				<div class="row">
-					<h2>Upcoming BILs</h2>
+					<div class="col-xs-12 content">
+						<h2>Upcoming BILs</h2>
+					</div>
+				</div>
+				<div class="row">
 					<?php while ( $future_bils->have_posts() ) : $future_bils->the_post(); ?>
 						<div class="col-xs-12 col-sm-4 content">
 							<h2><?php the_title(); ?></h2>

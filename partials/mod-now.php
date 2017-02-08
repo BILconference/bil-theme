@@ -1,22 +1,13 @@
-<?php $module = get_module_by_slug('intro') ?>
-<?php // $text = get_field("text", $module->ID, OBJECT); ?>
-<?php // $background = get_field("background_image", $module->ID, OBJECT); ?>
-<?php // $image = $background['sizes'][ 'full-width' ]; ?>
+<?php $module = get_module_by_slug('now') ?>
+<?php //$text = get_field("text", $module->ID, OBJECT); ?>
+<?php $background = get_field("background_image", $module->ID, OBJECT); ?>
+<?php $image = $background['sizes'][ 'full-width' ]; ?>
 
 <?php $future_bils = upcoming_bils(); ?>
 <?php if ($future_bils->have_posts() ) { ?>
-	<div id="module-now" style="display:none;">
+	<div id="module-now" style="background-image: url('<?php echo $image; ?>');">
 		<?php while ( $future_bils->have_posts() ) : $future_bils->the_post(); ?>
-			<?php if (get_field('hero_background')) {
-				$background = get_field('hero_background');
-				$image = $background['sizes']['full-width'];
-			} else if ( has_post_thumbnail() ) {
-				$image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-			} else {
-				$background = get_field('event_hero_background', 'option');
-				$image = $background['sizes']['full-width'];
-			} ?>
-			<div class="event-hero" class="hero jumbotron" style="background-image: url('<?php echo $image; ?>');">
+			<div class="event-hero" class="hero jumbotron">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-10 col-sm-offset-1 content">

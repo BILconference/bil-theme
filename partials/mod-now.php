@@ -6,6 +6,7 @@
 <?php $future_bils = upcoming_bils(); ?>
 <?php if ($future_bils->have_posts() ) { ?>
 	<div id="module-now">
+		<h2>Upcoming BILs</h2>
 		<?php while ( $future_bils->have_posts() ) : $future_bils->the_post(); ?>
 			<div class="event-hero" class="hero jumbotron">
 				<div class="container">

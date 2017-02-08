@@ -20,13 +20,11 @@
 			<div id="full-event-list" class="col-xs-12">
 				<?php $all_bils = all_bils(); ?>
 				<?php if ($all_bils->have_posts() ) : ?>
-					<ul class="list-inline">
+					<p>
 						<?php while ( $all_bils->have_posts() ) : $all_bils->the_post(); ?>
-							<li>
-								<a href="<?php the_permalink(); ?>"><strong><?php the_title() ?></strong> - <?php the_field('general_location'); ?></a>
-							</li>
+							<a href="<?php the_permalink(); ?>"><strong><?php the_title() ?></strong> - <?php the_field('general_location'); ?></a>
 						<?php endwhile; ?>
-					</ul>
+					</p>
 					<?php wp_reset_postdata(); ?>
 				<?php endif; ?>
 			</div>

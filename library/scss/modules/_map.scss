@@ -29,17 +29,13 @@
 	}
 
 	#full-event-list {
-		ul {
+		p {
 			color: $white;
 			word-wrap: break-word;
 			text-align: justify;
 
 			@include breakpoint(xs) {
 				padding-left: 20px;
-			}
-
-			li {
-				word-wrap: break-word;
 			}
 		
 			a, a:visited {

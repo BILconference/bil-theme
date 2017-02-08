@@ -29,6 +29,8 @@
 	}
 
 	#full-event-list {
+		margin-top:100px;
+
 		p {
 			color: $white;
 			word-wrap: break-word;
@@ -40,6 +42,7 @@
 		
 			a, a:visited {
 				color:$white;
+				margin-right:10px;
 			}
 		}
 	}

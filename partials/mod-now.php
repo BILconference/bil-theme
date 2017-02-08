@@ -5,7 +5,7 @@
 
 <?php $future_bils = upcoming_bils(); ?>
 <?php if ($future_bils->have_posts() ) { ?>
-	<div id="module-now" style="background-image: url('<?php echo $image; ?>');">
+	<div id="module-now">
 		<?php while ( $future_bils->have_posts() ) : $future_bils->the_post(); ?>
 			<div class="event-hero" class="hero jumbotron">
 				<div class="container">

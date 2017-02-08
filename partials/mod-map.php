@@ -15,8 +15,9 @@
 					<a href="http://bilconference.com/resources/" class="button pink">Organize a BIL in your City</a>
 				</div>
 			</div>
-
-			<div id="full-event-list" class="col-xs-12 col-md-4">				
+		</div>
+		<div class="row">
+			<div id="full-event-list" class="col-xs-12">
 				<?php $all_bils = all_bils(); ?>
 				<?php if ($all_bils->have_posts() ) : ?>
 					<ul class="list-inline">

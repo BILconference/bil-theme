@@ -31,17 +31,13 @@
 	#full-event-list {
 		ul {
 			color: $white;
+			word-wrap: break-word;
+			text-align: justify;
 
 			@include breakpoint(xs) {
-				padding-left: 40px;
-				text-align: justify;
+				padding-left: 20px;
 			}
 		
-			@include breakpoint(md) {
-				padding-left: 65px;
-				text-align: left;
-			}
-
 			a, a:visited {
 				color:$white;
 			}

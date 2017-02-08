@@ -1912,15 +1912,12 @@ footer#footer {
     text-align: center;
     padding-top: 30px; }
   #module-map #full-event-list ul {
-    color: #fff; }
+    color: #fff;
+    word-wrap: break-word;
+    text-align: justify; }
     @media (min-width: 0px) {
       #module-map #full-event-list ul {
-        padding-left: 40px;
-        text-align: justify; } }
-    @media (min-width: 992px) {
-      #module-map #full-event-list ul {
-        padding-left: 65px;
-        text-align: left; } }
+        padding-left: 20px; } }
     #module-map #full-event-list ul a, #module-map #full-event-list ul a:visited {
       color: #fff; }
 

@@ -35,6 +35,7 @@
 			color: $white;
 			word-wrap: break-word;
 			text-align: justify;
+			font-size:1.2em;
 
 			@include breakpoint(xs) {
 				padding-left: 20px;

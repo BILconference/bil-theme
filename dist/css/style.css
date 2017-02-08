@@ -1916,7 +1916,8 @@ footer#footer {
     #module-map #full-event-list p {
       color: #fff;
       word-wrap: break-word;
-      text-align: justify; }
+      text-align: justify;
+      font-size: 1.2em; }
       @media (min-width: 0px) {
         #module-map #full-event-list p {
           padding-left: 20px; } }

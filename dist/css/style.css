@@ -2057,6 +2057,8 @@ footer#footer {
   #module-now .content {
     text-shadow: 1px 1px 5px #000;
     color: #fff; }
+    #module-now .content h2 {
+      color: #fff; }
 
 body.post-type-archive-speaker #speakers-list #featured .speaker {
   min-height: 300px;

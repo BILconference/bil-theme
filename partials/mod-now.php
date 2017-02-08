@@ -13,7 +13,7 @@
 						<h2>Upcoming BILs</h2>
 						<?php while ( $future_bils->have_posts() ) : $future_bils->the_post(); ?>
 							<div class="col-xs-12 col-sm-4 content">
-								<h2><?php the_title(); ?></h2>
+								<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 								<p>
 									<?php the_field('general_location'); ?><br>
 									<?php if (get_field('start_date')) { 

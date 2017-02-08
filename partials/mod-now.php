@@ -6,12 +6,12 @@
 <?php $future_bils = upcoming_bils(); ?>
 <?php if ($future_bils->have_posts() ) { ?>
 	<div id="module-now">
-		<h2>Upcoming BILs</h2>
-		<?php while ( $future_bils->have_posts() ) : $future_bils->the_post(); ?>
-			<div class="event-hero" class="hero jumbotron">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12 col-sm-10 col-sm-offset-1 content">
+		<div class="event-hero" class="hero jumbotron">
+			<div class="container">
+				<div class="row">
+					<h2>Upcoming BILs</h2>
+					<?php while ( $future_bils->have_posts() ) : $future_bils->the_post(); ?>
+						<div class="col-xs-12 col-sm-4 content">
 							<h2><?php the_title(); ?></h2>
 							<p>
 								<?php the_field('general_location'); ?><br>
@@ -30,10 +30,10 @@
 								} ?>
 							</p>
 						</div>
-					</div>
+					<?php endwhile; ?>
 				</div>
 			</div>
-		<?php endwhile; ?>
+		</div>
 		<?php wp_reset_postdata(); ?>
 	</div>
 <?php } ?>

@@ -3,7 +3,7 @@
 <div id="module-map">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-md-8">
+			<div class="col-xs-12">
 				<div id="bil-global-statistics" class="bigtext">
 					<div><?php the_field('line_1', $module->ID); ?></div> 
 					<div><?php the_field('line_2', $module->ID); ?></div> 
@@ -19,7 +19,7 @@
 			<div id="full-event-list" class="col-xs-12 col-md-4">				
 				<?php $all_bils = all_bils(); ?>
 				<?php if ($all_bils->have_posts() ) : ?>
-					<ul>
+					<ul class="list-inline">
 						<?php while ( $all_bils->have_posts() ) : $all_bils->the_post(); ?>
 							<li>
 								<a href="<?php the_permalink(); ?>"><strong><?php the_title() ?></strong> - <?php the_field('general_location'); ?></a>

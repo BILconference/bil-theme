@@ -1910,10 +1910,8 @@ footer#footer {
         padding: 0; } }
   #module-map #map-cta {
     text-align: center;
-    padding-top: 20px; }
+    padding-top: 30px; }
   #module-map #full-event-list ul {
-    margin-top: 10px;
-    list-style: none;
     color: #fff; }
     @media (min-width: 0px) {
       #module-map #full-event-list ul {
@@ -1923,21 +1921,6 @@ footer#footer {
       #module-map #full-event-list ul {
         padding-left: 65px;
         text-align: left; } }
-    @media (min-width: 0px) {
-      #module-map #full-event-list ul li {
-        display: inline;
-        font-size: 15px;
-        line-height: 2em; }
-        #module-map #full-event-list ul li:after {
-          content: " | "; } }
-    @media (min-width: 992px) {
-      #module-map #full-event-list ul li {
-        white-space: nowrap;
-        display: block;
-        font-size: 12.9px;
-        line-height: 1.35em; }
-        #module-map #full-event-list ul li:after {
-          content: ""; } }
     #module-map #full-event-list ul a, #module-map #full-event-list ul a:visited {
       color: #fff; }
 

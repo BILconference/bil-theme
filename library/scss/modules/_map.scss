@@ -25,13 +25,11 @@
 
 	#map-cta {
 		text-align: center;
-		padding-top: 20px;
+		padding-top: 30px;
 	}
 
 	#full-event-list {
 		ul {
-			margin-top: 10px;
-			list-style: none;
 			color: $white;
 
 			@include breakpoint(xs) {
@@ -42,32 +40,6 @@
 			@include breakpoint(md) {
 				padding-left: 65px;
 				text-align: left;
-			}
-			
-			li {
-
-				@include breakpoint(xs) {
-					display: inline;
-					font-size: 15px;
-					line-height: 2em;
-
-					&:after {
-						content: " | ";
-					}
-				}
-			
-				@include breakpoint(md) {
-					white-space: nowrap;
-					display: block;
-					font-size: 12.9px;
-					line-height: 1.35em;
-
-					&:after {
-						content: "";
-					}
-
-				}
-
 			}
 
 			a, a:visited {

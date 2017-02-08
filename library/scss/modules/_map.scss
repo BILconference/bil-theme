@@ -29,13 +29,13 @@
 	}
 
 	#full-event-list {
-		margin-top:50px;
+		margin-top:30px;
 
 		p {
 			color: $white;
 			word-wrap: break-word;
 			text-align: justify;
-			font-size:1.2em;
+			font-size:1.5em;
 
 			@include breakpoint(xs) {
 				padding-left: 20px;
